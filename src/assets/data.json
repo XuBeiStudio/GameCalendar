@@ -1,0 +1,22 @@
+[
+  {
+    "month": "2023.5",
+    "games": [
+      {
+        "title": "塞尔达传说：王国之泪",
+        "subtitle": [
+          "The Legend of Zelda:",
+          "Tears of Kingdom"
+        ],
+        "releaseDate": "2023.5.12",
+        "platforms": [
+          "Switch"
+        ],
+        "bg": "https://cdn2.steamgriddb.com/hero/b61248fcbcb76b463231d88a39b5d4cb.jpg",
+        "logo": "https://cdn2.steamgriddb.com/logo/19e524e7aa887f6311e8b6ae061bf5d7.png",
+        "leftColor": "#000000",
+        "rightColor": "#FFFFFF"
+      }
+    ]
+  }
+]
