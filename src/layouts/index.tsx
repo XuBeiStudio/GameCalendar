@@ -6,7 +6,7 @@ import { Moon, SunOne } from '@icon-park/react';
 import { css } from '@emotion/css';
 import './index.less';
 import { getAllLocales, Helmet, setLocale, useIntl } from '@@/exports';
-import Icon from '@ant-design/icons';
+import Icon, { VerticalAlignTopOutlined } from '@ant-design/icons';
 import { ReactComponent as XubeiLogo } from '@/assets/imgs/logo.svg';
 
 const { useToken } = theme;
@@ -108,6 +108,15 @@ const Layout: React.FC = () => {
         </Modal>
         <FloatButton.Group>
           <FloatButton
+            tooltip={i18n.formatMessage({ id: 'backToTop' })}
+            onClick={()=>{
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }}
+            icon={<VerticalAlignTopOutlined />}
+          />
+          <FloatButton
+            tooltip={i18n.formatMessage({ id: 'github' })}
             onClick={()=>{
               window.location.href = 'https://github.com/liziyi0914/GameCalendar';
             }}

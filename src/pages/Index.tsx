@@ -1,8 +1,10 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import { Affix, theme } from 'antd';
+import { Affix, App, theme } from 'antd';
 import { ReactComponent as XubeiLogo } from '@/assets/imgs/logo.svg';
 import PlatformIcons from '@/components/PlatformIcons';
+import * as ics from 'ics'
 import data from '@/assets/data.json';
+import { DateTime } from 'ics';
 
 const { useToken } = theme;
 
@@ -48,6 +50,14 @@ const Month: React.FC<{
 
   const [affixed, setAffixed] = useState(false);
 
+  const month = useMemo(() => {
+    let [y, m] = props.value.split('.');
+    if (m.length === 1) {
+      m = `0${m}`;
+    }
+    return `${y}.${m}`;
+  }, [props.value]);
+
   return (
     <Affix
       onChange={affixed => setAffixed(affixed ?? false)}
@@ -60,7 +70,7 @@ const Month: React.FC<{
               color: token.colorTextTertiary,
             }}
           >
-            {props.value}
+            {month}
           </div>
         </div>
       </div>
@@ -71,6 +81,7 @@ const Month: React.FC<{
 const Game: React.FC<{
   config: GameType;
 }> = props => {
+  const { modal } = App.useApp();
   const { token } = useToken();
 
   return (
@@ -79,6 +90,34 @@ const Game: React.FC<{
       style={{
         borderRadius: token.borderRadiusLG,
         background: props.config.bgColor ?? 'white',
+      }}
+      onClick={()=>{
+        modal.confirm({
+          title: `添加到日历`,
+          content: `是否添加《${props.config.title}》到日历？`,
+          onOk: ()=>{
+            let {
+              title,
+              releaseDate,
+              platforms,
+            } = props.config;
+
+            ics.createEvent({
+              title: title,
+              description: `《${title}》 现已在 ${platforms?.join('、')} 上推出`,
+              start: (releaseDate?.split('.').map(n=>parseInt(n))??[1970,1,1]) as DateTime,
+              duration: { days: 1 },
+              url: 'https://game-calendar.liziyi0914.com',
+              organizer: { name: '序碑工作室', email: 'games@xu-bei.cn' },
+            }, (error, value)=>{
+              if (!error) {
+                let blob = new Blob([value], {type: 'text/calendar;charset=utf-8'});
+                let url = URL.createObjectURL(blob);
+                window.open(url, '_blank');
+              }
+            });
+          },
+        });
       }}
     >
       <div>
@@ -90,6 +129,7 @@ const Game: React.FC<{
             width: '100%',
           }}
           alt="bg"
+          loading="lazy"
         />
       </div>
       <div className="absolute top-0 right-0 py-2 px-6">
@@ -98,6 +138,7 @@ const Game: React.FC<{
             src={props.config.logo}
             className="object-cover h-16"
             alt="logo"
+            loading="lazy"
           />
         )}
       </div>
@@ -115,10 +156,10 @@ const Game: React.FC<{
       >
         <div>
           <div
-            className="font-extrabold text-lg truncate w-64"
+            className="font-extrabold text-lg truncate w-64 text-shadow-lg"
           >{props.config.title ?? ''}</div>
           <div
-            className="font-medium leading-5 truncate w-64"
+            className="font-medium leading-5 truncate w-64 text-shadow-lg"
           >
             {(props.config.subtitle ?? []).map((name, index) => (
               <div key={`${props.config.subtitle}_${index}`}>
@@ -135,10 +176,10 @@ const Game: React.FC<{
         }}
       >
         <div>
-          <div className="font-bold text-right">{props.config.releaseDate ?? ''}</div>
+          <div className="font-bold text-right text-shadow-lg">{props.config.releaseDate ?? ''}</div>
           <div>
             <div
-              className="flex gap-x-1 justify-end"
+              className="flex gap-x-1 justify-end text-shadow-lg"
               style={{
                 fontSize: '0.5rem',
               }}
@@ -156,8 +197,8 @@ const Game: React.FC<{
 const Page: React.FC = () => {
   const { token } = useToken();
 
-  const gameDatas = useMemo(() => {
-    return sortMonth(data as DataType);
+  const gameDatas: DataType = useMemo(() => {
+    return sortMonth(data as DataType).reverse();
   }, [data]);
 
   useEffect(() => {
