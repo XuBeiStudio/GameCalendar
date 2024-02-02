@@ -1,14 +1,21 @@
-import React, { useEffect, useMemo, useState } from 'react';
-import { Affix, App, theme } from 'antd';
+import data from '@/assets/data.json';
 import { ReactComponent as XubeiLogo } from '@/assets/imgs/logo.svg';
 import PlatformIcons from '@/components/PlatformIcons';
-import * as ics from 'ics'
-import data from '@/assets/data.json';
+import { Affix, App, theme } from 'antd';
+import * as ics from 'ics';
 import { DateTime } from 'ics';
+import React, { useEffect, useMemo, useState } from 'react';
 
 const { useToken } = theme;
 
-type PlatformType = 'Steam' | 'Epic' | 'Xbox' | 'Switch' | 'PlayStation' | 'Android' | 'Apple';
+type PlatformType =
+  | 'Steam'
+  | 'Epic'
+  | 'Xbox'
+  | 'Switch'
+  | 'PlayStation'
+  | 'Android'
+  | 'Apple';
 
 type GameType = {
   title?: string;
@@ -27,7 +34,7 @@ type DataType = {
   games: GameType[];
 }[];
 
-const sortMonth: (months: DataType) => DataType = months => {
+const sortMonth: (months: DataType) => DataType = (months) => {
   return months.sort((a, b) => {
     let dateA = new Date(a.month ?? '');
     let dateB = new Date(b.month ?? '');
@@ -35,7 +42,7 @@ const sortMonth: (months: DataType) => DataType = months => {
   });
 };
 
-const sortGames: (games: GameType[]) => GameType[] = games => {
+const sortGames: (games: GameType[]) => GameType[] = (games) => {
   return games.sort((a, b) => {
     let dateA = new Date(a.releaseDate ?? '');
     let dateB = new Date(b.releaseDate ?? '');
@@ -45,7 +52,7 @@ const sortGames: (games: GameType[]) => GameType[] = games => {
 
 const Month: React.FC<{
   value: string;
-}> = props => {
+}> = (props) => {
   const { token } = useToken();
 
   const [affixed, setAffixed] = useState(false);
@@ -59,10 +66,10 @@ const Month: React.FC<{
   }, [props.value]);
 
   return (
-    <Affix
-      onChange={affixed => setAffixed(affixed ?? false)}
-    >
-      <div className={`flex justify-center ${affixed ? 'backdrop-blur-2xl' : ''}`}>
+    <Affix onChange={(affixed) => setAffixed(affixed ?? false)}>
+      <div
+        className={`flex justify-center ${affixed ? 'backdrop-blur-2xl' : ''}`}
+      >
         <div className="w-full max-w-128 px-6 py-2">
           <div
             className="-mx-6 px-6 font-extrabold text-right text-6xl select-none"
@@ -80,7 +87,7 @@ const Month: React.FC<{
 
 const Game: React.FC<{
   config: GameType;
-}> = props => {
+}> = (props) => {
   const { modal } = App.useApp();
   const { token } = useToken();
 
@@ -91,31 +98,36 @@ const Game: React.FC<{
         borderRadius: token.borderRadiusLG,
         background: props.config.bgColor ?? 'white',
       }}
-      onClick={()=>{
+      onClick={() => {
         modal.confirm({
           title: `添加到日历`,
           content: `是否添加《${props.config.title}》到日历？`,
-          onOk: ()=>{
-            let {
-              title,
-              releaseDate,
-              platforms,
-            } = props.config;
+          onOk: () => {
+            let { title, releaseDate, platforms } = props.config;
 
-            ics.createEvent({
-              title: title,
-              description: `《${title}》 现已在 ${platforms?.join('、')} 上推出`,
-              start: (releaseDate?.split('.').map(n=>parseInt(n))??[1970,1,1]) as DateTime,
-              duration: { days: 1 },
-              url: 'https://game-calendar.liziyi0914.com',
-              organizer: { name: '序碑工作室', email: 'games@xu-bei.cn' },
-            }, (error, value)=>{
-              if (!error) {
-                let blob = new Blob([value], {type: 'text/calendar;charset=utf-8'});
-                let url = URL.createObjectURL(blob);
-                window.open(url, '_blank');
-              }
-            });
+            ics.createEvent(
+              {
+                title: title,
+                description: `《${title}》 现已在 ${platforms?.join(
+                  '、',
+                )} 上推出`,
+                start: (releaseDate?.split('.').map((n) => parseInt(n)) ?? [
+                  1970, 1, 1,
+                ]) as DateTime,
+                duration: { days: 1 },
+                url: 'https://game-calendar.liziyi0914.com',
+                organizer: { name: '序碑工作室', email: 'games@xu-bei.cn' },
+              },
+              (error, value) => {
+                if (!error) {
+                  let blob = new Blob([value], {
+                    type: 'text/calendar;charset=utf-8',
+                  });
+                  let url = URL.createObjectURL(blob);
+                  window.open(url, '_blank');
+                }
+              },
+            );
           },
         });
       }}
@@ -145,7 +157,8 @@ const Game: React.FC<{
       <div
         className="absolute top-0 left-0 bottom-0 right-0"
         style={{
-          background: 'linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%)',
+          background:
+            'linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%)',
         }}
       />
       <div
@@ -155,16 +168,12 @@ const Game: React.FC<{
         }}
       >
         <div>
-          <div
-            className="font-extrabold text-lg truncate w-64 text-shadow-lg"
-          >{props.config.title ?? ''}</div>
-          <div
-            className="font-medium leading-5 truncate w-64 text-shadow-lg"
-          >
+          <div className="font-extrabold text-lg truncate w-64 text-shadow-lg">
+            {props.config.title ?? ''}
+          </div>
+          <div className="font-medium leading-5 truncate w-64 text-shadow-lg">
             {(props.config.subtitle ?? []).map((name, index) => (
-              <div key={`${props.config.subtitle}_${index}`}>
-                {name}
-              </div>
+              <div key={`${props.config.subtitle}_${index}`}>{name}</div>
             ))}
           </div>
         </div>
@@ -176,7 +185,9 @@ const Game: React.FC<{
         }}
       >
         <div>
-          <div className="font-bold text-right text-shadow-lg">{props.config.releaseDate ?? ''}</div>
+          <div className="font-bold text-right text-shadow-lg">
+            {props.config.releaseDate ?? ''}
+          </div>
           <div>
             <div
               className="flex gap-x-1 justify-end text-shadow-lg"
@@ -184,8 +195,11 @@ const Game: React.FC<{
                 fontSize: '0.5rem',
               }}
             >
-              {(props.config.platforms ?? [])?.map(p => PlatformIcons[p]).map((Comp, index) => (
-                <Comp key={`${props.config.title ?? ''}_${index}`} />))}
+              {(props.config.platforms ?? [])
+                ?.map((p) => PlatformIcons[p])
+                .map((Comp, index) => (
+                  <Comp key={`${props.config.title ?? ''}_${index}`} />
+                ))}
             </div>
           </div>
         </div>
@@ -204,12 +218,14 @@ const Page: React.FC = () => {
   useEffect(() => {
     let now = new Date();
     now = new Date(now.getFullYear(), now.getMonth());
-    let index = gameDatas.findIndex(item => {
+    let index = gameDatas.findIndex((item) => {
       const date = new Date(item.month);
       return now.getTime() === date.getTime();
     });
 
-    document.getElementById(`month_${gameDatas[index]?.month}`)?.scrollIntoView();
+    document
+      .getElementById(`month_${gameDatas[index]?.month}`)
+      ?.scrollIntoView();
   }, [gameDatas]);
 
   return (
@@ -228,13 +244,8 @@ const Page: React.FC = () => {
         </div>
       </div>
       {gameDatas.map((item, index) => (
-        <div
-          key={`${item.month}_${index}`}
-          className="relative"
-        >
-          <Month
-            value={item.month}
-          />
+        <div key={`${item.month}_${index}`} className="relative">
+          <Month value={item.month} />
           <div
             id={`month_${item.month}`}
             className="absolute"
@@ -249,12 +260,11 @@ const Page: React.FC = () => {
                 maxWidth: '30rem',
               }}
             >
-              {sortGames(item.games).map((game, index) => (
-                <Game
-                  key={`${item.month}_${index}`}
-                  config={game}
-                />
-              ))}
+              {sortGames(item.games)
+                .reverse()
+                .map((game, index) => (
+                  <Game key={`${item.month}_${index}`} config={game} />
+                ))}
             </div>
           </div>
         </div>
