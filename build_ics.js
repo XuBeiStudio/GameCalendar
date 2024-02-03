@@ -1,7 +1,6 @@
 let ics = require('ics');
 let fs = require('fs');
 let months = require('./src/assets/data.json');
-const { DateTime } = require('ics');
 
 let events = [];
 for (let i = 0; i < months.length; i++) {
@@ -24,5 +23,8 @@ for (let i = 0; i < months.length; i++) {
 ics.createEvents(events, (error, value) => {
   if (!error) {
     fs.writeFileSync('./public/games.ics', value);
+    console.log('ICS file has been created successfully');
+  } else {
+    console.error(error);
   }
 });
