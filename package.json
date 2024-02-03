@@ -20,12 +20,15 @@
     "antd": "^5.4.0",
     "ics": "^3.7.2",
     "lodash": "^4.17.21",
-    "react-copy-to-clipboard": "^5.1.0"
+    "react-copy-to-clipboard": "^5.1.0",
+    "uuid": "^9.0.1"
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.202",
     "@types/react": "^18.0.33",
     "@types/react-copy-to-clipboard": "^5.0.7",
     "@types/react-dom": "^18.0.11",
+    "@types/uuid": "^9.0.8",
     "autoprefixer": "^10.4.17",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.0",

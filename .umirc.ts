@@ -6,10 +6,15 @@ export default defineConfig({
   model: {},
   initialState: {},
   request: {},
+  reactQuery: {},
   routes: [
     {
+      path: '/editor',
+      component: '@/pages/Editor',
+    },
+    {
       path: '/',
-      component: './Index',
+      component: '@/pages/Index',
     },
   ],
   locale: {

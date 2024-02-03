@@ -1,6 +1,6 @@
 let ics = require('ics');
 let fs = require('fs');
-let months = require('./src/assets/data.json');
+let months = require('./public/data.json');
 
 let events = [];
 for (let i = 0; i < months.length; i++) {
