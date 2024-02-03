@@ -2,53 +2,17 @@ import { ReactComponent as XubeiLogo } from '@/assets/imgs/logo.svg';
 import GameList from '@/components/GameList';
 import { GameType } from '@/utils/types';
 import { request, useQuery } from '@umijs/max';
-import { App, Skeleton, theme } from 'antd';
-import * as ics from 'ics';
-import { DateTime } from 'ics';
+import { Skeleton, theme } from 'antd';
 import React from 'react';
 
 const { useToken } = theme;
 
 const Page: React.FC = () => {
   const { token } = useToken();
-  const { modal } = App.useApp();
 
   const { data: gameDatas, isLoading } = useQuery(['gameDatas'], async () =>
     request<GameType[]>('/data.json'),
   );
-
-  const onClickGame = (game: GameType) => {
-    modal.confirm({
-      title: `添加到日历`,
-      content: `是否添加《${game.title}》到日历？`,
-      onOk: () => {
-        let { title, releaseDate, platforms } = game;
-
-        ics.createEvent(
-          {
-            title: title,
-            description: `《${title}》 现已在 ${platforms?.join('、')} 上推出`,
-            start: (releaseDate?.split('.').map((n) => parseInt(n)) ?? [
-              1970, 1, 1,
-            ]) as DateTime,
-            duration: { hours: 24 },
-            url: 'https://game-calendar.liziyi0914.com',
-            organizer: { name: '序碑工作室', email: 'games@xu-bei.cn' },
-            location: platforms?.join(', '),
-          },
-          (error, value) => {
-            if (!error) {
-              let blob = new Blob([value], {
-                type: 'text/calendar;charset=utf-8',
-              });
-              let url = URL.createObjectURL(blob);
-              window.open(url, '_blank');
-            }
-          },
-        );
-      },
-    });
-  };
 
   return (
     <div>
@@ -66,11 +30,7 @@ const Page: React.FC = () => {
         </div>
       </div>
       <Skeleton loading={isLoading} active>
-        <GameList
-          data={gameDatas}
-          onClickGame={onClickGame}
-          autoScroll={true}
-        />
+        <GameList data={gameDatas} onClickGame={() => {}} autoScroll={true} />
       </Skeleton>
     </div>
   );

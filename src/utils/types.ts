@@ -7,6 +7,8 @@ export type PlatformType =
   | 'Android'
   | 'Apple';
 
+export type FreeType = 'XGP' | 'PSPlus';
+
 export type GameType = {
   id?: string;
   title?: string;
@@ -18,6 +20,7 @@ export type GameType = {
   leftColor?: string;
   rightColor?: string;
   bgColor?: string;
+  free?: FreeType[];
 };
 
 export type DataType = {

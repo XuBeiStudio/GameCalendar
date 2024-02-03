@@ -103,6 +103,35 @@ const Game: React.FC<{
           </div>
         </div>
       </div>
+      <div
+        className="absolute bottom-0 left-0 overflow-hidden text-xs text-center"
+        style={{
+          borderTopRightRadius: token.borderRadius,
+        }}
+      >
+        {(props.config.free ?? []).includes('XGP') && (
+          <div
+            className="px-3 py-1"
+            style={{
+              backgroundColor: '#107c10',
+              color: 'white',
+            }}
+          >
+            Xbox Game Pass
+          </div>
+        )}
+        {(props.config.free ?? []).includes('PSPlus') && (
+          <div
+            className="px-3 py-1"
+            style={{
+              backgroundColor: '#00439c',
+              color: 'white',
+            }}
+          >
+            PlayStation Plus
+          </div>
+        )}
+      </div>
     </div>
   );
 };

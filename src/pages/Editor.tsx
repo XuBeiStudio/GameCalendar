@@ -165,7 +165,16 @@ const Page: React.FC = () => {
                       { label: 'Android', value: 'Android' },
                       { label: 'Apple', value: 'Apple' },
                     ]}
-                    colProps={{ span: 18 }}
+                    colProps={{ span: 12 }}
+                  />
+                  <ProFormCheckbox.Group
+                    name="free"
+                    label="会员免费"
+                    options={[
+                      { label: 'Xbox Game Pass', value: 'XGP' },
+                      { label: 'PlayStation Plus', value: 'PSPlus' },
+                    ]}
+                    colProps={{ span: 6 }}
                   />
                   <ProFormText name="bg" label="背景" />
                   <ProFormText name="logo" label="Logo" />
