@@ -2,6 +2,7 @@ import { ReactComponent as XubeiLogo } from '@/assets/imgs/logo.svg';
 import { Helmet, getAllLocales, setLocale, useIntl } from '@@/exports';
 import Icon, {
   CalendarOutlined,
+  MessageOutlined,
   VerticalAlignTopOutlined,
 } from '@ant-design/icons';
 import { css } from '@emotion/css';
@@ -174,6 +175,13 @@ const Layout: React.FC = () => {
                 'https://github.com/liziyi0914/GameCalendar';
             }}
             icon={<Icon component={XubeiLogo} />}
+          />
+          <FloatButton
+            tooltip={i18n.formatMessage({ id: 'txc' })}
+            onClick={() => {
+              window.location.href = 'https://txc.qq.com/products/634520';
+            }}
+            icon={<MessageOutlined />}
           />
           <FloatButton
             tooltip={i18n.formatMessage({ id: 'subscribe' })}

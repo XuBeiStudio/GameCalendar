@@ -6,4 +6,5 @@ export default {
   subscribe: 'Subscribe',
   copy: 'Copy',
   'copy.success': 'Successfully copied to clipboard',
+  txc: '兔小巢',
 };
