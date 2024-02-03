@@ -27,3 +27,15 @@ export type DataType = {
   month: string;
   games: GameType[];
 }[];
+
+export type GameDetailsType = {
+  name: string;
+  badges: {
+    type: 'steam' | 'epic';
+    value: string;
+  }[];
+  releaseDate?: string;
+  platforms?: PlatformType[];
+  developer?: string;
+  publisher?: string;
+};

@@ -60,10 +60,15 @@ const Page: React.FC = () => {
   };
 
   const updateGame = useThrottleFn((id: string, data: any) => {
+    data.title = data.title ?? '';
+    data.subtitle = data.subtitle ?? [];
     data.releaseDate =
-      data.releaseDate?.format?.('YYYY.MM.DD') ?? data.releaseDate;
+      data.releaseDate?.format?.('YYYY.MM.DD') ??
+      data.releaseDate ??
+      '1970.01.01';
     data.leftColor = data.leftColor?.toHexString?.() ?? data.leftColor;
     data.rightColor = data.rightColor?.toHexString?.() ?? data.rightColor;
+    data.platforms = data.platforms ?? [];
     setGames((games) => games.map((g) => (g.id === id ? { id, ...data } : g)));
   }, {});
 

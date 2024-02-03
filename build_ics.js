@@ -1,16 +1,24 @@
 let ics = require('ics');
 let fs = require('fs');
 let games = require('./public/data.json');
+let dayjs = require('dayjs');
+let utc = require('dayjs/plugin/utc');
+dayjs.extend(utc);
 
 let events = [];
 for (let j = 0; j < games.length; j++) {
   let game = games[j];
 
   let { title, releaseDate, platforms } = game;
+
+  console.log(`Creating event for ${title}`);
+
   events.push({
     title: title,
     description: `《${title}》 现已在 ${platforms.join('、')} 上推出`,
-    start: releaseDate.split('.').map((n) => parseInt(n)),
+    start: dayjs(`${releaseDate.replaceAll('.', '-')}T00:00:00+0800`)
+      .utc()
+      .format('YYYYMMDD[T]HHmmss[Z]'),
     duration: { hours: 24 },
     url: 'https://game-calendar.liziyi0914.com',
     organizer: { name: '序碑工作室', email: 'games@xu-bei.cn' },
