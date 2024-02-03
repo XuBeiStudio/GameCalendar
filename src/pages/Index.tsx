@@ -114,9 +114,10 @@ const Game: React.FC<{
                 start: (releaseDate?.split('.').map((n) => parseInt(n)) ?? [
                   1970, 1, 1,
                 ]) as DateTime,
-                duration: { days: 1 },
+                duration: { hours: 24 },
                 url: 'https://game-calendar.liziyi0914.com',
                 organizer: { name: '序碑工作室', email: 'games@xu-bei.cn' },
+                location: platforms?.join(', '),
               },
               (error, value) => {
                 if (!error) {

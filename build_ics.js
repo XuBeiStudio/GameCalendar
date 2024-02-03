@@ -13,9 +13,10 @@ for (let i = 0; i < months.length; i++) {
       title: title,
       description: `《${title}》 现已在 ${platforms.join('、')} 上推出`,
       start: releaseDate.split('.').map((n) => parseInt(n)),
-      duration: { days: 1 },
+      duration: { hours: 24 },
       url: 'https://game-calendar.liziyi0914.com',
       organizer: { name: '序碑工作室', email: 'games@xu-bei.cn' },
+      location: platforms.join(', '),
     });
   }
 }
