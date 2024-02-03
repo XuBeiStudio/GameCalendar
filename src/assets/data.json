@@ -4,14 +4,9 @@
     "games": [
       {
         "title": "塞尔达传说：王国之泪",
-        "subtitle": [
-          "The Legend of Zelda:",
-          "Tears of Kingdom"
-        ],
+        "subtitle": ["The Legend of Zelda:", "Tears of Kingdom"],
         "releaseDate": "2023.5.12",
-        "platforms": [
-          "Switch"
-        ],
+        "platforms": ["Switch"],
         "bg": "https://cdn2.steamgriddb.com/hero/b61248fcbcb76b463231d88a39b5d4cb.jpg",
         "logo": "https://cdn2.steamgriddb.com/logo/19e524e7aa887f6311e8b6ae061bf5d7.png",
         "leftColor": "#000000",
@@ -24,47 +19,28 @@
     "games": [
       {
         "title": "蕾斯莱莉娅娜的炼金工房",
-        "subtitle": [
-          "～忘却的炼金术与极夜的解放者～"
-        ],
+        "subtitle": ["～忘却的炼金术与极夜的解放者～"],
         "releaseDate": "2024.1.25",
-        "platforms": [
-          "Steam"
-        ],
+        "platforms": ["Steam"],
         "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2586520/library_hero.jpg?t=1705908043",
         "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/2586520/logo.png?t=1705908043",
-        "leftColor": "#000000",
+        "leftColor": "white",
         "rightColor": "#FFFFFF"
       },
       {
         "title": "夜下降生2 Sys:Celes",
-        "subtitle": [
-          "Under Night",
-          "In-Birth II Sys:Celes"
-        ],
+        "subtitle": ["Under Night", "In-Birth II Sys:Celes"],
         "releaseDate": "2024.1.25",
-        "platforms": [
-          "PlayStation",
-          "Steam",
-          "Switch"
-        ],
+        "platforms": ["PlayStation", "Steam", "Switch"],
         "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2076010/library_hero.jpg?t=1706264035",
-        "leftColor": "#000000",
+        "leftColor": "#FFFFFF",
         "rightColor": "#FFFFFF"
       },
       {
         "title": "逆转裁判456:王泥喜精选集",
-        "subtitle": [
-          "Apollo Justice:",
-          "Ace Attorney Trilogy"
-        ],
+        "subtitle": ["Apollo Justice:", "Ace Attorney Trilogy"],
         "releaseDate": "2024.1.25",
-        "platforms": [
-          "PlayStation",
-          "Steam",
-          "Xbox",
-          "Switch"
-        ],
+        "platforms": ["PlayStation", "Steam", "Xbox", "Switch"],
         "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2187220/library_hero.jpg?t=1706177141",
         "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/2187220/logo.png?t=1706177141",
         "leftColor": "#FFFFFF",
@@ -72,109 +48,69 @@
       },
       {
         "title": "湮灭线",
-        "subtitle": [
-          "Oblivion Override"
-        ],
+        "subtitle": ["Oblivion Override"],
         "releaseDate": "2024.1.25",
-        "platforms": [
-          "Steam",
-          "Android",
-          "Apple"
-        ],
+        "platforms": ["Steam", "Android", "Apple"],
         "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1952370/library_hero_schinese.jpg?t=1706166053",
         "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1952370/logo_schinese.png?t=1706166053",
         "leftColor": "#FFFFFF",
         "rightColor": "#FFFFFF"
       },
       {
-        "title": "异色代码 回忆录:两种记忆/记忆之门",
-        "subtitle": [
-          "Another Code:Recollection"
-        ],
+        "title": "异色代码 回忆录",
+        "subtitle": ["两种记忆/记忆之门", "Another Code:Recollection"],
         "releaseDate": "2024.1.19",
-        "platforms": [
-          "Switch"
-        ],
+        "platforms": ["Switch"],
         "bg": "https://cdn2.steamgriddb.com/hero/9cb9be7338a236adb160f2d3cf5f5f15.png",
-        "logo": "https://cdn2.steamgriddb.com/logo/acf9a6e48ef3a51ba351711eaff15f17.png",
         "leftColor": "#000000",
         "rightColor": "#000000"
       },
       {
         "title": "幻兽帕鲁",
-        "subtitle": [
-          "Palworld"
-        ],
+        "subtitle": ["Palworld"],
         "releaseDate": "2024.1.19",
-        "platforms": [
-          "Steam",
-          "Xbox"
-        ],
+        "platforms": ["Steam", "Xbox"],
         "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1623730/library_hero.jpg?t=1705661524",
         "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1623730/logo.png?t=1705661524",
-        "leftColor": "#000000",
+        "leftColor": "#FFFFFF",
         "rightColor": "#FFFFFF"
       },
       {
         "title": "赵云传:云汉腾龙",
-        "subtitle": [
-          "Three Kingdoms Zhao Yun"
-        ],
+        "subtitle": ["Three Kingdoms Zhao Yun"],
         "releaseDate": "2024.1.26",
-        "platforms": [
-          "Steam"
-        ],
+        "platforms": ["Steam"],
         "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2201710/library_hero.jpg?t=1705989969",
         "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/2201710/logo_schinese.png?t=1705989969",
         "leftColor": "#000000",
-        "rightColor": "#000000"
+        "rightColor": "#FFFFFF"
       },
       {
         "title": "如龙8",
-        "subtitle": [
-          "Like a Dragon:",
-          "Infinite Wealth"
-        ],
+        "subtitle": ["Like a Dragon:", "Infinite Wealth"],
         "releaseDate": "2024.1.26",
-        "platforms": [
-          "Steam",
-          "Xbox",
-          "PlayStation"
-        ],
+        "platforms": ["Steam", "Xbox", "PlayStation"],
         "bg": "https://cdn2.steamgriddb.com/hero/06a68b5e97b4f834f58e777a4dceaed0.png",
         "logo": "https://cdn2.steamgriddb.com/logo/0496c3742ecdd81d8fa84e4878b76bbd.png",
         "leftColor": "#000000",
-        "rightColor": "#000000"
+        "rightColor": "#FFFFFF"
       },
       {
         "title": "铁拳8",
-        "subtitle": [
-          "Tekken 8"
-        ],
+        "subtitle": ["Tekken 8"],
         "releaseDate": "2024.1.26",
-        "platforms": [
-          "Steam",
-          "PlayStation",
-          "Xbox"
-        ],
+        "platforms": ["Steam", "PlayStation", "Xbox"],
         "bg": "https://cdn2.steamgriddb.com/hero/b1dda493901cc6875f04ebece9cdb093.jpg",
-        "logo": "https://cdn2.steamgriddb.com/logo/c1b1ca04d0e345d20e9287be1b6d7e01.png",
         "leftColor": "#FFFFFF",
         "rightColor": "#FFFFFF"
       },
       {
         "title": "苍翼：混沌效应",
-        "subtitle": [
-          "BlazBlue Entropy Effect"
-        ],
+        "subtitle": ["BlazBlue Entropy Effect"],
         "releaseDate": "2024.1.31",
-        "platforms": [
-          "Steam",
-          "Android",
-          "Apple"
-        ],
+        "platforms": ["Steam", "Android", "Apple"],
         "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2273430/library_hero.jpg?t=1706709849",
-        "leftColor": "#000000",
+        "leftColor": "#ffffff",
         "rightColor": "#FFFFFF"
       }
     ]
@@ -184,59 +120,37 @@
     "games": [
       {
         "title": "古龙风云录",
-        "subtitle": [
-          "古龍風雲錄"
-        ],
+        "subtitle": ["古龍風雲錄"],
         "releaseDate": "2024.2.1",
-        "platforms": [
-          "Steam"
-        ],
+        "platforms": ["Steam"],
         "bg": "https://cdn2.steamgriddb.com/hero/483e968a8be73f8c2aaa285f32c5ed75.png",
         "logo": "https://cdn2.steamgriddb.com/logo/ee83e37561fad19564424946e7e7cc12.png",
-        "leftColor": "#000000",
+        "leftColor": "#FFFFFF",
         "rightColor": "#FFFFFF"
       },
       {
         "title": "碧蓝幻想：Relink",
-        "subtitle": [
-          "Granblue Fantasy: Relink"
-        ],
+        "subtitle": ["Granblue Fantasy: Relink"],
         "releaseDate": "2024.2.1",
-        "platforms": [
-          "Steam",
-          "PlayStation"
-        ],
+        "platforms": ["Steam", "PlayStation"],
         "bg": "https://cdn2.steamgriddb.com/hero/08e85df7974a9ba85cb40d8a168d1dd1.jpg",
         "leftColor": "#000000",
         "rightColor": "#FFFFFF"
       },
       {
         "title": "咒术回战 双华乱舞",
-        "subtitle": [
-          "Jujutsu Kaisen Cursed Clash"
-        ],
+        "subtitle": ["Jujutsu Kaisen Cursed Clash"],
         "releaseDate": "2024.2.2",
-        "platforms": [
-          "PlayStation",
-          "Steam",
-          "Xbox",
-          "Switch"
-        ],
+        "platforms": ["PlayStation", "Steam", "Xbox", "Switch"],
         "bg": "https://cdn2.steamgriddb.com/hero/149cacc4e92e77a029c2fabfa2b365f2.png",
-        "leftColor": "#000000",
+        "leftColor": "#FFFFFF",
         "rightColor": "#FFFFFF"
       },
       {
         "title": "女神异闻录3：Reload",
-        "subtitle": [
-          "Persona 3 Reload"
-        ],
+        "subtitle": ["Persona 3 Reload"],
         "releaseDate": "2024.2.2",
-        "platforms": [
-          "Steam",
-          "Xbox",
-          "PlayStation"
-        ],
+        "platforms": ["Steam", "Xbox", "PlayStation"],
         "bg": "https://cdn2.steamgriddb.com/hero/0055871c6bd13e2d1378d3779e84843c.png",
         "logo": "https://cdn2.steamgriddb.com/logo/be9a22cb85032b37ebb2eee3938bdb9b.png",
         "leftColor": "#000000",
@@ -244,29 +158,19 @@
       },
       {
         "title": "自杀小队：消灭正义联盟",
-        "subtitle": [
-          "Suicide Squad:",
-          "Kill the Justice League"
-        ],
+        "subtitle": ["Suicide Squad:", "Kill the Justice League"],
         "releaseDate": "2024.2.2",
-        "platforms": [
-          "Xbox",
-          "PlayStation"
-        ],
+        "platforms": ["Xbox", "PlayStation"],
         "bg": "https://cdn2.steamgriddb.com/hero/439d098c32d07e695014220aca9ed223.jpg",
         "logo": "https://cdn2.steamgriddb.com/logo/d2fb7247a8585505ca84d40afe37eea6.png",
-        "leftColor": "black",
+        "leftColor": "#FFFFFF",
         "rightColor": "#FFFFFF"
       },
       {
         "title": "泡沫之星",
-        "subtitle": [
-          "Foamstars"
-        ],
-        "releaseDate": "2024.2.2",
-        "platforms": [
-          "PlayStation"
-        ],
+        "subtitle": ["Foamstars"],
+        "releaseDate": "2024.2.6",
+        "platforms": ["PlayStation"],
         "bg": "https://www.square-enix.com/asia/newsportal/ja/topics/img/FOAMSTARS_1920x706.jpg",
         "leftColor": "black",
         "rightColor": "#FFFFFF",
@@ -274,47 +178,33 @@
       },
       {
         "title": "绝地潜兵2",
-        "subtitle": [
-          "Helldivers 2"
-        ],
+        "subtitle": ["Helldivers 2"],
         "releaseDate": "2024.2.8",
-        "platforms": [
-          "PlayStation",
-          "Steam"
-        ],
+        "platforms": ["PlayStation", "Steam"],
         "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/553850/library_hero.jpg?t=1705423007",
         "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/553850/logo.png?t=1705423007",
-        "leftColor": "black",
+        "leftColor": "#FFFFFF",
         "rightColor": "#FFFFFF"
       },
       {
         "title": "马力欧vs.咚奇刚 重制版",
-        "subtitle": [
-          "Mario vs. Donkey Kong"
-        ],
+        "subtitle": ["Mario vs. Donkey Kong"],
         "releaseDate": "2024.2.16",
-        "platforms": [
-          "PlayStation",
-          "Switch"
-        ],
+        "platforms": ["PlayStation", "Switch"],
         "bg": "https://cdn2.steamgriddb.com/grid/6a70f623a594d32f41f410047a0450ce.png",
-        "leftColor": "black",
+        "leftColor": "#FFFFFF",
         "rightColor": "white",
         "bgColor": "black"
       },
       {
         "title": "最终幻想7：重生",
-        "subtitle": [
-          "Final Fantasy VII Rebirth"
-        ],
+        "subtitle": ["Final Fantasy VII Rebirth"],
         "releaseDate": "2024.2.29",
-        "platforms": [
-          "PlayStation"
-        ],
+        "platforms": ["PlayStation"],
         "bg": "https://cdn2.steamgriddb.com/hero/42dfe7995107a551bada87b685acf285.png",
         "logo": "https://cdn2.steamgriddb.com/logo/e8afafac24a24dd767b87d9f8a596b0f.png",
-        "leftColor": "black",
-        "rightColor": "black"
+        "leftColor": "white",
+        "rightColor": "white"
       }
     ]
   }
