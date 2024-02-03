@@ -87,6 +87,7 @@ const Page: React.FC = () => {
                   data={games}
                   onClickGame={(game) => {
                     setCurrentGameId(game.id ?? null);
+                    form.resetFields();
                     form.setFieldsValue(
                       games.filter((g) => g.id === game.id)[0] ?? {},
                     );
