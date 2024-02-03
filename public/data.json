@@ -1732,9 +1732,10 @@
   },
   {
     "id": "9d29b83f-a417-458b-9add-7157e819cac3",
-    "title": " 30XX",
+    "title": "30XX",
     "subtitle": ["30XX"],
     "releaseDate": "2023.08.09",
+    "platforms": ["Switch"],
     "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1029210/library_hero.jpg?t=1702566968",
     "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1029210/logo.png?t=1702566968",
     "leftColor": "#82f7de",
