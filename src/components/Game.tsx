@@ -1,7 +1,7 @@
 import PlatformIcons from '@/components/PlatformIcons';
 import { GameType } from '@/utils/types';
 import { Image, theme } from 'antd';
-import React from 'react';
+import React, { useMemo } from 'react';
 
 const { useToken } = theme;
 
@@ -13,6 +13,12 @@ const Game: React.FC<{
   onClick?: () => void;
 }> = (props) => {
   const { token } = useToken();
+
+  const todayRelease = useMemo(() => {
+    const releaseDate = new Date(props.config?.releaseDate ?? '1970.01.01');
+    const today = new Date();
+    return releaseDate.toDateString() === today.toDateString();
+  }, [props.config]);
 
   return (
     <div
@@ -26,6 +32,7 @@ const Game: React.FC<{
         props.onClick?.();
       }}
     >
+      {/*背景*/}
       <div>
         {props.config.bg && (
           <Image
@@ -40,6 +47,7 @@ const Game: React.FC<{
           />
         )}
       </div>
+      {/*游戏logo*/}
       <div className="absolute top-0 right-0 py-2 px-6">
         {props.config.logo && (
           <Image
@@ -53,6 +61,7 @@ const Game: React.FC<{
           />
         )}
       </div>
+      {/*渐变层*/}
       <div
         className="absolute top-0 left-0 bottom-0 right-0"
         style={{
@@ -60,6 +69,7 @@ const Game: React.FC<{
             'linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%)',
         }}
       />
+      {/*游戏名称、副标题*/}
       <div
         className="absolute top-0 left-0 py-2 px-6"
         style={{
@@ -77,19 +87,25 @@ const Game: React.FC<{
           </div>
         </div>
       </div>
+      {/*发售日期、平台*/}
       <div
-        className="absolute right-0 bottom-0 py-2 px-6"
+        className={`absolute right-0 bottom-0 pb-2 pt-1 px-6 ${
+          todayRelease
+            ? 'backdrop-blur-md bg-white bg-opacity-20 shadow-lg'
+            : ''
+        } text-shadow-lg`}
         style={{
-          color: props.config.rightColor ?? 'black',
+          color: todayRelease ? 'white' : props.config.rightColor ?? 'black',
+          borderTopLeftRadius: token.borderRadius,
         }}
       >
         <div>
-          <div className="font-bold text-right text-shadow-lg">
-            {props.config.releaseDate ?? ''}
+          <div className="font-bold text-right">
+            {todayRelease ? '🎉今日发售' : props.config.releaseDate ?? ''}
           </div>
           <div>
             <div
-              className="flex gap-x-1 justify-end text-shadow-lg"
+              className="flex gap-x-1 justify-end"
               style={{
                 fontSize: '0.5rem',
               }}
@@ -103,6 +119,7 @@ const Game: React.FC<{
           </div>
         </div>
       </div>
+      {/*会员免费*/}
       <div
         className="absolute bottom-0 left-0 overflow-hidden text-xs text-center"
         style={{

@@ -9,6 +9,12 @@ export const sortMonth: (months: DataType) => DataType = (months) => {
 };
 
 export const sortGames: (games: GameType[]) => GameType[] = (games) => {
+  let today = new Date();
+  today.setHours(0);
+  today.setMinutes(0);
+  today.setSeconds(0);
+  today.setMilliseconds(0);
+
   return games.sort((a, b) => {
     let dateA = new Date(a.releaseDate ?? '');
     let dateB = new Date(b.releaseDate ?? '');
@@ -17,6 +23,13 @@ export const sortGames: (games: GameType[]) => GameType[] = (games) => {
 
     if (ret === 0) {
       return a.id?.localeCompare(b.id ?? '') ?? 0;
+    }
+
+    if (dateA.getTime() === today.getTime()) {
+      return 1;
+    }
+    if (dateB.getTime() === today.getTime()) {
+      return -1;
     }
 
     return ret;

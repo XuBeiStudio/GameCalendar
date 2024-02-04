@@ -6,7 +6,6 @@ import { useIntl, useModel } from '@@/exports';
 import {
   CalendarOutlined,
   GithubOutlined,
-  MenuOutlined,
   MessageOutlined,
 } from '@ant-design/icons';
 import { Moon, SunOne } from '@icon-park/react';
@@ -159,7 +158,13 @@ const Page: React.FC = () => {
               }}
             >
               <Button type="text" size="large">
-                <MenuOutlined />
+                <XubeiLogo
+                  style={{
+                    width: '1.5rem',
+                    height: '1.5rem',
+                    fill: token.colorTextSecondary,
+                  }}
+                />
               </Button>
             </Dropdown>
           </div>
