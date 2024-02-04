@@ -1,4 +1,5 @@
 import { DataType, GameType } from '@/utils/types';
+import { Record } from '@icon-park/react';
 
 export const sortMonth: (months: DataType) => DataType = (months) => {
   return months.sort((a, b) => {
@@ -34,4 +35,36 @@ export const sortGames: (games: GameType[]) => GameType[] = (games) => {
 
     return ret;
   });
+};
+
+const getI18nLang: (
+  i18n: Record<string, string>,
+  lang: string,
+) => string | null = (i18n, lang) => {
+  if (!lang) {
+    return null;
+  }
+  return i18n?.[lang] ?? null;
+};
+
+export const getI18n: (
+  i18n: Record<string, string>,
+  lang: string,
+  prefLang?: string[],
+) => string | null = (
+  i18n,
+  lang,
+  prefLang = ['zh_CN', 'zh_HK', 'zh_MO', 'zh_TW', 'en_US', 'ja_JP'],
+) => {
+  let ret = getI18nLang(i18n, lang);
+  if (ret) {
+    return ret;
+  }
+  for (let i = 0; i < prefLang.length; i++) {
+    ret = getI18nLang(i18n, prefLang[i]);
+    if (ret) {
+      return ret;
+    }
+  }
+  return null;
 };

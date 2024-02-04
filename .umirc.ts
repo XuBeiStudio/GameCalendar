@@ -16,6 +16,10 @@ export default defineConfig({
       path: '/',
       component: '@/pages/Index',
     },
+    {
+      path: '/game/:id',
+      component: '@/pages/GameDetails',
+    },
   ],
   locale: {
     default: 'zh-CN',

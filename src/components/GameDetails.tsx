@@ -1,5 +1,6 @@
 import Markdown from '@/components/Markdown';
 import PlatformIcons from '@/components/PlatformIcons';
+import { getI18n } from '@/utils/functions';
 import { GameDetailsType } from '@/utils/types';
 import { request, useQuery } from '@@/exports';
 import { CalendarOutlined } from '@ant-design/icons';
@@ -78,7 +79,9 @@ const Component: React.FC<{
 
   return (
     <div>
-      <div className="text-2xl font-bold">{gameData?.name ?? '未知'}</div>
+      <div className="text-2xl font-bold">
+        {getI18n(gameData?.name ?? {}, 'zh_CN') ?? '未知'}
+      </div>
       <div
         className="text-xs pt-1 pb-3"
         style={{
@@ -105,7 +108,8 @@ const Component: React.FC<{
                   onClick={() => {
                     if (!gameData) return;
 
-                    let { name, releaseDate, platforms } = gameData;
+                    let { name: _name, releaseDate, platforms } = gameData;
+                    let name = getI18n(_name, 'zh_CN') ?? '';
 
                     ics.createEvent(
                       {

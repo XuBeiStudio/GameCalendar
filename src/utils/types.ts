@@ -29,13 +29,16 @@ export type DataType = {
 }[];
 
 export type GameDetailsType = {
-  name: string;
+  id: string;
+  name: Record<string, string>;
+  bg: string;
+  logo: string;
   badges: {
     type: 'steam' | 'epic';
     value: string;
   }[];
   releaseDate?: string;
   platforms?: PlatformType[];
-  developer?: string;
-  publisher?: string;
+  developer?: string[];
+  publisher?: string[];
 };

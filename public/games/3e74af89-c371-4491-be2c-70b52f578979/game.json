@@ -1,5 +1,11 @@
 {
-  "name": "黑神话：悟空",
+  "id": "3e74af89-c371-4491-be2c-70b52f578979",
+  "name": {
+    "zh_CN": "黑神话：悟空",
+    "en_US": "Black Myth: WuKong"
+  },
+  "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2358720/library_hero.jpg?t=1701874841",
+  "logo": "https://cdn2.steamgriddb.com/logo/59dce7652ebe3f1c66ea871560889d5c.png",
   "badges": [
     {
       "type": "steam",
@@ -11,7 +17,7 @@
     }
   ],
   "releaseDate": "2024.08.20",
-  "platforms": ["steam"],
-  "developer": "Game Science",
-  "publisher": "Game Science"
+  "platforms": ["Steam"],
+  "developer": ["Game Science"],
+  "publisher": ["Game Science"]
 }
