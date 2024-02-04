@@ -1,6 +1,6 @@
 let ics = require('ics');
 let fs = require('fs');
-let games = require('./public/data.json');
+let games = require('./data/data.json');
 let dayjs = require('dayjs');
 let utc = require('dayjs/plugin/utc');
 dayjs.extend(utc);

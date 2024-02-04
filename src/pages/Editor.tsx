@@ -41,7 +41,7 @@ const Page: React.FC = () => {
 
   const { data: baseData, isLoading } = useQuery(
     ['gameDatas'],
-    async () => request<GameDataType[]>('/data.json'),
+    async () => request<GameDataType[]>('/games.json'),
     {
       refetchOnWindowFocus: false,
     },

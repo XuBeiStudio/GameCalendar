@@ -104,6 +104,7 @@ const Page: React.FC = () => {
               style={{
                 backgroundColor: token.colorBgContainer,
                 borderRadius: token.borderRadius,
+                minHeight: 'calc(100vh - 12rem)',
               }}
             >
               <div className="-mx-8 -mt-6">

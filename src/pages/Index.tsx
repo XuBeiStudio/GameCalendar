@@ -47,7 +47,7 @@ const Page: React.FC = () => {
   const i18n = useIntl();
 
   const { data: gameDatas, isLoading } = useQuery(['gameDatas'], async () =>
-    request<GameDataType[]>('/data.json'),
+    request<GameDataType[]>('/games.json'),
   );
 
   const [openSubscribeModal, setOpenSubscribeModal] = useState(false);
