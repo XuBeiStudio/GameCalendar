@@ -9,10 +9,14 @@ export type PlatformType =
 
 export type FreeType = 'XGP' | 'PSPlus';
 
-export type GameType = {
+export type GameDataType = {
   id?: string;
   title?: string;
   subtitle?: string[];
+  name?: {
+    lang: string;
+    content: string;
+  }[];
   releaseDate?: string;
   platforms?: PlatformType[];
   bg?: string;
@@ -21,16 +25,30 @@ export type GameType = {
   rightColor?: string;
   bgColor?: string;
   free?: FreeType[];
+  badges?: {
+    type: 'steam' | 'epic';
+    value: string;
+  }[];
+  developer?: {
+    name: string;
+  }[];
+  publisher?: {
+    name: string;
+  }[];
+  markdown?: string;
 };
 
 export type DataType = {
   month: string;
-  games: GameType[];
+  games: GameDataType[];
 }[];
 
 export type GameDetailsType = {
   id: string;
-  name: Record<string, string>;
+  name: {
+    lang: string;
+    content: string;
+  }[];
   bg: string;
   logo: string;
   badges: {
@@ -39,6 +57,10 @@ export type GameDetailsType = {
   }[];
   releaseDate?: string;
   platforms?: PlatformType[];
-  developer?: string[];
-  publisher?: string[];
+  developer?: {
+    name: string;
+  }[];
+  publisher?: {
+    name: string;
+  }[];
 };

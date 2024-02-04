@@ -21,7 +21,7 @@ dayjs.extend(utc);
 
 const { useToken } = theme;
 
-const parseBadge = (badge: { type: string; value: string }) => {
+export const parseBadge = (badge: { type: string; value: string }) => {
   switch (badge.type) {
     case 'steam':
       return (
@@ -137,7 +137,7 @@ const Page: React.FC = () => {
                       {affixTitle && (
                         <div className="flex justify-center items-center h-full">
                           <div className="text-lg font-bold text-shadow-md">
-                            {getI18n(gameData?.name ?? {}, 'zh_CN') ?? '未知'}
+                            {getI18n(gameData?.name ?? [], 'zh_CN') ?? '未知'}
                           </div>
                         </div>
                       )}
@@ -191,7 +191,7 @@ const Page: React.FC = () => {
                 <div />
               </Affix>
               <div className="text-2xl font-bold py-2">
-                {getI18n(gameData?.name ?? {}, 'zh_CN') ?? '未知'}
+                {getI18n(gameData?.name ?? [], 'zh_CN') ?? '未知'}
               </div>
               <div className="flex pb-3">
                 <div
@@ -201,10 +201,14 @@ const Page: React.FC = () => {
                   }}
                 >
                   <div className="truncate">
-                    开发商：{gameData?.developer?.join(' ') ?? '未知'}
+                    开发商：
+                    {gameData?.developer?.map((i) => i.name)?.join(' ') ??
+                      '未知'}
                   </div>
                   <div className="truncate">
-                    发行商：{gameData?.publisher?.join(' ') ?? '未知'}
+                    发行商：
+                    {gameData?.publisher?.map((i) => i.name)?.join(' ') ??
+                      '未知'}
                   </div>
                 </div>
                 <div className="text-xs">
@@ -298,6 +302,7 @@ const Page: React.FC = () => {
                             style={{
                               maxWidth: '100%',
                             }}
+                            alt="img"
                           />
                         ),
                       }}

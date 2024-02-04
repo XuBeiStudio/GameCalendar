@@ -1,6 +1,6 @@
 import { ReactComponent as XubeiLogo } from '@/assets/imgs/logo.svg';
 import GameList from '@/components/GameList';
-import { GameType } from '@/utils/types';
+import { GameDataType } from '@/utils/types';
 import {
   CalendarOutlined,
   GithubOutlined,
@@ -47,7 +47,7 @@ const Page: React.FC = () => {
   const i18n = useIntl();
 
   const { data: gameDatas, isLoading } = useQuery(['gameDatas'], async () =>
-    request<GameType[]>('/data.json'),
+    request<GameDataType[]>('/data.json'),
   );
 
   const [openSubscribeModal, setOpenSubscribeModal] = useState(false);

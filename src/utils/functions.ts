@@ -1,5 +1,4 @@
-import { DataType, GameType } from '@/utils/types';
-import { Record } from '@icon-park/react';
+import { DataType, GameDataType } from '@/utils/types';
 
 export const sortMonth: (months: DataType) => DataType = (months) => {
   return months.sort((a, b) => {
@@ -9,7 +8,7 @@ export const sortMonth: (months: DataType) => DataType = (months) => {
   });
 };
 
-export const sortGames: (games: GameType[]) => GameType[] = (games) => {
+export const sortGames: (games: GameDataType[]) => GameDataType[] = (games) => {
   let today = new Date();
   today.setHours(0);
   today.setMinutes(0);
@@ -38,17 +37,23 @@ export const sortGames: (games: GameType[]) => GameType[] = (games) => {
 };
 
 const getI18nLang: (
-  i18n: Record<string, string>,
+  i18n: {
+    lang: string;
+    content: string;
+  }[],
   lang: string,
 ) => string | null = (i18n, lang) => {
   if (!lang) {
     return null;
   }
-  return i18n?.[lang] ?? null;
+  return i18n?.filter((i) => i.lang === lang)?.[0]?.content ?? null;
 };
 
 export const getI18n: (
-  i18n: Record<string, string>,
+  i18n: {
+    lang: string;
+    content: string;
+  }[],
   lang: string,
   prefLang?: string[],
 ) => string | null = (
