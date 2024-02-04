@@ -7,4 +7,5 @@ export default {
   copy: 'Copy',
   'copy.success': 'Successfully copied to clipboard',
   txc: '兔小巢',
+  menu: 'Menu',
 };

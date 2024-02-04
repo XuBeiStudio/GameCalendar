@@ -2,8 +2,57 @@ import Game from '@/components/Game';
 import Month from '@/components/Month';
 import { sortGames, sortMonth } from '@/utils/functions';
 import { GameType } from '@/utils/types';
+import { Affix } from 'antd';
 import lodash from 'lodash';
-import React, { useEffect, useMemo } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
+
+const MonthGroup: React.FC<{
+  item: {
+    month: string;
+    games: GameType[];
+  };
+  container?: () => HTMLElement | Window | null;
+  onClickGame?: (game: GameType) => void;
+}> = ({ item, container, onClickGame }) => {
+  const [closed, setClosed] = useState(false);
+
+  return (
+    <div className="pb-4">
+      <Month value={item.month} container={container} closed={closed} />
+      <div
+        id={`month_${item.month}`}
+        className="absolute"
+        style={{
+          top: '1px',
+        }}
+      />
+      <div className="flex justify-center">
+        <div
+          className="w-full px-6"
+          style={{
+            maxWidth: '30rem',
+          }}
+        >
+          {sortGames(item.games)
+            .reverse()
+            .map((game, index) => (
+              <Game
+                key={`${item.month}_${index}`}
+                config={game}
+                onClick={() => onClickGame?.(game)}
+              />
+            ))}
+        </div>
+      </div>
+      <Affix
+        onChange={(affixed) => setClosed(affixed ?? false)}
+        target={container ?? (() => window)}
+      >
+        <div />
+      </Affix>
+    </div>
+  );
+};
 
 const Component: React.FC<{
   data?: GameType[];
@@ -53,32 +102,11 @@ const Component: React.FC<{
     <div>
       {(months ?? []).map((item, index) => (
         <div key={`${item.month}_${index}`} className="relative">
-          <Month value={item.month} container={props.container} />
-          <div
-            id={`month_${item.month}`}
-            className="absolute"
-            style={{
-              top: '1px',
-            }}
+          <MonthGroup
+            item={item}
+            container={props.container}
+            onClickGame={props.onClickGame}
           />
-          <div className="flex justify-center">
-            <div
-              className="w-full px-6"
-              style={{
-                maxWidth: '30rem',
-              }}
-            >
-              {sortGames(item.games)
-                .reverse()
-                .map((game, index) => (
-                  <Game
-                    key={`${item.month}_${index}`}
-                    config={game}
-                    onClick={() => props?.onClickGame?.(game)}
-                  />
-                ))}
-            </div>
-          </div>
         </div>
       ))}
     </div>

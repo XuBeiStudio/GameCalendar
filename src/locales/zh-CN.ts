@@ -7,4 +7,5 @@ export default {
   copy: '复制',
   'copy.success': '成功复制到剪贴板',
   txc: '兔小巢',
+  menu: '菜单',
 };
