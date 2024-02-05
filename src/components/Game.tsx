@@ -1,9 +1,10 @@
+import { GameListCtx } from '@/components/GameList';
 import PlatformIcons from '@/components/PlatformIcons';
 import { GameDataType } from '@/utils/types';
-import { Image, theme } from 'antd';
-import React, { useContext, useEffect, useMemo, useRef, useState } from 'react';
 import { css } from '@emotion/css';
-import { GameListCtx } from '@/components/GameList';
+import { Image, Skeleton, theme } from 'antd';
+import React, { useContext, useEffect, useMemo, useRef, useState } from 'react';
+import LazyLoad from 'react-lazyload';
 
 const { useToken } = theme;
 
@@ -33,153 +34,158 @@ const Game: React.FC<{
   }, [ref, ctx]);
 
   return (
-    <div
-      onFocus={()=>{
-        if (!enableGamepad) {
-          if (navigator.getGamepads().filter(i=>!!i).length!==0) {
-            setEnableGamepad(true);
-          }
-        }
-      }}
-      ref={ref}
-      tabIndex={0}
-      className={`relative my-4 overflow-hidden shadow-md select-none cursor-pointer transition-all duration-150 ease-in-out ${css`
-          &:focus {
-              outline: 0;
-              ${enableGamepad?'transform: scale(1.05);':''}
-              //transform: scale(1.05);
-          }
-          //&:hover {
-          //    transform: scale(1.05);
-          //}
-      `}`}
-      style={{
-        borderRadius: token.borderRadiusLG,
-        background: props.config.bgColor ?? 'white',
-        height: '9.6875rem',
-      }}
-      onClick={() => {
-        props.onClick?.();
-      }}
+    <LazyLoad
+      debounce={80}
+      throttle={20}
+      height="9.6875rem"
+      placeholder={
+        <Skeleton avatar loading active style={{ height: '9.6875rem' }} />
+      }
     >
-      {/*背景*/}
-      <div>
-        {props.config.bg && (
-          <Image
-            src={props.config.bg ?? ''}
-            className="object-cover"
-            height="9.6875rem"
-            width="100%"
-            alt="bg"
-            loading="lazy"
-            preview={false}
-            fallback={FallbackImg}
-          />
-        )}
-      </div>
-      {/*游戏logo*/}
-      <div className="absolute top-0 right-0 py-2 px-6">
-        {props.config.logo && (
-          <Image
-            src={props.config.logo}
-            className="object-cover"
-            height="4rem"
-            alt="logo"
-            loading="lazy"
-            preview={false}
-            fallback={FallbackImg}
-          />
-        )}
-      </div>
-      {/*渐变层*/}
       <div
-        className="absolute top-0 left-0 bottom-0 right-0"
-        style={{
-          background:
-            'linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%)',
+        onFocus={() => {
+          if (!enableGamepad) {
+            if (navigator.getGamepads().filter((i) => !!i).length !== 0) {
+              setEnableGamepad(true);
+            }
+          }
         }}
-      />
-      {/*游戏名称、副标题*/}
-      <div
-        className="absolute top-0 left-0 py-2 px-6"
+        ref={ref}
+        tabIndex={0}
+        className={`relative overflow-hidden shadow-md select-none cursor-pointer transition-all duration-150 ease-in-out ${css`
+          &:focus {
+            outline: 0;
+            ${enableGamepad ? 'transform: scale(1.05);' : ''}
+          }
+        `}`}
         style={{
-          color: props.config.leftColor ?? 'black',
+          borderRadius: token.borderRadiusLG,
+          background: props.config.bgColor ?? 'white',
+          height: '9.6875rem',
+        }}
+        onClick={() => {
+          props.onClick?.();
         }}
       >
+        {/*背景*/}
         <div>
-          <div className="font-extrabold text-lg truncate w-64 text-shadow-lg">
-            {props.config.title ?? ''}
-          </div>
-          <div className="font-medium leading-5 truncate w-64 text-shadow-lg">
-            {(props.config.subtitle ?? []).map((name, index) => (
-              <div key={`${props.config.subtitle}_${index}`}>{name}</div>
-            ))}
-          </div>
+          {props.config.bg && (
+            <Image
+              src={props.config.bg ?? ''}
+              className="object-cover"
+              height="9.6875rem"
+              width="100%"
+              alt="bg"
+              loading="lazy"
+              preview={false}
+              fallback={FallbackImg}
+            />
+          )}
         </div>
-      </div>
-      {/*发售日期、平台*/}
-      <div
-        className={`absolute right-0 bottom-0 pb-2 pt-1 px-6 ${
-          todayRelease
-            ? 'backdrop-blur-md bg-white bg-opacity-20 shadow-lg'
-            : ''
-        } text-shadow-lg`}
-        style={{
-          color: todayRelease ? 'white' : props.config.rightColor ?? 'black',
-          borderTopLeftRadius: token.borderRadius,
-        }}
-      >
-        <div>
-          <div className="font-bold text-right">
-            {todayRelease ? '🎉今日发售' : props.config.releaseDate ?? ''}
-          </div>
+        {/*游戏logo*/}
+        <div className="absolute top-0 right-0 py-2 px-6">
+          {props.config.logo && (
+            <Image
+              src={props.config.logo}
+              className="object-cover"
+              height="4rem"
+              alt="logo"
+              loading="lazy"
+              preview={false}
+              fallback={FallbackImg}
+            />
+          )}
+        </div>
+        {/*渐变层*/}
+        <div
+          className="absolute top-0 left-0 bottom-0 right-0"
+          style={{
+            background:
+              'linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%)',
+          }}
+        />
+        {/*游戏名称、副标题*/}
+        <div
+          className="absolute top-0 left-0 py-2 px-6"
+          style={{
+            color: props.config.leftColor ?? 'black',
+          }}
+        >
           <div>
-            <div
-              className="flex gap-x-1 justify-end"
-              style={{
-                fontSize: '0.5rem',
-              }}
-            >
-              {(props.config.platforms ?? [])
-                ?.map((p) => PlatformIcons[p])
-                .map((Comp, index) => (
-                  <Comp key={`${props.config.title ?? ''}_${index}`} />
-                ))}
+            <div className="font-extrabold text-lg truncate w-64 text-shadow-lg">
+              {props.config.title ?? ''}
+            </div>
+            <div className="font-medium leading-5 truncate w-64 text-shadow-lg">
+              {(props.config.subtitle ?? []).map((name, index) => (
+                <div key={`${props.config.subtitle}_${index}`}>{name}</div>
+              ))}
             </div>
           </div>
         </div>
-      </div>
-      {/*会员免费*/}
-      <div
-        className="absolute bottom-0 left-0 overflow-hidden text-xs text-center"
-        style={{
-          borderTopRightRadius: token.borderRadius,
-        }}
-      >
-        {(props.config.free ?? []).includes('XGP') && (
-          <div
-            className="px-3 py-1"
-            style={{
-              backgroundColor: '#107c10',
-              color: 'white',
-            }}
-          >
-            Xbox Game Pass
+        {/*发售日期、平台*/}
+        <div
+          className={`absolute right-0 bottom-0 pb-2 pt-1 px-6 ${
+            todayRelease
+              ? 'backdrop-blur-md bg-white bg-opacity-20 shadow-lg'
+              : ''
+          } text-shadow-lg`}
+          style={{
+            color: todayRelease ? 'white' : props.config.rightColor ?? 'black',
+            borderTopLeftRadius: token.borderRadius,
+          }}
+        >
+          <div>
+            <div className="font-bold text-right">
+              {todayRelease ? '🎉今日发售' : props.config.releaseDate ?? ''}
+            </div>
+            <div>
+              <div
+                className="flex gap-x-1 justify-end"
+                style={{
+                  fontSize: '0.5rem',
+                }}
+              >
+                {(props.config.platforms ?? [])
+                  ?.map((p) => PlatformIcons[p])
+                  .map((Comp, index) => (
+                    <Comp key={`${props.config.title ?? ''}_${index}`} />
+                  ))}
+              </div>
+            </div>
           </div>
-        )}
-        {(props.config.free ?? []).includes('PSPlus') && (
-          <div
-            className="px-3 py-1"
-            style={{
-              backgroundColor: '#00439c',
-              color: 'white',
-            }}
-          >
-            PlayStation Plus
-          </div>
-        )}
+        </div>
+        {/*会员免费*/}
+        <div
+          className="absolute bottom-0 left-0 overflow-hidden text-xs text-center"
+          style={{
+            borderTopRightRadius: token.borderRadius,
+          }}
+        >
+          {(props.config.free ?? []).includes('XGP') && (
+            <div
+              className="px-3 py-1"
+              style={{
+                backgroundColor: '#107c10',
+                color: 'white',
+              }}
+            >
+              Xbox Game Pass
+            </div>
+          )}
+          {(props.config.free ?? []).includes('PSPlus') && (
+            <div
+              className="px-3 py-1"
+              style={{
+                backgroundColor: '#00439c',
+                color: 'white',
+              }}
+            >
+              PlayStation Plus
+            </div>
+          )}
+        </div>
       </div>
-    </div>
+    </LazyLoad>
   );
 };
 

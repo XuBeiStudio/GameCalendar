@@ -1,11 +1,15 @@
 import Game from '@/components/Game';
 import Month from '@/components/Month';
+import {
+  GamepadManager,
+  XboxAxisMap,
+  XboxButtonMap,
+} from '@/utils/GamepadManager';
 import { sortGames, sortMonth } from '@/utils/functions';
 import { GameDataType } from '@/utils/types';
 import { Affix, App } from 'antd';
 import lodash from 'lodash';
 import React, { useContext, useEffect, useMemo, useRef, useState } from 'react';
-import { GamepadManager, XboxAxisMap, XboxButtonMap } from '@/utils/GamepadManager';
 
 export class GameListContext {
   public games: HTMLDivElement[] = [];
@@ -35,7 +39,7 @@ const MonthGroup: React.FC<{
       />
       <div className="flex justify-center">
         <div
-          className="w-full px-6"
+          className="w-full px-6 flex flex-col gap-y-4"
           style={{
             maxWidth: '30rem',
           }}
@@ -107,8 +111,10 @@ const Component: React.FC<{
 
       {
         // focus到当前屏幕上第一个可见游戏
-        const viewWidth = window.innerWidth || document.documentElement.clientWidth;
-        const viewHeight = window.innerHeight || document.documentElement.clientHeight;
+        const viewWidth =
+          window.innerWidth || document.documentElement.clientWidth;
+        const viewHeight =
+          window.innerHeight || document.documentElement.clientHeight;
         let games = ctx?.games;
         if (!games || games.length === 0) {
           return;
@@ -117,14 +123,10 @@ const Component: React.FC<{
         for (let i = 0; i < games.length; i++) {
           let game = games[i];
 
-          const {
-            top,
-            left,
-            bottom,
-            right,
-          } = game.getBoundingClientRect();
+          const { top, left, bottom, right } = game.getBoundingClientRect();
 
-          let visible = top >= 0 && left >= 0 && right <= viewWidth && bottom <= viewHeight;
+          let visible =
+            top >= 0 && left >= 0 && right <= viewWidth && bottom <= viewHeight;
           if (visible && !find) {
             game.focus();
             behavior.setData({
@@ -147,17 +149,14 @@ const Component: React.FC<{
       message.error('手柄已断开');
     };
 
-    behavior.update = (data: {
-      focused: number;
-      pressing: boolean;
-    }) => {
+    behavior.update = (data: { focused: number; pressing: boolean }) => {
       let games = ctx?.games;
       if (!games || games.length === 0) {
         return data;
       }
 
       let pressing = false;
-      let focused = data.focused??0;
+      let focused = data.focused ?? 0;
 
       if (
         behavior.getButtonState(XboxButtonMap.LeftStick)?.pressed ||
@@ -177,27 +176,33 @@ const Component: React.FC<{
       }
 
       let speed = 0;
-      if (behavior.getButtonState(XboxButtonMap.A)?.pressed || behavior.getButtonState(XboxButtonMap.Down)?.pressed) {
+      if (
+        behavior.getButtonState(XboxButtonMap.A)?.pressed ||
+        behavior.getButtonState(XboxButtonMap.Down)?.pressed
+      ) {
         speed = 10;
         pressing = true;
       }
-      if (behavior.getButtonState(XboxButtonMap.Y)?.pressed || behavior.getButtonState(XboxButtonMap.Up)?.pressed) {
+      if (
+        behavior.getButtonState(XboxButtonMap.Y)?.pressed ||
+        behavior.getButtonState(XboxButtonMap.Up)?.pressed
+      ) {
         speed = -10;
         pressing = true;
       }
       if (Math.abs(behavior.getAxisState(XboxAxisMap.LeftY)) > 0.1) {
-        speed = behavior.getAxisState(XboxAxisMap.LeftY)*15;
+        speed = behavior.getAxisState(XboxAxisMap.LeftY) * 15;
       }
       if (Math.abs(behavior.getAxisState(XboxAxisMap.RightY)) > 0.1) {
-        speed = behavior.getAxisState(XboxAxisMap.RightY)*15;
+        speed = behavior.getAxisState(XboxAxisMap.RightY) * 15;
       }
 
       if (pressing) {
         if (!data.pressing) {
           focused = data.focused + speed / Math.abs(speed);
-          if (focused<0) {
+          if (focused < 0) {
             focused = 0;
-          } else if (focused>games.length) {
+          } else if (focused > games.length) {
             focused = games.length;
           }
           games[Math.floor(focused) % games.length]?.focus();
@@ -209,10 +214,10 @@ const Component: React.FC<{
       }
 
       if (speed !== 0) {
-        focused = data.focused + behavior.deltaTime / 1000 * speed;
-        if (focused<0) {
+        focused = data.focused + (behavior.deltaTime / 1000) * speed;
+        if (focused < 0) {
           focused = 0;
-        } else if (focused>games.length) {
+        } else if (focused > games.length) {
           focused = games.length;
         }
         games[Math.floor(focused) % games.length]?.focus();
