@@ -359,11 +359,11 @@
     ],
     "badges": [
       {
-        "type": "steam",
+        "type": "store.steam",
         "value": "2358720"
       },
       {
-        "type": "epic",
+        "type": "store.epic",
         "value": "black-myth-wukong-87a72b"
       }
     ],

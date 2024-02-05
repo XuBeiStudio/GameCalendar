@@ -1,3 +1,6 @@
+import Bilibili from '@/components/BadgeComponents/Bilibili';
+import Spotify from '@/components/BadgeComponents/Spotify';
+import Youtube from '@/components/BadgeComponents/Youtube';
 import Markdown from '@/components/Markdown';
 import PlatformIcons from '@/components/PlatformIcons';
 import { getI18n } from '@/utils/functions';
@@ -23,7 +26,7 @@ const { useToken } = theme;
 
 export const parseBadge = (badge: { type: string; value: string }) => {
   switch (badge.type) {
-    case 'steam':
+    case 'store.steam':
       return (
         <Button
           onClick={() => {
@@ -41,7 +44,7 @@ export const parseBadge = (badge: { type: string; value: string }) => {
           </div>
         </Button>
       );
-    case 'epic':
+    case 'store.epic':
       return (
         <Button
           onClick={() => {
@@ -59,6 +62,14 @@ export const parseBadge = (badge: { type: string; value: string }) => {
           </div>
         </Button>
       );
+    case 'music.spotify.playlist':
+      return <Spotify.Playlist id={badge.value} />;
+    case 'music.spotify.track':
+      return <Spotify.Track id={badge.value} />;
+    case 'video.bilibili':
+      return <Bilibili id={badge.value} />;
+    case 'video.youtube':
+      return <Youtube id={badge.value} />;
     default:
       return null;
   }
@@ -235,58 +246,79 @@ const Page: React.FC = () => {
                   {isGameDataError ? (
                     <></>
                   ) : (
-                    <div className="pb-2">
-                      <div className="flex flex-wrap gap-x-2 gap-y-1">
-                        <Button
-                          icon={<CalendarOutlined />}
-                          onClick={() => {
-                            if (!gameData) return;
+                    <div>
+                      <div className="pb-2">
+                        <div className="flex flex-wrap gap-x-2 gap-y-1">
+                          <Button
+                            icon={<CalendarOutlined />}
+                            onClick={() => {
+                              if (!gameData) return;
 
-                            let {
-                              name: _name,
-                              releaseDate,
-                              platforms,
-                            } = gameData;
-                            let name = getI18n(_name, 'zh_CN') ?? '';
+                              let {
+                                name: _name,
+                                releaseDate,
+                                platforms,
+                              } = gameData;
+                              let name = getI18n(_name, 'zh_CN') ?? '';
 
-                            ics.createEvent(
-                              {
-                                title: name,
-                                description: `《${name}》 现已在 ${platforms?.join(
-                                  '、',
-                                )} 上推出`,
-                                start: dayjs(
-                                  `${(releaseDate ?? '').replaceAll(
-                                    '.',
-                                    '-',
-                                  )}T00:00:00+0800`,
-                                )
-                                  .utc()
-                                  .format('YYYYMMDD[T]HHmmss[Z]') as string,
-                                duration: { hours: 24 },
-                                url: 'https://game-calendar.liziyi0914.com',
-                                organizer: {
-                                  name: '序碑工作室',
-                                  email: 'games@xu-bei.cn',
+                              ics.createEvent(
+                                {
+                                  title: name,
+                                  description: `《${name}》 现已在 ${platforms?.join(
+                                    '、',
+                                  )} 上推出`,
+                                  start: dayjs(
+                                    `${(releaseDate ?? '').replaceAll(
+                                      '.',
+                                      '-',
+                                    )}T00:00:00+0800`,
+                                  )
+                                    .utc()
+                                    .format('YYYYMMDD[T]HHmmss[Z]') as string,
+                                  duration: { hours: 24 },
+                                  url: 'https://game-calendar.liziyi0914.com',
+                                  organizer: {
+                                    name: '序碑工作室',
+                                    email: 'games@xu-bei.cn',
+                                  },
+                                  location: platforms?.join(', '),
                                 },
-                                location: platforms?.join(', '),
-                              },
-                              (error, value) => {
-                                if (!error) {
-                                  let blob = new Blob([value], {
-                                    type: 'text/calendar;charset=utf-8',
-                                  });
-                                  let url = URL.createObjectURL(blob);
-                                  window.open(url, '_blank');
-                                }
-                              },
-                            );
-                          }}
-                        >
-                          加入日历
-                        </Button>
-                        {gameData?.badges?.map((badge) => parseBadge(badge))}
+                                (error, value) => {
+                                  if (!error) {
+                                    let blob = new Blob([value], {
+                                      type: 'text/calendar;charset=utf-8',
+                                    });
+                                    let url = URL.createObjectURL(blob);
+                                    window.open(url, '_blank');
+                                  }
+                                },
+                              );
+                            }}
+                          >
+                            加入日历
+                          </Button>
+                          {gameData?.badges
+                            ?.filter(
+                              (b) =>
+                                !(
+                                  b.type.startsWith('music.') ||
+                                  b.type.startsWith('video.')
+                                ),
+                            )
+                            ?.map((badge) => parseBadge(badge))}
+                        </div>
                       </div>
+                      {gameData?.badges
+                        ?.filter(
+                          (b) =>
+                            b.type.startsWith('music.') ||
+                            b.type.startsWith('video.'),
+                        )
+                        ?.map((badge, index) => (
+                          <div key={`${badge.type}_${index}`} className="pb-2">
+                            {parseBadge(badge)}
+                          </div>
+                        ))}
                     </div>
                   )}
                 </Skeleton>
