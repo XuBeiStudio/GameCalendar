@@ -422,7 +422,7 @@
   {
     "id": "879fc6ec-6957-46af-b4ae-006d1ddde7a3",
     "title": "地心归途",
-    "subtitle": ["Return from Core", ""],
+    "subtitle": ["Return from Core"],
     "releaseDate": "2023.12.16",
     "platforms": ["Steam"],
     "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2171630/library_hero.jpg?t=1704436844",
@@ -575,7 +575,7 @@
   {
     "id": "cdea3100-c25e-46a9-b18b-d814ee40c3cd",
     "title": "虚时异境：迷离时空",
-    "subtitle": ["Dyschronia: Chronos Alternate", ""],
+    "subtitle": ["Dyschronia: Chronos Alternate"],
     "releaseDate": "2023.11.22",
     "platforms": ["Steam", "Switch", "PlayStation"],
     "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2023920/header.jpg?t=1705982585",
@@ -1302,7 +1302,7 @@
   {
     "id": "5089ead7-70c4-4c46-9653-8384ff311f6b",
     "title": "无限神速斩 勇者斗恶龙",
-    "subtitle": [" 达伊的大冒险", ""],
+    "subtitle": ["达伊的大冒险"],
     "releaseDate": "2023.09.28",
     "platforms": ["Steam", "Xbox", "Switch", "PlayStation"],
     "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1895810/library_hero.jpg?t=1695918758",
