@@ -239,143 +239,166 @@ const Page: React.FC = () => {
               </Space>
             }
           >
-            {!currentGameId ? (
-              <Empty>
-                <Space>
-                  <div>在左侧选择一款游戏</div>
-                  <div>或</div>
-                  <div>
-                    <Button type="primary" onClick={() => createGame()}>
-                      添加
-                    </Button>
-                  </div>
-                </Space>
-              </Empty>
-            ) : (
-              <div>
-                <ProForm
-                  submitter={false}
-                  form={form}
-                  onValuesChange={() => {
-                    updateGame.run(currentGameId, form.getFieldsValue());
-                  }}
-                >
-                  <div className="grid grid-cols-12 gap-x-4">
-                    <div className="col-span-6">
-                      <ProFormText name="title" label="标题" />
-                      <ProFormFieldSet name="subtitle" label="副标题">
-                        <ProFormText />
-                        <ProFormText />
-                      </ProFormFieldSet>
+            <div
+              className="overflow-y-auto"
+              style={{
+                height: 'calc(55vh - 4rem)',
+              }}
+            >
+              {!currentGameId ? (
+                <Empty>
+                  <Space>
+                    <div>在左侧选择一款游戏</div>
+                    <div>或</div>
+                    <div>
+                      <Button type="primary" onClick={() => createGame()}>
+                        添加
+                      </Button>
                     </div>
-                    <div className="col-span-6">
-                      <ProFormCheckbox.Group
-                        name="platforms"
-                        label="平台"
-                        options={[
-                          { label: 'Steam', value: 'Steam' },
-                          { label: 'Epic', value: 'Epic' },
-                          { label: 'Xbox', value: 'Xbox' },
-                          { label: 'Switch', value: 'Switch' },
-                          { label: 'PlayStation', value: 'PlayStation' },
-                          { label: 'Android', value: 'Android' },
-                          { label: 'Apple', value: 'Apple' },
-                        ]}
-                      />
-                      <ProFormCheckbox.Group
-                        name="free"
-                        label="会员免费"
-                        options={[
-                          { label: 'Xbox Game Pass', value: 'XGP' },
-                          { label: 'PlayStation Plus', value: 'PSPlus' },
-                        ]}
-                      />
-                    </div>
-                    <div className="col-span-2">
-                      <ProFormDatePicker
-                        name="releaseDate"
-                        label="发售日期"
-                        dataFormat={'YYYY.MM.DD'}
-                      />
-                    </div>
-                    <div className="col-span-2">
-                      <ProFormColorPicker
-                        name="leftColor"
-                        label="左侧颜色"
-                        initialValue="black"
-                      />
-                    </div>
-                    <div className="col-span-2">
-                      <ProFormColorPicker
-                        name="rightColor"
-                        label="右侧颜色"
-                        initialValue="black"
-                      />
-                    </div>
-                    <div className="col-span-3">
-                      <ProFormText name="bg" label="背景" />
-                    </div>
-                    <div className="col-span-3">
-                      <ProFormText name="logo" label="Logo" />
-                    </div>
-                    <div className="col-span-3">
-                      <ProFormList name="name" label="游戏名称">
-                        <div className="grid grid-cols-3 gap-x-2">
-                          <div className="col-span-1">
-                            <ProFormText
-                              name="lang"
-                              label="语言"
-                              placeholder="例如：zh_CN"
-                            />
+                  </Space>
+                </Empty>
+              ) : (
+                <div>
+                  <ProForm
+                    submitter={false}
+                    form={form}
+                    onValuesChange={() => {
+                      updateGame.run(currentGameId, form.getFieldsValue());
+                    }}
+                  >
+                    <div className="grid grid-cols-12 gap-x-4">
+                      <div className="col-span-6">
+                        <ProFormText name="title" label="标题" />
+                        <ProFormFieldSet name="subtitle" label="副标题">
+                          <ProFormText />
+                          <ProFormText />
+                        </ProFormFieldSet>
+                      </div>
+                      <div className="col-span-6">
+                        <ProFormCheckbox.Group
+                          name="platforms"
+                          label="平台"
+                          options={[
+                            { label: 'Steam', value: 'Steam' },
+                            { label: 'Epic', value: 'Epic' },
+                            { label: 'Xbox', value: 'Xbox' },
+                            { label: 'Switch', value: 'Switch' },
+                            { label: 'PlayStation', value: 'PlayStation' },
+                            { label: 'Android', value: 'Android' },
+                            { label: 'Apple', value: 'Apple' },
+                          ]}
+                        />
+                        <ProFormCheckbox.Group
+                          name="free"
+                          label="会员免费"
+                          options={[
+                            { label: 'Xbox Game Pass', value: 'XGP' },
+                            { label: 'PlayStation Plus', value: 'PSPlus' },
+                          ]}
+                        />
+                      </div>
+                      <div className="col-span-2">
+                        <ProFormDatePicker
+                          name="releaseDate"
+                          label="发售日期"
+                          dataFormat={'YYYY.MM.DD'}
+                        />
+                      </div>
+                      <div className="col-span-2">
+                        <ProFormColorPicker
+                          name="leftColor"
+                          label="左侧颜色"
+                          initialValue="black"
+                        />
+                      </div>
+                      <div className="col-span-2">
+                        <ProFormColorPicker
+                          name="rightColor"
+                          label="右侧颜色"
+                          initialValue="black"
+                        />
+                      </div>
+                      <div className="col-span-3">
+                        <ProFormText name="bg" label="背景" />
+                      </div>
+                      <div className="col-span-3">
+                        <ProFormText name="logo" label="Logo" />
+                      </div>
+                      <div className="col-span-3">
+                        <ProFormList name="name" label="游戏名称">
+                          <div className="grid grid-cols-3 gap-x-2">
+                            <div className="col-span-1">
+                              <ProFormText
+                                name="lang"
+                                label="语言"
+                                placeholder="例如：zh_CN"
+                              />
+                            </div>
+                            <div className="col-span-2">
+                              <ProFormText name="content" label="内容" />
+                            </div>
                           </div>
-                          <div className="col-span-2">
-                            <ProFormText name="content" label="内容" />
+                        </ProFormList>
+                      </div>
+                      <div className="col-span-3">
+                        <ProFormList name="developer" label="开发商">
+                          <ProFormText name="name" />
+                        </ProFormList>
+                      </div>
+                      <div className="col-span-3">
+                        <ProFormList name="publisher" label="发行商">
+                          <ProFormText name="name" />
+                        </ProFormList>
+                      </div>
+                      <div className="col-span-3">
+                        <ProFormList name="badges" label="徽章">
+                          <div className="grid grid-cols-2 gap-x-2">
+                            <div>
+                              <ProFormSelect
+                                name="type"
+                                label="类型"
+                                options={[
+                                  {
+                                    label: 'Steam商城页',
+                                    value: 'store.steam',
+                                  },
+                                  {
+                                    label: 'Epic商城页',
+                                    value: 'store.epic',
+                                  },
+                                  {
+                                    label: 'Bilibili',
+                                    value: 'video.bilibili',
+                                  },
+                                  {
+                                    label: 'Youtube',
+                                    value: 'video.youtube',
+                                  },
+                                  {
+                                    label: 'Spotify歌单',
+                                    value: 'music.spotify.playlist',
+                                  },
+                                  {
+                                    label: 'Spotify歌曲',
+                                    value: 'music.spotify.track',
+                                  },
+                                ]}
+                              />
+                            </div>
+                            <div>
+                              <ProFormText name="value" label="值" />
+                            </div>
                           </div>
-                        </div>
-                      </ProFormList>
+                        </ProFormList>
+                      </div>
+                      <div className="col-span-12">
+                        <ProFormTextArea name="markdown" label="Markdown" />
+                      </div>
                     </div>
-                    <div className="col-span-3">
-                      <ProFormList name="developer" label="开发商">
-                        <ProFormText name="name" />
-                      </ProFormList>
-                    </div>
-                    <div className="col-span-3">
-                      <ProFormList name="publisher" label="发行商">
-                        <ProFormText name="name" />
-                      </ProFormList>
-                    </div>
-                    <div className="col-span-3">
-                      <ProFormList name="badges" label="徽章">
-                        <div className="grid grid-cols-2 gap-x-2">
-                          <div>
-                            <ProFormSelect
-                              name="type"
-                              label="类型"
-                              options={[
-                                {
-                                  label: 'Steam商城页',
-                                  value: 'steam',
-                                },
-                                {
-                                  label: 'Epic商城页',
-                                  value: 'epic',
-                                },
-                              ]}
-                            />
-                          </div>
-                          <div>
-                            <ProFormText name="value" label="值" />
-                          </div>
-                        </div>
-                      </ProFormList>
-                    </div>
-                    <div className="col-span-12">
-                      <ProFormTextArea name="markdown" label="Markdown" />
-                    </div>
-                  </div>
-                </ProForm>
-              </div>
-            )}
+                  </ProForm>
+                </div>
+              )}
+            </div>
           </Card>
           <div className="h-2" />
           <Card title="预览">
@@ -401,40 +424,47 @@ const Page: React.FC = () => {
                 }}
               />
             </Modal>
-            {!currentGameId ? (
-              <Empty>
-                <Space>
-                  <div>在左侧选择一款游戏</div>
-                  <div>或</div>
-                  <div>
-                    <Button type="primary" onClick={() => createGame()}>
-                      添加
+            <div
+              className="overflow-y-auto"
+              style={{
+                height: 'calc(30vh - 4rem)',
+              }}
+            >
+              {!currentGameId ? (
+                <Empty>
+                  <Space>
+                    <div>在左侧选择一款游戏</div>
+                    <div>或</div>
+                    <div>
+                      <Button type="primary" onClick={() => createGame()}>
+                        添加
+                      </Button>
+                    </div>
+                  </Space>
+                </Empty>
+              ) : (
+                <div>
+                  <div className="py-2">
+                    <Button onClick={() => setOpenPreviewModal(true)}>
+                      Markdown
                     </Button>
                   </div>
-                </Space>
-              </Empty>
-            ) : (
-              <div>
-                <div className="py-2">
-                  <Button onClick={() => setOpenPreviewModal(true)}>
-                    Markdown
-                  </Button>
-                </div>
-                <div className="py-2 flex gap-x-2">
-                  {currentGame.badges?.map((badge) => parseBadge(badge))}
-                </div>
-                <div>
-                  <div
-                    className="w-full px-6"
-                    style={{
-                      maxWidth: '30rem',
-                    }}
-                  >
-                    <Game config={currentGame} />
+                  <div className="py-2 flex gap-x-2">
+                    {currentGame.badges?.map((badge) => parseBadge(badge))}
+                  </div>
+                  <div>
+                    <div
+                      className="w-full px-6"
+                      style={{
+                        maxWidth: '30rem',
+                      }}
+                    >
+                      <Game config={currentGame} />
+                    </div>
                   </div>
                 </div>
-              </div>
-            )}
+              )}
+            </div>
           </Card>
         </div>
       </div>

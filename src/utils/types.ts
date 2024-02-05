@@ -52,7 +52,7 @@ export type GameDetailsType = {
   bg: string;
   logo: string;
   badges: {
-    type: 'steam' | 'epic';
+    type: 'steam' | 'epic' | 'music.spotify.playlist' | 'music.spotify.track';
     value: string;
   }[];
   releaseDate?: string;
