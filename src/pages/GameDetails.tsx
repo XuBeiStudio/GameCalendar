@@ -87,7 +87,7 @@ const Page: React.FC = () => {
     isLoading: isLoadingGameMd,
     isError: isGameMdError,
   } = useQuery(['game', gameId, 'md'], async ({ queryKey }) =>
-    request<string>(`/games/${queryKey[1]}/info.md`),
+    request<string>(`/games/${queryKey[1]}/game.md`),
   );
 
   return (
