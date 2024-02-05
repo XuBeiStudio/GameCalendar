@@ -1,7 +1,9 @@
 import PlatformIcons from '@/components/PlatformIcons';
 import { GameDataType } from '@/utils/types';
 import { Image, theme } from 'antd';
-import React, { useMemo } from 'react';
+import React, { useContext, useEffect, useMemo, useRef, useState } from 'react';
+import { css } from '@emotion/css';
+import { GameListCtx } from '@/components/GameList';
 
 const { useToken } = theme;
 
@@ -13,6 +15,10 @@ const Game: React.FC<{
   onClick?: () => void;
 }> = (props) => {
   const { token } = useToken();
+  const ref = useRef<HTMLDivElement>(null);
+  const ctx = useContext(GameListCtx);
+
+  const [enableGamepad, setEnableGamepad] = useState(false);
 
   const todayRelease = useMemo(() => {
     const releaseDate = new Date(props.config?.releaseDate ?? '1970.01.01');
@@ -20,9 +26,33 @@ const Game: React.FC<{
     return releaseDate.toDateString() === today.toDateString();
   }, [props.config]);
 
+  useEffect(() => {
+    if (ref.current && ctx) {
+      ctx.games.push(ref.current);
+    }
+  }, [ref, ctx]);
+
   return (
     <div
-      className="relative my-4 overflow-hidden shadow-md select-none cursor-pointer"
+      onFocus={()=>{
+        if (!enableGamepad) {
+          if (navigator.getGamepads().filter(i=>!!i).length!==0) {
+            setEnableGamepad(true);
+          }
+        }
+      }}
+      ref={ref}
+      tabIndex={0}
+      className={`relative my-4 overflow-hidden shadow-md select-none cursor-pointer transition-all duration-150 ease-in-out ${css`
+          &:focus {
+              outline: 0;
+              ${enableGamepad?'transform: scale(1.05);':''}
+              //transform: scale(1.05);
+          }
+          //&:hover {
+          //    transform: scale(1.05);
+          //}
+      `}`}
       style={{
         borderRadius: token.borderRadiusLG,
         background: props.config.bgColor ?? 'white',
