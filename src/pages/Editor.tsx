@@ -60,10 +60,6 @@ const Page: React.FC = () => {
   const [search, setSearch] = useState<string>('');
 
   useEffect(() => {
-    console.log('@@@@', games);
-  }, [games]);
-
-  useEffect(() => {
     if (baseData) {
       setGames(baseData);
     }
@@ -96,7 +92,7 @@ const Page: React.FC = () => {
     data.platforms = data.platforms ?? [];
     data.markdown = data.markdown ?? '';
 
-    let tmp = data.name;
+    let tmp = data.name ?? [];
     data.name = [];
     for (let i of tmp) {
       if (!/^.{2}_.{2}$/.test(i.lang)) {
