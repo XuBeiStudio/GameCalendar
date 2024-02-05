@@ -51,4 +51,12 @@ export default defineConfig({
                 })();`,
     },
   ],
+  favicons: ['/favicon.png'],
+  links: [
+    {
+      href: '/manifest.json',
+      rel: 'manifest',
+    },
+  ],
+  metas: [],
 });
