@@ -1,5 +1,5 @@
 import { ReactComponent as XubeiLogo } from '@/assets/imgs/logo.svg';
-import GameList from '@/components/GameList';
+import GameList, { GameListContext, GameListCtx } from '@/components/GameList';
 import { GameDataType } from '@/utils/types';
 import {
   CalendarOutlined,
@@ -86,13 +86,15 @@ const Page: React.FC = () => {
         </div>
       </div>
       <Skeleton loading={isLoading} active>
-        <GameList
-          data={gameDatas}
-          onClickGame={(game) => {
-            history.push(`/game/${game.id}`);
-          }}
-          autoScroll={true}
-        />
+        <GameListCtx.Provider value={new GameListContext()}>
+          <GameList
+            data={gameDatas}
+            onClickGame={(game) => {
+              history.push(`/game/${game.id}`);
+            }}
+            autoScroll={true}
+          />
+        </GameListCtx.Provider>
       </Skeleton>
       <div className="fixed left-0 right-0 top-2 z-40">
         <div className="flex justify-center">

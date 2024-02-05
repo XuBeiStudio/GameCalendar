@@ -5,7 +5,14 @@ import Markdown from '@/components/Markdown';
 import PlatformIcons from '@/components/PlatformIcons';
 import { getI18n } from '@/utils/functions';
 import { GameDetailsType } from '@/utils/types';
-import { request, useIntl, useMatch, useModel, useQuery } from '@@/exports';
+import {
+  Helmet,
+  request,
+  useIntl,
+  useMatch,
+  useModel,
+  useQuery,
+} from '@@/exports';
 import {
   CalendarOutlined,
   GithubOutlined,
@@ -103,6 +110,9 @@ const Page: React.FC = () => {
 
   return (
     <div className="h-screen overflow-hidden relative">
+      <Helmet>
+        <title>{getI18n(gameData?.name ?? [], 'zh_CN') ?? '未知'} | 序碑</title>
+      </Helmet>
       <div className="relative z-10">
         <div
           ref={scrollRef}
