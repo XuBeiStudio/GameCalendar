@@ -1,7 +1,7 @@
 import Game from '@/components/Game';
 import Month from '@/components/Month';
 import { sortGames, sortMonth } from '@/utils/functions';
-import { GameType } from '@/utils/types';
+import { GameDataType } from '@/utils/types';
 import { Affix } from 'antd';
 import lodash from 'lodash';
 import React, { useEffect, useMemo, useState } from 'react';
@@ -9,10 +9,10 @@ import React, { useEffect, useMemo, useState } from 'react';
 const MonthGroup: React.FC<{
   item: {
     month: string;
-    games: GameType[];
+    games: GameDataType[];
   };
   container?: () => HTMLElement | Window | null;
-  onClickGame?: (game: GameType) => void;
+  onClickGame?: (game: GameDataType) => void;
 }> = ({ item, container, onClickGame }) => {
   const [closed, setClosed] = useState(false);
 
@@ -55,15 +55,15 @@ const MonthGroup: React.FC<{
 };
 
 const Component: React.FC<{
-  data?: GameType[];
-  onClickGame?: (game: GameType) => void;
+  data?: GameDataType[];
+  onClickGame?: (game: GameDataType) => void;
   container?: () => HTMLElement | Window | null;
   autoScroll?: boolean;
 }> = (props) => {
   const months = useMemo(() => {
     let result: {
       month: string;
-      games: GameType[];
+      games: GameDataType[];
     }[] = [];
     let dict = lodash.groupBy(props.data, (item) => {
       let [y, m] = (item?.releaseDate ?? '1970.1.1').split('.');
