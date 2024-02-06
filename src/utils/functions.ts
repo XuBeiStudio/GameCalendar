@@ -73,3 +73,7 @@ export const getI18n: (
   }
   return null;
 };
+
+export const hasWebShare: () => boolean = () => {
+  return !!navigator?.share;
+};

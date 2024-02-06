@@ -8,4 +8,7 @@ export default {
   'copy.success': '成功复制到剪贴板',
   txc: '兔小巢',
   menu: '菜单',
+  site: '游历年轴',
+  share: '分享',
+  addCalendar: '添加到日历',
 };

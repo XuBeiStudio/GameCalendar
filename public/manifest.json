@@ -2,10 +2,10 @@
   "background_color": "#ffffff",
   "dir": "ltr",
   "display": "standalone",
-  "name": "游戏发售时间表",
+  "name": "游历年轴",
   "orientation": "any",
   "scope": "/",
-  "short_name": "Game Cal",
+  "short_name": "Gaming Epochs",
   "start_url": "/",
   "theme_color": "#ffffff",
   "lang": "zh",
@@ -17,8 +17,8 @@
     "browser"
   ],
   "categories": ["utilities"],
-  "id": "game_calendar",
-  "description": "游戏发售时间表",
+  "id": "gaming_epochs",
+  "description": "游历年轴 Gaming Epochs",
   "edge_side_panel": {
     "preferred_width": 500
   },

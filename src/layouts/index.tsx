@@ -79,7 +79,7 @@ const Layout: React.FC = () => {
       }}
     >
       <Helmet>
-        <title>游戏发售时间表 | 序碑</title>
+        <title>{i18n.formatMessage({ id: 'site' })}</title>
       </Helmet>
       <App>
         <Modal
