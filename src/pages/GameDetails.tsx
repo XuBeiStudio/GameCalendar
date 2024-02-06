@@ -3,7 +3,7 @@ import Spotify from '@/components/BadgeComponents/Spotify';
 import Youtube from '@/components/BadgeComponents/Youtube';
 import Markdown from '@/components/Markdown';
 import PlatformIcons from '@/components/PlatformIcons';
-import { getI18n } from '@/utils/functions';
+import { getI18n, hasWebShare } from '@/utils/functions';
 import { GameDetailsType } from '@/utils/types';
 import {
   Helmet,
@@ -18,6 +18,7 @@ import {
   GithubOutlined,
   MenuOutlined,
   MessageOutlined,
+  ShareAltOutlined,
 } from '@ant-design/icons';
 import { ArrowLeft, Moon, SunOne } from '@icon-park/react';
 import { history } from '@umijs/max';
@@ -305,8 +306,28 @@ const Page: React.FC = () => {
                               );
                             }}
                           >
-                            加入日历
+                            {i18n.formatMessage({ id: 'addCalendar' })}
                           </Button>
+                          {hasWebShare() && (
+                            <Button
+                              icon={<ShareAltOutlined />}
+                              onClick={() => {
+                                navigator.share({
+                                  title: `${
+                                    getI18n(gameData?.name ?? [], 'zh_CN') ??
+                                    '未知'
+                                  } | 游历年轴`,
+                                  text: `${
+                                    getI18n(gameData?.name ?? [], 'zh_CN') ??
+                                    '未知'
+                                  } | 游历年轴`,
+                                  url: window.location.href,
+                                });
+                              }}
+                            >
+                              {i18n.formatMessage({ id: 'share' })}
+                            </Button>
+                          )}
                           {gameData?.badges
                             ?.filter(
                               (b) =>

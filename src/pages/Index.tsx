@@ -1,10 +1,13 @@
 import { ReactComponent as XubeiLogo } from '@/assets/imgs/logo.svg';
+import { ReactComponent as GELogo } from '@/assets/imgs/logo_ge.svg';
 import GameList, { GameListContext, GameListCtx } from '@/components/GameList';
+import { hasWebShare } from '@/utils/functions';
 import { GameDataType } from '@/utils/types';
 import {
   CalendarOutlined,
   GithubOutlined,
   MessageOutlined,
+  ShareAltOutlined,
 } from '@ant-design/icons';
 import { Moon, SunOne } from '@icon-park/react';
 import { history, request, useIntl, useModel, useQuery } from '@umijs/max';
@@ -75,11 +78,12 @@ const Page: React.FC = () => {
       <div className="flex justify-center">
         <div className="w-full max-w-128">
           <div className="fixed left-4 bottom-4">
-            <XubeiLogo
+            <GELogo
               width={256}
               height={256}
               style={{
-                fill: token.colorTextQuaternary,
+                fill: isDark ? '#555' : '#ccc',
+                stroke: isDark ? '#555' : '#ccc',
               }}
             />
           </div>
@@ -100,7 +104,7 @@ const Page: React.FC = () => {
         <div className="flex justify-center">
           <div className="w-full max-w-128 px-6 py-2">
             <Dropdown
-              trigger={['click', 'hover', 'contextMenu']}
+              trigger={['click']}
               menu={{
                 items: [
                   {
@@ -112,6 +116,22 @@ const Page: React.FC = () => {
                         'https://github.com/liziyi0914/GameCalendar';
                     },
                   },
+                  ...(hasWebShare()
+                    ? [
+                        {
+                          key: 'share',
+                          label: i18n.formatMessage({ id: 'share' }),
+                          icon: <ShareAltOutlined />,
+                          onClick: () => {
+                            navigator.share({
+                              title: i18n.formatMessage({ id: 'site' }),
+                              text: i18n.formatMessage({ id: 'site' }),
+                              url: window.location.href,
+                            });
+                          },
+                        },
+                      ]
+                    : []),
                   {
                     key: 'txc',
                     label: i18n.formatMessage({ id: 'txc' }),
