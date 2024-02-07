@@ -50,7 +50,7 @@ jobs:
       - name: Upload COS 🚀
         uses: zkqiang/tencent-cos-action@v0.1.0
         with:
-          args: upload -rs dist /
+          args: upload -rs dist/ /
           secret_id: ${{ secrets.TENCENT_SECRET_ID }}
           secret_key: ${{ secrets.TENCENT_SECRET_KEY }}
           bucket: ${{ secrets.TENCENT_BUCKET }}
