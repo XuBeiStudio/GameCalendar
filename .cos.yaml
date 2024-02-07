@@ -1,0 +1,15 @@
+cos:
+  base:
+    secretid: 3kNZR4wfjUgOqbHffiQSMw==
+    secretkey: 3kNZR4wfjUgOqbHffiQSMw==
+    sessiontoken: 3kNZR4wfjUgOqbHffiQSMw==
+    protocol: https
+    mode: ""
+    cvmrolename: ""
+    closeautoswitchhost: ""
+  buckets:
+  - name: ""
+    alias: ""
+    region: ""
+    endpoint: ""
+    ofs: false

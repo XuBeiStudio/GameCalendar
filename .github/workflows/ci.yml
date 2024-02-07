@@ -51,4 +51,4 @@ jobs:
         run: |
           chmod +x ./coscli-linux
           cd dist
-          ../coscli-linux sync ./ cos://gaming-epochs-1251466821/ -r -e cos.ap-guangzhou.myqcloud.com -i ${{ secrets.TENCENT_SECRET_ID }} -k ${{ secrets.TENCENT_SECRET_KEY }}
+          ../coscli-linux sync ./ cos://gaming-epochs-1251466821/ -c ../.cos.yaml -r -e cos.ap-guangzhou.myqcloud.com -i ${{ secrets.TENCENT_SECRET_ID }} -k ${{ secrets.TENCENT_SECRET_KEY }}
