@@ -1,0 +1,13 @@
+{
+  "badges": [],
+  "bg": "/games/a53b6d01-c03b-4fc3-8b1c-9a66c4025b70/cover.png",
+  "developer": [],
+  "free": ["PSPlus"],
+  "id": "a53b6d01-c03b-4fc3-8b1c-9a66c4025b70",
+  "logo": "/games/a53b6d01-c03b-4fc3-8b1c-9a66c4025b70/logo.png",
+  "name": [{ "content": "星际拓荒", "lang": "zh_CN" }],
+  "platforms": ["Steam", "Xbox", "Switch", "PlayStation"],
+  "publisher": [],
+  "releaseDate": "2023.12.07",
+  "subtitle": ["Outer Wilds"]
+}

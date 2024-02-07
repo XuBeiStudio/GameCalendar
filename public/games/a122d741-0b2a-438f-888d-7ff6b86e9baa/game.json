@@ -1,0 +1,13 @@
+{
+  "badges": [],
+  "bg": "/games/a122d741-0b2a-438f-888d-7ff6b86e9baa/cover.jpg",
+  "developer": [],
+  "free": ["XGP"],
+  "id": "a122d741-0b2a-438f-888d-7ff6b86e9baa",
+  "logo": "/games/a122d741-0b2a-438f-888d-7ff6b86e9baa/logo.png",
+  "name": [{ "content": "黎明前20分钟", "lang": "zh_CN" }],
+  "platforms": ["Steam", "Epic", "Switch", "Android", "Apple"],
+  "publisher": [],
+  "releaseDate": "2023.06.08",
+  "subtitle": ["20 Minutes Till Dawn"]
+}
