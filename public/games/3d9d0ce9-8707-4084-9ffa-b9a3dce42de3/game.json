@@ -1,0 +1,13 @@
+{
+  "badges": [],
+  "bg": "/games/3d9d0ce9-8707-4084-9ffa-b9a3dce42de3/cover.webp",
+  "developer": [],
+  "free": ["PSPlus"],
+  "id": "3d9d0ce9-8707-4084-9ffa-b9a3dce42de3",
+  "logo": "/games/3d9d0ce9-8707-4084-9ffa-b9a3dce42de3/logo.png",
+  "name": [{ "content": "瑞奇与叮当：时空跳转", "lang": "zh_CN" }],
+  "platforms": ["Steam", "PlayStation"],
+  "publisher": [],
+  "releaseDate": "2021.06.11",
+  "subtitle": ["Ratchet & Clank: ", "Rift Apart"]
+}
