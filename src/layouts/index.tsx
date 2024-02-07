@@ -74,7 +74,7 @@ const Layout: React.FC = () => {
       theme={{
         algorithm: isDark ? theme.darkAlgorithm : theme.defaultAlgorithm,
         token: {
-          fontFamily: 'MiSans, system-ui, sans-serif',
+          fontFamily: '"MiSans VF", system-ui, sans-serif',
         },
       }}
     >
