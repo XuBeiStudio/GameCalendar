@@ -27,9 +27,9 @@ export default defineConfig({
   },
   extraPostCSSPlugins: [require('tailwindcss'), require('autoprefixer')],
   npmClient: 'yarn',
-  history: {
-    type: 'hash',
-  },
+  // history: {
+  //   type: 'hash',
+  // },
   analytics: {
     ga_v2: 'G-BB6KZMZJHH',
   },
