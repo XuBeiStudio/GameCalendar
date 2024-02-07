@@ -48,10 +48,6 @@ jobs:
           yarn build
 
       - name: Upload artifact 🚀
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: './dist'
-
-      - name: Deploy to GitHub Pages 🚀
-        id: deployment
-        uses: actions/deploy-pages@v4
+        run: |
+          cd dist
+          ../coscli-linux sync ./ cos://gaming-epochs-1251466821/ -r -e cos.ap-guangzhou.myqcloud.com -i ${{ secrets.TENCENT_SECRET_ID }} -k ${{ secrets.TENCENT_SECRET_KEY }}
