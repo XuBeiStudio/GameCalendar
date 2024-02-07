@@ -57,6 +57,42 @@ export default defineConfig({
       href: '/manifest.json',
       rel: 'manifest',
     },
+    {
+      href: '/assets/fonts/MiSans/Bold/result.css',
+      rel: 'stylesheet',
+    },
+    {
+      href: '/assets/fonts/MiSans/Demibold/result.css',
+      rel: 'stylesheet',
+    },
+    {
+      href: '/assets/fonts/MiSans/ExtraLight/result.css',
+      rel: 'stylesheet',
+    },
+    {
+      href: '/assets/fonts/MiSans/Heavy/result.css',
+      rel: 'stylesheet',
+    },
+    {
+      href: '/assets/fonts/MiSans/Light/result.css',
+      rel: 'stylesheet',
+    },
+    {
+      href: '/assets/fonts/MiSans/Medium/result.css',
+      rel: 'stylesheet',
+    },
+    {
+      href: '/assets/fonts/MiSans/Normal/result.css',
+      rel: 'stylesheet',
+    },
+    {
+      href: '/assets/fonts/MiSans/Semibold/result.css',
+      rel: 'stylesheet',
+    },
+    {
+      href: '/assets/fonts/MiSans/Thin/result.css',
+      rel: 'stylesheet',
+    },
   ],
   metas: [],
 });
