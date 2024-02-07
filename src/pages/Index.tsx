@@ -1,8 +1,9 @@
 import { ReactComponent as XubeiLogo } from '@/assets/imgs/logo.svg';
 import { ReactComponent as GELogo } from '@/assets/imgs/logo_ge.svg';
 import GameList, { GameListContext, GameListCtx } from '@/components/GameList';
+import { getGames } from '@/utils/api';
+import { SITE_ASSETS } from '@/utils/constants';
 import { hasWebShare } from '@/utils/functions';
-import { GameDataType } from '@/utils/types';
 import {
   CalendarOutlined,
   GithubOutlined,
@@ -10,7 +11,7 @@ import {
   ShareAltOutlined,
 } from '@ant-design/icons';
 import { Moon, SunOne } from '@icon-park/react';
-import { history, request, useIntl, useModel, useQuery } from '@umijs/max';
+import { history, useIntl, useModel, useQuery } from '@umijs/max';
 import {
   App,
   Button,
@@ -50,7 +51,7 @@ const Page: React.FC = () => {
   const i18n = useIntl();
 
   const { data: gameDatas, isLoading } = useQuery(['gameDatas'], async () =>
-    request<GameDataType[]>('/games.json'),
+    getGames(),
   );
 
   const [openSubscribeModal, setOpenSubscribeModal] = useState(false);
@@ -66,11 +67,11 @@ const Page: React.FC = () => {
       >
         <Space.Compact style={{ width: '100%' }}>
           <Input
-            value="https://game-calendar.liziyi0914.com/games.ics"
+            value={`${SITE_ASSETS}/games.ics`}
             className="select-all"
             onFocus={(e) => e.target.select()}
           />
-          <CopyButton text="https://game-calendar.liziyi0914.com/games.ics">
+          <CopyButton text={`${SITE_ASSETS}/games.ics`}>
             <Button type="primary">{i18n.formatMessage({ id: 'copy' })}</Button>
           </CopyButton>
         </Space.Compact>

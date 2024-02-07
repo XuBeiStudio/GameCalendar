@@ -3,6 +3,7 @@ import Spotify from '@/components/BadgeComponents/Spotify';
 import Youtube from '@/components/BadgeComponents/Youtube';
 import Markdown from '@/components/Markdown';
 import PlatformIcons from '@/components/PlatformIcons';
+import { SITE_ASSETS } from '@/utils/constants';
 import { getI18n, hasWebShare } from '@/utils/functions';
 import { GameDetailsType } from '@/utils/types';
 import {
@@ -287,7 +288,7 @@ const Page: React.FC = () => {
                                     .utc()
                                     .format('YYYYMMDD[T]HHmmss[Z]') as string,
                                   duration: { hours: 24 },
-                                  url: 'https://game-calendar.liziyi0914.com',
+                                  url: SITE_ASSETS,
                                   organizer: {
                                     name: '序碑工作室',
                                     email: 'games@xu-bei.cn',
