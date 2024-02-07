@@ -1,1 +1,4 @@
 *.ics
+games
+games.json
+games_fixed.json
