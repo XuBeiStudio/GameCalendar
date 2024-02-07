@@ -1,0 +1,10 @@
+{
+  "name": "font_builder",
+  "version": "1.0.0",
+  "license": "MIT",
+  "type": "module",
+  "main": "index.js",
+  "devDependencies": {
+    "@konghayao/cn-font-split": "^4.11.2"
+  }
+}
