@@ -1,3 +1,4 @@
-# README
+<h1 align="center">游历年轴 GamingEpochs</h1>
+<h2 align="center">by 序碑工作室 Refillsoft</h2>
 
-`@umijs/max` 模板项目，更多功能参考 [Umi Max 简介](https://umijs.org/docs/max/introduce)
+===========================
