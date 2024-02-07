@@ -9,6 +9,14 @@ export type PlatformType =
 
 export type FreeType = 'XGP' | 'PSPlus';
 
+export type BadgeTypes =
+  | 'store.steam'
+  | 'store.epic'
+  | 'video.bilibili'
+  | 'video.youtube'
+  | 'music.spotify.playlist'
+  | 'music.spotify.track';
+
 export type GameDataType = {
   id?: string;
   title?: string;
@@ -26,7 +34,7 @@ export type GameDataType = {
   bgColor?: string;
   free?: FreeType[];
   badges?: {
-    type: 'steam' | 'epic';
+    type: BadgeTypes;
     value: string;
   }[];
   developer?: {
@@ -52,7 +60,7 @@ export type GameDetailsType = {
   bg: string;
   logo: string;
   badges: {
-    type: 'steam' | 'epic' | 'music.spotify.playlist' | 'music.spotify.track';
+    type: BadgeTypes;
     value: string;
   }[];
   releaseDate?: string;
