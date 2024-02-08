@@ -8,6 +8,7 @@ import {
 import { sortGames, sortMonth } from '@/utils/functions';
 import { GameDataType } from '@/utils/types';
 import { Affix, App } from 'antd';
+import dayjs from 'dayjs';
 import lodash from 'lodash';
 import React, { useContext, useEffect, useMemo, useRef, useState } from 'react';
 
@@ -243,11 +244,15 @@ const Component: React.FC<{
       return;
     }
 
-    let now = new Date();
-    now = new Date(now.getFullYear(), now.getMonth());
+    let now = dayjs().date(1).hour(0).minute(0).second(0).millisecond(0);
     let index = (months ?? []).findIndex((item) => {
-      const date = new Date(item.month);
-      return now.getTime() === date.getTime();
+      const date = dayjs(item.month, 'YYYY.MM')
+        .date(1)
+        .hour(0)
+        .minute(0)
+        .second(0)
+        .millisecond(0);
+      return now.unix() === date.unix();
     });
 
     document

@@ -3,6 +3,7 @@ import PlatformIcons from '@/components/PlatformIcons';
 import { GameDataType } from '@/utils/types';
 import { css } from '@emotion/css';
 import { Image, Skeleton, theme } from 'antd';
+import dayjs from 'dayjs';
 import React, { useContext, useEffect, useMemo, useRef, useState } from 'react';
 import LazyLoad from 'react-lazyload';
 
@@ -22,9 +23,12 @@ const Game: React.FC<{
   const [enableGamepad, setEnableGamepad] = useState(false);
 
   const todayRelease = useMemo(() => {
-    const releaseDate = new Date(props.config?.releaseDate ?? '1970.01.01');
-    const today = new Date();
-    return releaseDate.toDateString() === today.toDateString();
+    const releaseDate = dayjs(
+      props.config?.releaseDate ?? '1970.01.01',
+      'YYYY.MM.DD',
+    );
+    const today = dayjs();
+    return releaseDate.unix() === today.unix();
   }, [props.config]);
 
   useEffect(() => {
