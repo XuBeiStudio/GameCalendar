@@ -1,5 +1,6 @@
 import Game from '@/components/Game';
 import Month from '@/components/Month';
+import SideNav from '@/components/SideNav';
 import {
   GamepadManager,
   XboxAxisMap,
@@ -7,6 +8,7 @@ import {
 } from '@/utils/GamepadManager';
 import { sortGames, sortMonth } from '@/utils/functions';
 import { GameDataType } from '@/utils/types';
+import { useBoolean } from 'ahooks';
 import { Affix, App } from 'antd';
 import dayjs from 'dayjs';
 import lodash from 'lodash';
@@ -25,43 +27,51 @@ const MonthGroup: React.FC<{
   };
   container?: () => HTMLElement | Window | null;
   onClickGame?: (game: GameDataType) => void;
-}> = ({ item, container, onClickGame }) => {
+  onClickMonth?: (affixed: boolean) => void;
+}> = ({ item, container, onClickGame, onClickMonth }) => {
   const [closed, setClosed] = useState(false);
 
   return (
-    <div className="pb-4">
-      <Month value={item.month} container={container} closed={closed} />
+    <div className="flex justify-center">
       <div
-        id={`month_${item.month}`}
-        className="absolute"
+        className="w-full"
         style={{
-          top: '1px',
+          maxWidth: '32rem',
         }}
-      />
-      <div className="flex justify-center">
-        <div
-          className="w-full px-6 flex flex-col gap-y-4"
-          style={{
-            maxWidth: '30rem',
-          }}
-        >
-          {sortGames(item.games)
-            .reverse()
-            .map((game, index) => (
-              <Game
-                key={`${item.month}_${index}`}
-                config={game}
-                onClick={() => onClickGame?.(game)}
-              />
-            ))}
+      >
+        <div className="pb-6">
+          <Month
+            value={item.month}
+            container={container}
+            closed={closed}
+            onClick={(affixed) => onClickMonth?.(affixed)}
+          />
+          <div
+            id={`month_${item.month}`}
+            className="absolute"
+            style={{
+              top: '2px',
+            }}
+          />
+          <div className="px-10 pt-2 flex flex-col gap-y-4">
+            {sortGames(item.games)
+              .reverse()
+              .map((game, index) => (
+                <Game
+                  key={`${item.month}_${index}`}
+                  config={game}
+                  onClick={() => onClickGame?.(game)}
+                />
+              ))}
+          </div>
+          <Affix
+            onChange={(affixed) => setClosed(affixed ?? false)}
+            target={container ?? (() => window)}
+          >
+            <div />
+          </Affix>
         </div>
       </div>
-      <Affix
-        onChange={(affixed) => setClosed(affixed ?? false)}
-        target={container ?? (() => window)}
-      >
-        <div />
-      </Affix>
     </div>
   );
 };
@@ -75,6 +85,7 @@ const Component: React.FC<{
   const { message } = App.useApp();
   const behaviorInstance = useRef<GamepadManager>();
   const ctx = useContext(GameListCtx);
+  const [openSider, { toggle: toggleSider }] = useBoolean(false);
 
   const months = useMemo(() => {
     let result: {
@@ -262,15 +273,42 @@ const Component: React.FC<{
 
   return (
     <div>
-      {(months ?? []).map((item, index) => (
-        <div key={`${item.month}_${index}`} className="relative">
-          <MonthGroup
-            item={item}
-            container={props.container}
-            onClickGame={props.onClickGame}
-          />
+      <div className={`flex justify-center`}>
+        <div
+          className="w-full z-30 flex justify-end"
+          style={{
+            maxWidth: '32rem',
+          }}
+        >
+          <div
+            className={`fixed top-24 mr-2 transition duration-150 ease-in-out ${
+              openSider ? 'visible translate-y-0' : 'invisible -translate-y-6'
+            }`}
+          >
+            <SideNav games={props.data ?? []} />
+          </div>
         </div>
-      ))}
+      </div>
+      <div>
+        {(months ?? []).map((item, index) => (
+          <div key={`${item.month}_${index}`} className="relative">
+            <MonthGroup
+              item={item}
+              container={props.container}
+              onClickGame={props.onClickGame}
+              onClickMonth={(affixed) => {
+                if (affixed) {
+                  toggleSider();
+                } else {
+                  document
+                    .getElementById(`month_${item.month}`)
+                    ?.scrollIntoView();
+                }
+              }}
+            />
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

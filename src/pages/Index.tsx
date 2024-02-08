@@ -77,33 +77,8 @@ const Page: React.FC = () => {
         </Space.Compact>
       </Modal>
       <div className="flex justify-center">
-        <div className="w-full max-w-128">
-          <div className="fixed left-4 bottom-4">
-            <GELogo
-              width={256}
-              height={256}
-              style={{
-                fill: isDark ? '#555' : '#ccc',
-                stroke: isDark ? '#555' : '#ccc',
-              }}
-            />
-          </div>
-        </div>
-      </div>
-      <Skeleton loading={isLoading} active>
-        <GameListCtx.Provider value={new GameListContext()}>
-          <GameList
-            data={gameDatas}
-            onClickGame={(game) => {
-              history.push(`/game/${game.id}`);
-            }}
-            autoScroll={true}
-          />
-        </GameListCtx.Provider>
-      </Skeleton>
-      <div className="fixed left-0 right-0 top-2 z-40">
-        <div className="flex justify-center">
-          <div className="w-full max-w-128 px-6 py-2">
+        <div className="w-full max-w-128 px-6 py-2">
+          <div className="fixed top-4 z-40">
             <Dropdown
               trigger={['click']}
               menu={{
@@ -174,6 +149,31 @@ const Page: React.FC = () => {
           </div>
         </div>
       </div>
+      <div className="flex justify-center">
+        <div className="w-full max-w-128">
+          <div className="fixed left-4 bottom-4">
+            <GELogo
+              width={256}
+              height={256}
+              style={{
+                fill: isDark ? '#555' : '#ccc',
+                stroke: isDark ? '#555' : '#ccc',
+              }}
+            />
+          </div>
+        </div>
+      </div>
+      <Skeleton loading={isLoading} active>
+        <GameListCtx.Provider value={new GameListContext()}>
+          <GameList
+            data={gameDatas}
+            onClickGame={(game) => {
+              history.push(`/game/${game.id}`);
+            }}
+            autoScroll={true}
+          />
+        </GameListCtx.Provider>
+      </Skeleton>
     </div>
   );
 };
