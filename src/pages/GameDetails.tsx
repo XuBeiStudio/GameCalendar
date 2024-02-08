@@ -161,7 +161,7 @@ const Page: React.FC = () => {
                     </div>
                     <div>
                       <Dropdown
-                        trigger={['click', 'hover', 'contextMenu']}
+                        trigger={['click']}
                         menu={{
                           items: [
                             {
@@ -170,7 +170,7 @@ const Page: React.FC = () => {
                               icon: <GithubOutlined />,
                               onClick: () => {
                                 window.location.href =
-                                  'https://github.com/liziyi0914/GameCalendar';
+                                  'https://github.com/XuBeiStudio/GameCalendar';
                               },
                             },
                             {
