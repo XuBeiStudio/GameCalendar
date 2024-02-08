@@ -2,13 +2,10 @@ import { GAME_ASSETS } from '@/utils/constants';
 import { GameDataType, GameDetailsType } from '@/utils/types';
 import { request } from '@@/exports';
 
-const host =
-  process?.env?.NODE_ENV === 'development'
-    ? 'http://localhost:8000'
-    : GAME_ASSETS;
+const host = process?.env?.NODE_ENV === 'development' ? '' : GAME_ASSETS;
 
 const isDEV = process?.env?.NODE_ENV === 'development';
-const DEV_HOST = 'http://localhost:8000';
+const DEV_HOST = '';
 
 export const getGames = async () => {
   const games = await request<GameDataType[]>(host + '/games.json');
