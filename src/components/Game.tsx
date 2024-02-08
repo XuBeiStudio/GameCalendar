@@ -99,11 +99,14 @@ const Game: React.FC<{
               <Image
                 src={props.config.logo}
                 className="object-cover"
-                height="4rem"
                 alt="logo"
                 loading="lazy"
                 preview={false}
                 fallback={FallbackImg}
+                style={{
+                  height: '4rem',
+                  width: 'auto',
+                }}
               />
             )}
           </div>

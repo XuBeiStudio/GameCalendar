@@ -21,9 +21,11 @@
     "ahooks": "^3.7.10",
     "antd": "^5.4.0",
     "dayjs": "^1.11.10",
+    "eruda": "^3.0.1",
     "ics": "^3.7.2",
     "lodash": "^4.17.21",
     "react-copy-to-clipboard": "^5.1.0",
+    "react-device-detect": "^2.2.3",
     "react-lazyload": "^3.2.0",
     "uuid": "^9.0.1"
   },

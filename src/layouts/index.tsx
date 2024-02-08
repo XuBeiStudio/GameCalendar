@@ -3,7 +3,9 @@ import { VerticalAlignTopOutlined } from '@ant-design/icons';
 import { css } from '@emotion/css';
 import { useModel } from '@umijs/max';
 import { App, Button, ConfigProvider, FloatButton, Modal, theme } from 'antd';
+import eruda from 'eruda';
 import React, { useEffect, useState } from 'react';
+import { isSafari } from 'react-device-detect';
 import { Outlet } from 'umi';
 import './index.less';
 
@@ -67,6 +69,14 @@ const Layout: React.FC = () => {
 
   useEffect(() => {
     setSupportLocales(getAllLocales());
+
+    if (
+      (process.env.NODE_ENV === 'development' ||
+        window.location.href.includes('__debug_eruda=1')) &&
+      eruda
+    ) {
+      eruda.init();
+    }
   }, []);
 
   return (
@@ -74,11 +84,21 @@ const Layout: React.FC = () => {
       theme={{
         algorithm: isDark ? theme.darkAlgorithm : theme.defaultAlgorithm,
         token: {
-          fontFamily: '"MiSans VF", system-ui, sans-serif',
+          fontFamily: isSafari
+            ? '"San Francisco", "Helvetica Neue", "PingFang SC", system-ui, sans-serif'
+            : '"MiSans VF", system-ui, sans-serif',
         },
       }}
     >
       <Helmet>
+        <html
+          //@ts-ignore
+          style={`font-family: ${
+            isSafari
+              ? '"San Francisco", "Helvetica Neue", "PingFang SC"'
+              : '"MiSans VF", '
+          }system-ui, sans-serif;scroll-behavior: smooth;`}
+        />
         <title>{i18n.formatMessage({ id: 'site' })}</title>
       </Helmet>
       <App>
