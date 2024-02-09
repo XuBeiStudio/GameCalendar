@@ -11,3 +11,9 @@
 /dist
 /.mfsu
 .swc
+
+public/*.ics
+public/games
+public/games.json
+public/games_fixed.json
+public/assets/fonts/MiSans

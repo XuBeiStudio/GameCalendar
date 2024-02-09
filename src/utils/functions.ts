@@ -1,34 +1,31 @@
 import { DataType, GameDataType } from '@/utils/types';
+import dayjs from 'dayjs';
 
 export const sortMonth: (months: DataType) => DataType = (months) => {
   return months.sort((a, b) => {
-    let dateA = new Date(a.month ?? '');
-    let dateB = new Date(b.month ?? '');
-    return dateA.getTime() - dateB.getTime();
+    let dateA = dayjs(a.month ?? '', 'YYYY.MM');
+    let dateB = dayjs(b.month ?? '', 'YYYY.MM');
+    return dateA.unix() - dateB.unix();
   });
 };
 
 export const sortGames: (games: GameDataType[]) => GameDataType[] = (games) => {
-  let today = new Date();
-  today.setHours(0);
-  today.setMinutes(0);
-  today.setSeconds(0);
-  today.setMilliseconds(0);
+  let today = dayjs().hour(0).minute(0).second(0).millisecond(0).unix();
 
   return games.sort((a, b) => {
-    let dateA = new Date(a.releaseDate ?? '');
-    let dateB = new Date(b.releaseDate ?? '');
+    let dateA = dayjs(a.releaseDate ?? '', 'YYYY.MM.DD').unix();
+    let dateB = dayjs(b.releaseDate ?? '', 'YYYY.MM.DD').unix();
 
-    let ret = dateA.getTime() - dateB.getTime();
+    let ret = dateA - dateB;
 
     if (ret === 0) {
       return a.id?.localeCompare(b.id ?? '') ?? 0;
     }
 
-    if (dateA.getTime() === today.getTime()) {
+    if (dateA === today) {
       return 1;
     }
-    if (dateB.getTime() === today.getTime()) {
+    if (dateB === today) {
       return -1;
     }
 

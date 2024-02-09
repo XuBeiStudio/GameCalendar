@@ -1,8 +1,9 @@
 import Game from '@/components/Game';
 import Markdown from '@/components/Markdown';
 import { parseBadge } from '@/pages/GameDetails';
+import { getGames } from '@/utils/api';
 import { GameDataType } from '@/utils/types';
-import { request, useQuery } from '@@/exports';
+import { useQuery } from '@@/exports';
 import {
   ProForm,
   ProFormCheckbox,
@@ -41,7 +42,7 @@ const Page: React.FC = () => {
 
   const { data: baseData, isLoading } = useQuery(
     ['gameDatas'],
-    async () => request<GameDataType[]>('/games.json'),
+    async () => getGames(),
     {
       refetchOnWindowFocus: false,
     },

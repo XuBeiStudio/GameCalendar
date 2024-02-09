@@ -3,16 +3,10 @@ import Spotify from '@/components/BadgeComponents/Spotify';
 import Youtube from '@/components/BadgeComponents/Youtube';
 import Markdown from '@/components/Markdown';
 import PlatformIcons from '@/components/PlatformIcons';
+import { getGame, getGameMd } from '@/utils/api';
+import { SITE_ASSETS } from '@/utils/constants';
 import { getI18n, hasWebShare } from '@/utils/functions';
-import { GameDetailsType } from '@/utils/types';
-import {
-  Helmet,
-  request,
-  useIntl,
-  useMatch,
-  useModel,
-  useQuery,
-} from '@@/exports';
+import { Helmet, useIntl, useMatch, useModel, useQuery } from '@@/exports';
 import {
   CalendarOutlined,
   GithubOutlined,
@@ -99,14 +93,14 @@ const Page: React.FC = () => {
     isLoading: isLoadingGameData,
     isError: isGameDataError,
   } = useQuery(['game', gameId, 'json'], async ({ queryKey }) =>
-    request<GameDetailsType>(`/games/${queryKey[1]}/game.json`),
+    getGame(queryKey[1]),
   );
   const {
     data: gameMd,
     isLoading: isLoadingGameMd,
     isError: isGameMdError,
   } = useQuery(['game', gameId, 'md'], async ({ queryKey }) =>
-    request<string>(`/games/${queryKey[1]}/game.md`),
+    getGameMd(queryKey[1]),
   );
 
   return (
@@ -167,7 +161,7 @@ const Page: React.FC = () => {
                     </div>
                     <div>
                       <Dropdown
-                        trigger={['click', 'hover', 'contextMenu']}
+                        trigger={['click']}
                         menu={{
                           items: [
                             {
@@ -176,7 +170,7 @@ const Page: React.FC = () => {
                               icon: <GithubOutlined />,
                               onClick: () => {
                                 window.location.href =
-                                  'https://github.com/liziyi0914/GameCalendar';
+                                  'https://github.com/XuBeiStudio/GameCalendar';
                               },
                             },
                             {
@@ -287,7 +281,7 @@ const Page: React.FC = () => {
                                     .utc()
                                     .format('YYYYMMDD[T]HHmmss[Z]') as string,
                                   duration: { hours: 24 },
-                                  url: 'https://game-calendar.liziyi0914.com',
+                                  url: SITE_ASSETS,
                                   organizer: {
                                     name: '序碑工作室',
                                     email: 'games@xu-bei.cn',
