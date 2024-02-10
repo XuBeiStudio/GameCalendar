@@ -9,6 +9,7 @@ import { getI18n, hasWebShare } from '@/utils/functions';
 import { Helmet, useIntl, useMatch, useModel, useQuery } from '@@/exports';
 import {
   CalendarOutlined,
+  GiftOutlined,
   GithubOutlined,
   MenuOutlined,
   MessageOutlined,
@@ -16,13 +17,16 @@ import {
 } from '@ant-design/icons';
 import { ArrowLeft, Moon, SunOne } from '@icon-park/react';
 import { history } from '@umijs/max';
-import { Affix, Button, Dropdown, Empty, Skeleton, theme } from 'antd';
+import { useInterval } from 'ahooks';
+import { Affix, Alert, Button, Dropdown, Empty, Skeleton, theme } from 'antd';
 import dayjs from 'dayjs';
+import duration from 'dayjs/plugin/duration';
 import utc from 'dayjs/plugin/utc';
 import * as ics from 'ics';
 import React, { useMemo, useRef, useState } from 'react';
 
 dayjs.extend(utc);
+dayjs.extend(duration);
 
 const { useToken } = theme;
 
@@ -74,6 +78,93 @@ export const parseBadge = (badge: { type: string; value: string }) => {
       return <Youtube id={badge.value} />;
     default:
       return null;
+  }
+};
+
+const ReleaseCountdown: React.FC<{ releaseDate?: string }> = (props) => {
+  const [deltaInfo, setDeltaInfo] = useState<{
+    type: 'soon' | 'today' | 'released';
+    msg?: string;
+  }>();
+  const updateInterval = useMemo(() => {
+    let now = dayjs('2024.02.16');
+    let du = dayjs.duration(dayjs(props.releaseDate ?? '1970.01.01').diff(now));
+
+    if (du.asDays() < -1) {
+      return undefined;
+    }
+
+    return 1000;
+  }, [props]);
+  const releaseTime = useMemo(
+    () => dayjs(props.releaseDate ?? '1970.01.01'),
+    [props.releaseDate],
+  );
+  const surprise = useMemo(
+    () => ['🎉', '✨', '🎊'][Math.round(Math.random() * 10000) % 3],
+    [],
+  );
+
+  useInterval(
+    () => {
+      let now = dayjs();
+      let du = dayjs.duration(releaseTime.diff(now));
+      let days = du.asDays();
+
+      if (days < -1) {
+        setDeltaInfo({
+          type: 'released',
+        });
+        return;
+      } else if (days <= 0) {
+        setDeltaInfo({
+          type: 'today',
+        });
+        return;
+      }
+
+      let result = '';
+
+      if (days <= 7) {
+        result += `${du.days()} 天 ${du.hours()} 小时`;
+        if (days <= 3) {
+          result += ` ${du.minutes()} 分钟 ${du.seconds()} 秒`;
+        }
+      } else {
+        result += `${Math.ceil(du.asDays())} 天`;
+      }
+
+      setDeltaInfo({
+        type: 'soon',
+        msg: result,
+      });
+    },
+    updateInterval,
+    { immediate: true },
+  );
+
+  switch (deltaInfo?.type) {
+    case 'released':
+      return <></>;
+    case 'today':
+      return (
+        <Alert
+          type="success"
+          message={`今日发售 ${surprise}`}
+          showIcon
+          closable
+          icon={<GiftOutlined />}
+        />
+      );
+    case 'soon':
+      return (
+        <Alert
+          type="warning"
+          message={`距离游戏发售还有 ${deltaInfo?.msg}`}
+          showIcon
+          closable
+        />
+      );
   }
 };
 
@@ -252,7 +343,7 @@ const Page: React.FC = () => {
                     <></>
                   ) : (
                     <div>
-                      <div className="pb-2">
+                      <div className="py-1.5">
                         <div className="flex flex-wrap gap-x-2 gap-y-1">
                           <Button
                             icon={<CalendarOutlined />}
@@ -333,22 +424,30 @@ const Page: React.FC = () => {
                             ?.map((badge) => parseBadge(badge))}
                         </div>
                       </div>
-                      {gameData?.badges
-                        ?.filter(
-                          (b) =>
-                            b.type.startsWith('music.') ||
-                            b.type.startsWith('video.'),
-                        )
-                        ?.map((badge, index) => (
-                          <div key={`${badge.type}_${index}`} className="pb-2">
-                            {parseBadge(badge)}
-                          </div>
-                        ))}
+                      <div className="py-1.5">
+                        <ReleaseCountdown releaseDate={gameData?.releaseDate} />
+                      </div>
+                      <div className="py-1.5">
+                        {gameData?.badges
+                          ?.filter(
+                            (b) =>
+                              b.type.startsWith('music.') ||
+                              b.type.startsWith('video.'),
+                          )
+                          ?.map((badge, index) => (
+                            <div
+                              key={`${badge.type}_${index}`}
+                              className="pb-2"
+                            >
+                              {parseBadge(badge)}
+                            </div>
+                          ))}
+                      </div>
                     </div>
                   )}
                 </Skeleton>
                 <Skeleton loading={isLoadingGameMd} active>
-                  {isGameMdError ? (
+                  {isGameMdError || (gameMd ?? '') === '' ? (
                     <Empty />
                   ) : (
                     <Markdown
