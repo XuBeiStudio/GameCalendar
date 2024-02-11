@@ -63,4 +63,12 @@ export default defineConfig({
     },
   ],
   metas: [],
+  chainWebpack(memo, { env, webpack }) {
+    memo.plugin('build_info').use(
+      new webpack.DefinePlugin({
+        BUILD_TIME: new Date().getTime(),
+        BUILD_ENV: `"${env}"`,
+      }),
+    );
+  },
 });

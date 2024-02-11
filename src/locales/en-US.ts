@@ -3,7 +3,7 @@ export default {
   darkMode: 'Dark Mode',
   backToTop: 'Back to top',
   github: 'GitHub',
-  subscribe: 'Subscribe',
+  settings: 'Settings',
   copy: 'Copy',
   'copy.success': 'Successfully copied to clipboard',
   txc: '兔小巢',
