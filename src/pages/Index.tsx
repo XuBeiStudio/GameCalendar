@@ -1,13 +1,14 @@
 import { ReactComponent as XubeiLogo } from '@/assets/imgs/logo.svg';
 import { ReactComponent as GELogo } from '@/assets/imgs/logo_ge.svg';
 import GameList, { GameListContext, GameListCtx } from '@/components/GameList';
+import GithubAvatar from '@/components/GithubAvatar';
 import { getGames } from '@/utils/api';
-import { SITE_ASSETS } from '@/utils/constants';
+import { CONTRIBUTORS, MAINTAINERS, SITE_ASSETS } from '@/utils/constants';
 import { hasWebShare } from '@/utils/functions';
 import {
-  CalendarOutlined,
   GithubOutlined,
   MessageOutlined,
+  SettingOutlined,
   ShareAltOutlined,
 } from '@ant-design/icons';
 import { Moon, SunOne } from '@icon-park/react';
@@ -20,9 +21,13 @@ import {
   Modal,
   Skeleton,
   Space,
+  Tabs,
+  Tooltip,
   theme,
 } from 'antd';
-import React, { PropsWithChildren, useState } from 'react';
+import dayjs from 'dayjs';
+import lodash from 'lodash';
+import React, { PropsWithChildren, useMemo, useState } from 'react';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 const { useToken } = theme;
@@ -54,27 +59,142 @@ const Page: React.FC = () => {
     getGames(),
   );
 
-  const [openSubscribeModal, setOpenSubscribeModal] = useState(false);
+  const [openSettingsModal, setOpenSettingsModal] = useState(false);
+
+  const VERSION = useMemo(() => {
+    // @ts-ignore
+    let time = dayjs(BUILD_TIME);
+    // @ts-ignore
+    return `${BUILD_ENV}_${time.format('YYYYMMDD_HHmmss')}`;
+  }, []);
 
   return (
     <div>
       <Modal
+        title="设置"
+        open={openSettingsModal}
         destroyOnClose
-        title={i18n.formatMessage({ id: 'subscribe' })}
         footer={false}
-        open={openSubscribeModal}
-        onCancel={() => setOpenSubscribeModal(false)}
+        onCancel={() => setOpenSettingsModal(false)}
       >
-        <Space.Compact style={{ width: '100%' }}>
-          <Input
-            value={`${SITE_ASSETS}/games.ics`}
-            className="select-all"
-            onFocus={(e) => e.target.select()}
-          />
-          <CopyButton text={`${SITE_ASSETS}/games.ics`}>
-            <Button type="primary">{i18n.formatMessage({ id: 'copy' })}</Button>
-          </CopyButton>
-        </Space.Compact>
+        <Tabs
+          tabPosition="left"
+          items={[
+            {
+              key: 'calendar',
+              label: '日历',
+              children: (
+                <>
+                  <div className="pb-2 font-semibold">订阅地址</div>
+                  <Space.Compact style={{ width: '100%' }}>
+                    <Input
+                      value={`${SITE_ASSETS}/games.ics`}
+                      className="select-all"
+                      onFocus={(e) => e.target.select()}
+                    />
+                    <CopyButton text={`${SITE_ASSETS}/games.ics`}>
+                      <Button type="primary">
+                        {i18n.formatMessage({ id: 'copy' })}
+                      </Button>
+                    </CopyButton>
+                  </Space.Compact>
+                </>
+              ),
+            },
+            {
+              key: 'push',
+              label: '推送',
+              disabled: true,
+              children: null,
+            },
+            {
+              key: 'about',
+              label: '关于',
+              children: (
+                <>
+                  <div className="font-semibold pb-2 select-none">构建编号</div>
+                  <div className="pb-3 select-none">{VERSION}</div>
+                  <div className="font-semibold pb-2 select-none">Github</div>
+                  <div className="pb-3">
+                    <Button
+                      type="text"
+                      icon={<GithubOutlined />}
+                      onClick={() => {
+                        window.location.href =
+                          'https://github.com/XuBeiStudio/GameCalendar';
+                      }}
+                    >
+                      XuBeiStudio/GameCalendar
+                    </Button>
+                  </div>
+                  <div className="font-semibold pb-2 select-none">
+                    主要贡献者
+                  </div>
+                  <div className="pb-3">
+                    <div className="flex flex-col gap-y-2">
+                      {MAINTAINERS.map((username) => (
+                        <div
+                          className="flex items-center gap-x-2"
+                          key={username}
+                        >
+                          <div>
+                            <GithubAvatar username={username} />
+                          </div>
+                          <div className="flex-grow select-none">
+                            {username}
+                          </div>
+                          <Button
+                            type="text"
+                            icon={<GithubOutlined />}
+                            onClick={() =>
+                              (window.location.href = `https://github.com/${username}`)
+                            }
+                          />
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  <div className="font-semibold pb-2 select-none">维护者</div>
+                  <div className="pb-3">
+                    <div className="flex flex-col gap-y-2 group">
+                      {lodash
+                        .values(
+                          lodash.groupBy(
+                            CONTRIBUTORS.map((obj: any, i) => ({
+                              item: obj,
+                              index: i,
+                            })),
+                            (o: any) => Math.floor(o.index / 5),
+                          ),
+                        )
+                        .map((group, i) => (
+                          <div key={i} className="flex">
+                            {group
+                              .map((o) => o.item)
+                              .map((username: string, j) => (
+                                <div
+                                  key={`${i}-${j}`}
+                                  className="-me-4 transition-all duration-100 ease-in-out translate-x-0 group-hover:me-1"
+                                >
+                                  <Tooltip title={username}>
+                                    <GithubAvatar
+                                      username={username}
+                                      onClick={() => {
+                                        window.location.href = `https://github.com/${username}`;
+                                      }}
+                                    />
+                                  </Tooltip>
+                                </div>
+                              ))}
+                          </div>
+                        ))}
+                    </div>
+                  </div>
+                </>
+              ),
+            },
+          ]}
+        />
       </Modal>
       <div className="flex justify-center">
         <div className="w-full max-w-128 px-6 py-2">
@@ -118,11 +238,11 @@ const Page: React.FC = () => {
                     },
                   },
                   {
-                    key: 'subscribe',
-                    label: i18n.formatMessage({ id: 'subscribe' }),
-                    icon: <CalendarOutlined />,
+                    key: 'settings',
+                    label: i18n.formatMessage({ id: 'settings' }),
+                    icon: <SettingOutlined />,
                     onClick: () => {
-                      setOpenSubscribeModal(true);
+                      setOpenSettingsModal(true);
                     },
                   },
                   {

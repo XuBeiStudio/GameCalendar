@@ -421,7 +421,9 @@ const Page: React.FC = () => {
                                   b.type.startsWith('video.')
                                 ),
                             )
-                            ?.map((badge) => parseBadge(badge))}
+                            ?.map((badge) => (
+                              <div key={badge.type}>{parseBadge(badge)}</div>
+                            ))}
                         </div>
                       </div>
                       <div className="py-1.5">
