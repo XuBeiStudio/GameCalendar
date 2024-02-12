@@ -1,9 +1,14 @@
+import { PushSettingsType } from '@/components/PushSettings';
+import { refreshWebPush } from '@/utils/api';
 import { Helmet, getAllLocales, setLocale, useIntl } from '@@/exports';
 import { VerticalAlignTopOutlined } from '@ant-design/icons';
 import { css } from '@emotion/css';
 import { useModel } from '@umijs/max';
+import { useLocalStorageState } from 'ahooks';
 import { App, Button, ConfigProvider, FloatButton, Modal, theme } from 'antd';
+import dayjs from 'dayjs';
 import eruda from 'eruda';
+import { onMessage } from 'firebase/messaging';
 import React, { useEffect, useState } from 'react';
 import { isSafari } from 'react-device-detect';
 import { Outlet } from 'umi';
@@ -18,6 +23,52 @@ const langMap: Record<string, string> = {
 
 const Page: React.FC = () => {
   const { token } = useToken();
+  const [pushSettings, setPushSettings] =
+    useLocalStorageState<PushSettingsType | null>('pushSettings', {
+      defaultValue: null,
+    });
+  const { messaging, tryGetMessaging } = useModel('firebaseModel');
+  const { notification } = App.useApp();
+
+  useEffect(() => {
+    if (pushSettings?.updatedAt) {
+      let updatedAt = pushSettings?.updatedAt;
+      if (dayjs().diff(dayjs(updatedAt), 'day') > 1) {
+        refreshWebPush(
+          pushSettings.platform,
+          pushSettings.token,
+          pushSettings.secret,
+        ).then((result) => {
+          if (result.code === 200) {
+            setPushSettings({
+              ...pushSettings,
+              updatedAt: new Date().getTime(),
+            });
+          }
+        });
+      }
+
+      let unsubscribe = () => {};
+      tryGetMessaging().then(() => {
+        if (messaging.current) {
+          console.log(messaging);
+          unsubscribe = onMessage?.(messaging.current, (payload) => {
+            console.log('Message received. ', payload);
+            notification.info({
+              message: payload.notification?.title,
+              description: payload.notification?.body,
+              duration: 0,
+            });
+          });
+          console.log(unsubscribe);
+        }
+      });
+
+      return () => {
+        unsubscribe();
+      };
+    }
+  }, [pushSettings, notification]);
 
   return (
     <div
@@ -77,6 +128,11 @@ const Layout: React.FC = () => {
     ) {
       eruda.init();
     }
+
+    // @ts-ignore
+    window.recaptchaOptions = {
+      useRecaptchaNet: true,
+    };
   }, []);
 
   return (
