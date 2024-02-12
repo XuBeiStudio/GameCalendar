@@ -27,8 +27,16 @@ const { useToken } = theme;
 const Component: React.FC = () => {
   const { token } = useToken();
   const { message } = App.useApp();
-  const { tryGetMessaging, tryGetMessagingToken, tryDeleteMessagingToken } =
-    useModel('firebaseModel');
+  const {
+    tryGetMessaging: fcmTryGetMessaging,
+    tryGetMessagingToken: fcmTryGetMessagingToken,
+    tryDeleteMessagingToken: fcmTryDeleteMessagingToken,
+  } = useModel('firebaseModel');
+  const {
+    tryGetMessaging: hmsTryGetMessaging,
+    tryGetMessagingToken: hmsTryGetMessagingToken,
+    tryDeleteMessagingToken: hmsTryDeleteMessagingToken,
+  } = useModel('huaweiModel');
   const [settings, setSettings] = useLocalStorageState<PushSettingsType | null>(
     'pushSettings',
     {
@@ -49,17 +57,24 @@ const Component: React.FC = () => {
   }, [settings]);
 
   const register = useCallback(async () => {
-    let tcaptcha = await getTCaptchaAsync();
+    let tcaptcha;
+    try {
+      tcaptcha = await getTCaptchaAsync();
 
-    if (tcaptcha.ret !== 0) {
-      message.error('人机验证失败');
+      if (tcaptcha.ret !== 0) {
+        message.error('人机验证失败');
+        return;
+      }
+    } catch (e) {
+      message.error('人机验证失败 ' + e);
       return;
     }
+    console.log(2);
 
     if (currentPlatform === 'firebase') {
       try {
-        await tryGetMessaging();
-        let token = await tryGetMessagingToken();
+        await fcmTryGetMessaging();
+        let token = await fcmTryGetMessagingToken();
 
         let resp = await registerWebPush(
           currentPlatform,
@@ -84,18 +99,54 @@ const Component: React.FC = () => {
           message.error(`注册失败: ${resp.data}`);
         }
       } catch (e) {
-        message.error(e as string);
+        console.log(e);
+        message.error('注册失败 ' + e);
       }
     } else if (currentPlatform === 'huawei') {
-      //
+      try {
+        await hmsTryGetMessaging();
+        let token = await hmsTryGetMessagingToken();
+
+        let resp = await registerWebPush(
+          currentPlatform,
+          token,
+          JSON.stringify({
+            ticket: tcaptcha.ticket,
+            randstr: tcaptcha.randstr,
+          }),
+        );
+
+        if (resp.code === 200) {
+          message.success('注册成功');
+
+          setSettings({
+            platform: 'huawei',
+            triggers: ['0'],
+            secret: resp.data ?? '',
+            token: token,
+            updatedAt: new Date().getTime(),
+          });
+        } else {
+          message.error(`注册失败: ${resp.data}`);
+        }
+      } catch (e) {
+        console.log(e);
+        message.error('注册失败 ' + e);
+      }
     }
   }, [currentPlatform]);
 
   const update = useCallback(async () => {
-    let tcaptcha = await getTCaptchaAsync();
+    let tcaptcha;
+    try {
+      tcaptcha = await getTCaptchaAsync();
 
-    if (tcaptcha.ret !== 0) {
-      message.error('人机验证失败');
+      if (tcaptcha.ret !== 0) {
+        message.error('人机验证失败');
+        return;
+      }
+    } catch (e) {
+      message.error('人机验证失败 ' + e);
       return;
     }
 
@@ -120,22 +171,45 @@ const Component: React.FC = () => {
   }, [settings, settingsCache]);
 
   const del = useCallback(async () => {
-    let tcaptcha = await getTCaptchaAsync();
-
-    if (tcaptcha.ret !== 0) {
-      message.error('人机验证失败');
-      return;
-    }
-
+    let tcaptcha;
     try {
-      await tryGetMessaging();
+      tcaptcha = await getTCaptchaAsync();
 
-      if (!(await tryDeleteMessagingToken())) {
-        message.error('注销失败');
+      if (tcaptcha.ret !== 0) {
+        message.error('人机验证失败');
         return;
       }
     } catch (e) {
-      message.error('注销失败 ' + e);
+      message.error('人机验证失败 ' + e);
+      return;
+    }
+
+    if (settings?.platform === 'firebase') {
+      try {
+        await fcmTryGetMessaging();
+
+        if (!(await fcmTryDeleteMessagingToken())) {
+          message.error('注销失败');
+          return;
+        }
+      } catch (e) {
+        message.error('注销失败 ' + e);
+        return;
+      }
+    } else if (settings?.platform === 'huawei') {
+      try {
+        await hmsTryGetMessaging();
+
+        if (!(await hmsTryDeleteMessagingToken(settings?.token))) {
+          message.error('注销失败');
+          return;
+        }
+      } catch (e) {
+        message.error('注销失败 ' + e);
+        return;
+      }
+    } else {
+      message.error('注销失败: 未知平台');
       return;
     }
 
@@ -165,9 +239,7 @@ const Component: React.FC = () => {
               onChange={(e) => setCurrentPlatform(e.target.value)}
             >
               <Radio value="firebase">Firebase</Radio>
-              <Radio value="huawei" disabled>
-                华为
-              </Radio>
+              <Radio value="huawei">华为</Radio>
             </Radio.Group>
           </div>
           <div>

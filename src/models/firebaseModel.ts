@@ -31,6 +31,9 @@ const firebaseModel = () => {
 
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const tryGetMessaging = useCallback(async () => {
+    if (!Notification) {
+      throw new Error('浏览器不支持Notification');
+    }
     let permission = await Notification.requestPermission();
     if (permission === 'granted') {
       console.log('granted');

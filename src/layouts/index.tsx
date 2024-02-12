@@ -27,7 +27,10 @@ const Page: React.FC = () => {
     useLocalStorageState<PushSettingsType | null>('pushSettings', {
       defaultValue: null,
     });
-  const { messaging, tryGetMessaging } = useModel('firebaseModel');
+  const { messaging: fcmMessaging, tryGetMessaging: fcmTryGetMessaging } =
+    useModel('firebaseModel');
+  const { messaging: hmsMessaging, tryGetMessaging: hmsTryGetMessaging } =
+    useModel('huaweiModel');
   const { notification } = App.useApp();
 
   useEffect(() => {
@@ -49,20 +52,32 @@ const Page: React.FC = () => {
       }
 
       let unsubscribe = () => {};
-      tryGetMessaging().then(() => {
-        if (messaging.current) {
-          console.log(messaging);
-          unsubscribe = onMessage?.(messaging.current, (payload) => {
-            console.log('Message received. ', payload);
-            notification.info({
-              message: payload.notification?.title,
-              description: payload.notification?.body,
-              duration: 0,
+      if (pushSettings.platform === 'firebase') {
+        fcmTryGetMessaging().then(() => {
+          if (fcmMessaging.current) {
+            console.log(fcmMessaging);
+            unsubscribe = onMessage?.(fcmMessaging.current, (payload) => {
+              console.log('Message received. ', payload);
+              notification.info({
+                message: payload.notification?.title,
+                description: payload.notification?.body,
+                duration: 0,
+              });
             });
-          });
-          console.log(unsubscribe);
-        }
-      });
+            console.log(unsubscribe);
+          }
+        });
+      } else if (pushSettings.platform === 'huawei') {
+        hmsTryGetMessaging().then(() => {
+          if (hmsMessaging.current) {
+            console.log(hmsMessaging);
+            unsubscribe = hmsMessaging.current.onMessage((payload: any) => {
+              console.log('Message received. ', payload);
+            });
+            console.log(unsubscribe);
+          }
+        });
+      }
 
       return () => {
         unsubscribe();

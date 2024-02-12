@@ -8,7 +8,7 @@ const isDEV = process?.env?.NODE_ENV === 'development';
 const DEV_HOST = '';
 
 const API_HOST =
-  process?.env?.NODE_ENV === 'development' ? 'http://127.0.0.1:8080' : API;
+  process?.env?.NODE_ENV === 'development' ? 'http://192.168.31.224:8080' : API;
 
 export const getGames = async () => {
   const games = await request<GameDataType[]>(host + '/games.json');
