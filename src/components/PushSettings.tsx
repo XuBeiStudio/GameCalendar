@@ -1,9 +1,9 @@
 import { registerWebPush, unregisterWebPush, updateWebPush } from '@/utils/api';
+import { getTCaptchaAsync } from '@/utils/functions';
 import { useModel } from '@umijs/max';
 import { useBoolean, useLocalStorageState } from 'ahooks';
 import { App, Button, Checkbox, Popconfirm, Radio, theme } from 'antd';
-import React, { useCallback, useEffect, useRef, useState } from 'react';
-import ReCAPTCHA from 'react-google-recaptcha';
+import React, { useCallback, useEffect, useState } from 'react';
 
 type Triggers = '0' | '9' | '-1D0' | '-1D9';
 
@@ -27,7 +27,6 @@ const { useToken } = theme;
 const Component: React.FC = () => {
   const { token } = useToken();
   const { message } = App.useApp();
-  const { isDark } = useModel('themeModel');
   const { tryGetMessaging, tryGetMessagingToken, tryDeleteMessagingToken } =
     useModel('firebaseModel');
   const [settings, setSettings] = useLocalStorageState<PushSettingsType | null>(
@@ -37,9 +36,7 @@ const Component: React.FC = () => {
     },
   );
 
-  const recaptchaRef = useRef<ReCAPTCHA | null>(null);
   const [currentPlatform, setCurrentPlatform] = useState('firebase');
-  const [recaptchaValue, setRecaptchaValue] = useState<string | null>(null);
   const [settingsCache, setSettingsCache] = useState<PushSettingsType | null>(
     null,
   );
@@ -52,8 +49,10 @@ const Component: React.FC = () => {
   }, [settings]);
 
   const register = useCallback(async () => {
-    if (!recaptchaValue) {
-      message.error('请先完成人机验证');
+    let tcaptcha = await getTCaptchaAsync();
+
+    if (tcaptcha.ret !== 0) {
+      message.error('人机验证失败');
       return;
     }
 
@@ -65,7 +64,10 @@ const Component: React.FC = () => {
         let resp = await registerWebPush(
           currentPlatform,
           token,
-          recaptchaValue,
+          JSON.stringify({
+            ticket: tcaptcha.ticket,
+            randstr: tcaptcha.randstr,
+          }),
         );
 
         if (resp.code === 200) {
@@ -84,17 +86,16 @@ const Component: React.FC = () => {
       } catch (e) {
         message.error(e as string);
       }
-
-      recaptchaRef.current?.reset();
-      setRecaptchaValue(null);
     } else if (currentPlatform === 'huawei') {
       //
     }
-  }, [currentPlatform, recaptchaValue, recaptchaRef]);
+  }, [currentPlatform]);
 
   const update = useCallback(async () => {
-    if (!recaptchaValue) {
-      message.error('请先完成人机验证');
+    let tcaptcha = await getTCaptchaAsync();
+
+    if (tcaptcha.ret !== 0) {
+      message.error('人机验证失败');
       return;
     }
 
@@ -105,7 +106,7 @@ const Component: React.FC = () => {
     let resp = await updateWebPush(
       settings?.platform ?? 'firebase',
       settings?.token ?? '',
-      recaptchaValue ?? '',
+      JSON.stringify({ ticket: tcaptcha.ticket, randstr: tcaptcha.randstr }),
       settings?.secret ?? '',
       triggers,
     );
@@ -116,13 +117,13 @@ const Component: React.FC = () => {
     }
 
     setSettings(settingsCache);
-    setRecaptchaValue(null);
-    recaptchaRef.current?.reset();
-  }, [recaptchaValue, recaptchaRef, settings, settingsCache]);
+  }, [settings, settingsCache]);
 
   const del = useCallback(async () => {
-    if (!recaptchaValue) {
-      message.error('请先完成人机验证');
+    let tcaptcha = await getTCaptchaAsync();
+
+    if (tcaptcha.ret !== 0) {
+      message.error('人机验证失败');
       return;
     }
 
@@ -141,7 +142,7 @@ const Component: React.FC = () => {
     let resp = await unregisterWebPush(
       settings?.platform ?? 'firebase',
       settings?.token ?? '',
-      recaptchaValue ?? '',
+      JSON.stringify({ ticket: tcaptcha.ticket, randstr: tcaptcha.randstr }),
       settings?.secret ?? '',
     );
 
@@ -151,7 +152,7 @@ const Component: React.FC = () => {
     } else {
       message.error(`注销失败: ${resp.data}`);
     }
-  }, [recaptchaValue, recaptchaRef, settings]);
+  }, [settings]);
 
   return (
     <div>
@@ -168,16 +169,6 @@ const Component: React.FC = () => {
                 华为
               </Radio>
             </Radio.Group>
-          </div>
-          <div className="pb-3">
-            <ReCAPTCHA
-              ref={recaptchaRef}
-              sitekey="6Lf9em4pAAAAAPfxzmzaTE9eEC5LODrobZih3b3_"
-              onChange={(value) => {
-                setRecaptchaValue(value);
-              }}
-              theme={isDark ? 'dark' : 'light'}
-            />
           </div>
           <div>
             <Button
@@ -231,16 +222,6 @@ const Component: React.FC = () => {
                 <Checkbox value="-1D9">游戏发售日前一天9时</Checkbox>
               </div>
             </Checkbox.Group>
-          </div>
-          <div className="pb-3">
-            <ReCAPTCHA
-              ref={recaptchaRef}
-              sitekey="6Lf9em4pAAAAAPfxzmzaTE9eEC5LODrobZih3b3_"
-              onChange={(value) => {
-                setRecaptchaValue(value);
-              }}
-              theme={isDark ? 'dark' : 'light'}
-            />
           </div>
           <div className="flex gap-x-2">
             <Button
