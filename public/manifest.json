@@ -19,6 +19,7 @@
   "categories": ["utilities"],
   "id": "gaming_epochs",
   "description": "游历年轴 Gaming Epochs",
+  "gcm_sender_id": "103953800507",
   "edge_side_panel": {
     "preferred_width": 500
   },

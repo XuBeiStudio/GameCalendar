@@ -2,6 +2,7 @@ import { ReactComponent as XubeiLogo } from '@/assets/imgs/logo.svg';
 import { ReactComponent as GELogo } from '@/assets/imgs/logo_ge.svg';
 import GameList, { GameListContext, GameListCtx } from '@/components/GameList';
 import GithubAvatar from '@/components/GithubAvatar';
+import PushSettings from '@/components/PushSettings';
 import { getGames } from '@/utils/api';
 import { CONTRIBUTORS, MAINTAINERS, SITE_ASSETS } from '@/utils/constants';
 import { hasWebShare } from '@/utils/functions';
@@ -103,9 +104,8 @@ const Page: React.FC = () => {
             },
             {
               key: 'push',
-              label: '推送',
-              disabled: true,
-              children: null,
+              label: '推送(测试)',
+              children: <PushSettings />,
             },
             {
               key: 'about',
