@@ -61,3 +61,11 @@ jobs:
           secret_key: ${{ secrets.TENCENT_SECRET_KEY }}
           bucket: ${{ secrets.TENCENT_BUCKET }}
           region: ap-guangzhou
+
+      - name: Flush CDN 🧹
+        env:
+          TENCENT_SECRET_ID: ${{ secrets.TENCENT_SECRET_ID }}
+          TENCENT_SECRET_KEY: ${{ secrets.TENCENT_SECRET_KEY }}
+        run: |
+          chmod +x ./refresh_cdn.sh
+          ./refresh_cdn.sh

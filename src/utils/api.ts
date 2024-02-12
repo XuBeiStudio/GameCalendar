@@ -56,14 +56,14 @@ function requestWebAPI<T>(
 export const registerWebPush = (
   type: string,
   token: string,
-  recaptchaToken: string,
+  captchaToken: string,
 ) => {
   return requestWebAPI<string>('/subscription/register', {
     method: 'POST',
     data: {
       platform: type,
       token,
-      captcha: recaptchaToken,
+      captcha: captchaToken,
     },
   });
 };
@@ -71,7 +71,7 @@ export const registerWebPush = (
 export const unregisterWebPush = (
   type: string,
   token: string,
-  recaptchaToken: string,
+  captchaToken: string,
   secret: string,
 ) => {
   return requestWebAPI('/subscription/unregister', {
@@ -79,7 +79,7 @@ export const unregisterWebPush = (
     data: {
       platform: type,
       token,
-      captcha: recaptchaToken,
+      captcha: captchaToken,
       secret,
     },
   });
@@ -99,7 +99,7 @@ export const refreshWebPush = (type: string, token: string, secret: string) => {
 export const updateWebPush = (
   type: string,
   token: string,
-  recaptchaToken: string,
+  captchaToken: string,
   secret: string,
   triggers: number,
 ) => {
@@ -108,7 +108,7 @@ export const updateWebPush = (
     data: {
       platform: type,
       token,
-      captcha: recaptchaToken,
+      captcha: captchaToken,
       secret,
       channel: triggers,
     },

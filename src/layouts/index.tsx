@@ -128,11 +128,6 @@ const Layout: React.FC = () => {
     ) {
       eruda.init();
     }
-
-    // @ts-ignore
-    window.recaptchaOptions = {
-      useRecaptchaNet: true,
-    };
   }, []);
 
   return (

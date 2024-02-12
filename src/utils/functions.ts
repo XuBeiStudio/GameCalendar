@@ -74,3 +74,34 @@ export const getI18n: (
 export const hasWebShare: () => boolean = () => {
   return !!navigator?.share;
 };
+
+export type TCaptchaCallbackType = {
+  ret?: 0 | 2;
+  ticket?: string;
+  appid?: string;
+  bizState?: any;
+  randstr?: string;
+  errorCode?: number;
+  errorMessage?: string;
+};
+
+export const getTCaptcha: (callback: (data: TCaptchaCallbackType) => void) => {
+  show: () => void;
+  destroy: () => void;
+  getTicket: () => {
+    CaptchaAppId: string;
+    ticket: string;
+  };
+} = (callback) => {
+  // @ts-ignore
+  return new TencentCaptcha('196459992', callback, { enableDarkMode: true });
+};
+
+export const getTCaptchaAsync: () => Promise<TCaptchaCallbackType> = () => {
+  return new Promise((resolve) => {
+    let captcha = getTCaptcha((data) => {
+      resolve(data);
+    });
+    captcha.show();
+  });
+};
