@@ -3,9 +3,9 @@ import dayjs from 'dayjs';
 
 export const sortMonth: (months: DataType) => DataType = (months) => {
   return months.sort((a, b) => {
-    let dateA = dayjs(a.month ?? '', 'YYYY.MM');
-    let dateB = dayjs(b.month ?? '', 'YYYY.MM');
-    return dateA.unix() - dateB.unix();
+    let dateA = (a.month ?? '').split('.').map((i) => parseInt(i));
+    let dateB = (b.month ?? '').split('.').map((i) => parseInt(i));
+    return dateA[0] * 100 + dateA[1] - (dateB[0] * 100 + dateB[1]);
   });
 };
 
