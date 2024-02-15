@@ -1,5 +1,6 @@
 import { PushSettingsType } from '@/components/PushSettings';
 import { refreshWebPush } from '@/utils/api';
+import { getPlatform } from '@/utils/platform';
 import { Helmet, getAllLocales, setLocale, useIntl } from '@@/exports';
 import { VerticalAlignTopOutlined } from '@ant-design/icons';
 import { css } from '@emotion/css';
@@ -114,6 +115,7 @@ const Page: React.FC = () => {
 const Layout: React.FC = () => {
   const { isDark } = useModel('themeModel');
   const i18n = useIntl();
+  const { platform, setPlatform } = useModel('platformModel');
 
   const [openI18nModal, setOpenI18nModal] = useState(false);
   const [supportLocales, setSupportLocales] = useState<string[]>([]);
@@ -127,6 +129,23 @@ const Layout: React.FC = () => {
       eruda
     ) {
       eruda.init();
+    }
+
+    if (platform !== 'android') {
+      console.log(getPlatform());
+      const onBridgeReady = () => {
+        console.log('WebViewJavascriptBridgeReady');
+        setPlatform('android');
+      };
+
+      document.addEventListener('WebViewJavascriptBridgeReady', onBridgeReady);
+
+      return () => {
+        document.removeEventListener(
+          'WebViewJavascriptBridgeReady',
+          onBridgeReady,
+        );
+      };
     }
   }, []);
 

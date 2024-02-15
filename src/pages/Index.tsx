@@ -208,7 +208,7 @@ const Page: React.FC = () => {
                 onClick={() => {
                   platformExec({
                     android: 'openSettingsPage',
-                  })?.({}).then();
+                  })?.('').then();
                 }}
               >
                 <XubeiLogo
@@ -311,7 +311,12 @@ const Page: React.FC = () => {
           <GameList
             data={gameDatas}
             onClickGame={(game) => {
-              history.push(`/game/${game.id}`);
+              platformExec({
+                android: 'openGamePage',
+                web: (id) => {
+                  history.push(`/game/${id}`);
+                },
+              })?.(game.id ?? '').then();
             }}
             autoScroll={true}
           />

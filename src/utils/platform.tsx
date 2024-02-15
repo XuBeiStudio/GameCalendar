@@ -1,12 +1,12 @@
 export type PlatformsType = {
   android?: string;
-  web?: (args: Record<any, any>) => any;
+  web?: (args: string) => any;
 };
 
 type WebViewJavascriptBridgeType = {
   callHandler: (
     name?: string,
-    data?: Record<any, any>,
+    data?: string,
     callback?: (response: any) => void,
   ) => void;
 };
@@ -27,15 +27,16 @@ export function platformExec(platforms: PlatformsType) {
       // @ts-ignore
       let bridge = window['AndroidJsSdk'] as WebViewJavascriptBridgeType;
 
-      return (args: Record<any, any>) =>
+      return (args: string) =>
         new Promise((resolve) => {
+          console.log(args);
           bridge.callHandler(platforms.android, args, (response) => {
             resolve(response);
           });
         });
     }
     case 'web': {
-      return (args: Record<any, any>) =>
+      return (args: string) =>
         new Promise((resolve) => {
           resolve(platforms.web?.(args));
         });
