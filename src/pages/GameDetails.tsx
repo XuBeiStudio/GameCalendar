@@ -6,6 +6,7 @@ import PlatformIcons from '@/components/PlatformIcons';
 import { getGame, getGameMd } from '@/utils/api';
 import { SITE_ASSETS } from '@/utils/constants';
 import { getI18n, hasWebShare } from '@/utils/functions';
+import { GameDetailsType } from '@/utils/types';
 import { Helmet, useIntl, useMatch, useModel, useQuery } from '@@/exports';
 import {
   CalendarOutlined,
@@ -29,6 +30,37 @@ dayjs.extend(utc);
 dayjs.extend(duration);
 
 const { useToken } = theme;
+
+const addToCalendar = (gameData: GameDetailsType) => {
+  let { name: _name, releaseDate, platforms } = gameData;
+  let name = getI18n(_name, 'zh_CN') ?? '';
+
+  ics.createEvent(
+    {
+      title: name,
+      description: `《${name}》 现已在 ${platforms?.join('、')} 上推出`,
+      start: dayjs(`${(releaseDate ?? '').replaceAll('.', '-')}T00:00:00+0800`)
+        .utc()
+        .format('YYYYMMDD[T]HHmmss[Z]') as string,
+      duration: { hours: 24 },
+      url: SITE_ASSETS,
+      organizer: {
+        name: '序碑工作室',
+        email: 'games@xu-bei.cn',
+      },
+      location: platforms?.join(', '),
+    },
+    (error, value) => {
+      if (!error) {
+        let blob = new Blob([value], {
+          type: 'text/calendar;charset=utf-8',
+        });
+        let url = URL.createObjectURL(blob);
+        window.open(url, '_blank');
+      }
+    },
+  );
+};
 
 export const parseBadge = (badge: { type: string; value: string }) => {
   switch (badge.type) {
@@ -87,7 +119,7 @@ const ReleaseCountdown: React.FC<{ releaseDate?: string }> = (props) => {
     msg?: string;
   }>();
   const updateInterval = useMemo(() => {
-    let now = dayjs('2024.02.16');
+    let now = dayjs();
     let du = dayjs.duration(dayjs(props.releaseDate ?? '1970.01.01').diff(now));
 
     if (du.asDays() < -1) {
@@ -193,6 +225,17 @@ const Page: React.FC = () => {
   } = useQuery(['game', gameId, 'md'], async ({ queryKey }) =>
     getGameMd(queryKey[1]),
   );
+
+  const released = useMemo(() => {
+    if (!gameData) return false;
+
+    let now = dayjs();
+    let du = dayjs.duration(
+      dayjs(gameData?.releaseDate ?? '1970.01.01').diff(now),
+    );
+
+    return du.asDays() < 0;
+  }, [gameData]);
 
   return (
     <div className="h-screen overflow-hidden relative">
@@ -345,54 +388,18 @@ const Page: React.FC = () => {
                     <div>
                       <div className="py-1.5">
                         <div className="flex flex-wrap gap-x-2 gap-y-1">
-                          <Button
-                            icon={<CalendarOutlined />}
-                            onClick={() => {
-                              if (!gameData) return;
+                          {!released && (
+                            <Button
+                              icon={<CalendarOutlined />}
+                              onClick={() => {
+                                if (!gameData) return;
 
-                              let {
-                                name: _name,
-                                releaseDate,
-                                platforms,
-                              } = gameData;
-                              let name = getI18n(_name, 'zh_CN') ?? '';
-
-                              ics.createEvent(
-                                {
-                                  title: name,
-                                  description: `《${name}》 现已在 ${platforms?.join(
-                                    '、',
-                                  )} 上推出`,
-                                  start: dayjs(
-                                    `${(releaseDate ?? '').replaceAll(
-                                      '.',
-                                      '-',
-                                    )}T00:00:00+0800`,
-                                  )
-                                    .utc()
-                                    .format('YYYYMMDD[T]HHmmss[Z]') as string,
-                                  duration: { hours: 24 },
-                                  url: SITE_ASSETS,
-                                  organizer: {
-                                    name: '序碑工作室',
-                                    email: 'games@xu-bei.cn',
-                                  },
-                                  location: platforms?.join(', '),
-                                },
-                                (error, value) => {
-                                  if (!error) {
-                                    let blob = new Blob([value], {
-                                      type: 'text/calendar;charset=utf-8',
-                                    });
-                                    let url = URL.createObjectURL(blob);
-                                    window.open(url, '_blank');
-                                  }
-                                },
-                              );
-                            }}
-                          >
-                            {i18n.formatMessage({ id: 'addCalendar' })}
-                          </Button>
+                                addToCalendar(gameData);
+                              }}
+                            >
+                              {i18n.formatMessage({ id: 'addCalendar' })}
+                            </Button>
+                          )}
                           {hasWebShare() && (
                             <Button
                               icon={<ShareAltOutlined />}

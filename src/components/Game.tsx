@@ -27,7 +27,7 @@ const Game: React.FC<{
       props.config?.releaseDate ?? '1970.01.01',
       'YYYY.MM.DD',
     );
-    const today = dayjs();
+    const today = dayjs().hour(0).minute(0).second(0).millisecond(0);
     return releaseDate.unix() === today.unix();
   }, [props.config]);
 

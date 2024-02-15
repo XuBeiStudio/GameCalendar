@@ -7,23 +7,11 @@ const platformModel = () => {
 
   // eslint-disable-next-line react-hooks/rules-of-hooks
   useEffect(() => {
-    if (platform !== 'android') {
-      console.log(getPlatform());
-      const onBridgeReady = () => {
-        console.log('WebViewJavascriptBridgeReady');
-        setPlatform('android');
-      };
-
-      document.addEventListener('WebViewJavascriptBridgeReady', onBridgeReady);
-
-      return () => {
-        document.removeEventListener(
-          'WebViewJavascriptBridgeReady',
-          onBridgeReady,
-        );
-      };
+    if (platform === 'android') {
+      // @ts-ignore
+      window?.['AndroidJsSdk']?.init?.();
     }
-  }, []);
+  }, [platform]);
 
   return {
     platform,
