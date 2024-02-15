@@ -6,6 +6,7 @@ import PushSettings from '@/components/PushSettings';
 import { getGames } from '@/utils/api';
 import { CONTRIBUTORS, MAINTAINERS, SITE_ASSETS } from '@/utils/constants';
 import { hasWebShare } from '@/utils/functions';
+import { platformExec } from '@/utils/platform';
 import {
   GithubOutlined,
   MessageOutlined,
@@ -55,6 +56,7 @@ const Page: React.FC = () => {
   const { token } = useToken();
   const { isDark, setIsDark } = useModel('themeModel');
   const i18n = useIntl();
+  const { platform } = useModel('platformModel');
 
   const { data: gameDatas, isLoading } = useQuery(['gameDatas'], async () =>
     getGames(),
@@ -199,64 +201,16 @@ const Page: React.FC = () => {
       <div className="flex justify-center">
         <div className="w-full max-w-128 px-6 py-2">
           <div className="fixed top-4 z-40">
-            <Dropdown
-              trigger={['click']}
-              menu={{
-                items: [
-                  {
-                    key: 'github',
-                    label: i18n.formatMessage({ id: 'github' }),
-                    icon: <GithubOutlined />,
-                    onClick: () => {
-                      window.location.href =
-                        'https://github.com/XuBeiStudio/GameCalendar';
-                    },
-                  },
-                  ...(hasWebShare()
-                    ? [
-                        {
-                          key: 'share',
-                          label: i18n.formatMessage({ id: 'share' }),
-                          icon: <ShareAltOutlined />,
-                          onClick: () => {
-                            navigator.share({
-                              title: i18n.formatMessage({ id: 'site' }),
-                              text: i18n.formatMessage({ id: 'site' }),
-                              url: window.location.href,
-                            });
-                          },
-                        },
-                      ]
-                    : []),
-                  {
-                    key: 'txc',
-                    label: i18n.formatMessage({ id: 'txc' }),
-                    icon: <MessageOutlined />,
-                    onClick: () => {
-                      window.location.href =
-                        'https://txc.qq.com/products/634520';
-                    },
-                  },
-                  {
-                    key: 'settings',
-                    label: i18n.formatMessage({ id: 'settings' }),
-                    icon: <SettingOutlined />,
-                    onClick: () => {
-                      setOpenSettingsModal(true);
-                    },
-                  },
-                  {
-                    key: 'darkMode',
-                    label: i18n.formatMessage({ id: 'darkMode' }),
-                    icon: isDark ? <Moon /> : <SunOne />,
-                    onClick: () => {
-                      setIsDark(!isDark);
-                    },
-                  },
-                ],
-              }}
-            >
-              <Button type="text" size="large">
+            {platform === 'android' && (
+              <Button
+                type="text"
+                size="large"
+                onClick={() => {
+                  platformExec({
+                    android: 'openSettingsPage',
+                  })?.({}).then();
+                }}
+              >
                 <XubeiLogo
                   style={{
                     width: '1.5rem',
@@ -265,7 +219,76 @@ const Page: React.FC = () => {
                   }}
                 />
               </Button>
-            </Dropdown>
+            )}
+            {platform === 'web' && (
+              <Dropdown
+                trigger={['click']}
+                menu={{
+                  items: [
+                    {
+                      key: 'github',
+                      label: i18n.formatMessage({ id: 'github' }),
+                      icon: <GithubOutlined />,
+                      onClick: () => {
+                        window.location.href =
+                          'https://github.com/XuBeiStudio/GameCalendar';
+                      },
+                    },
+                    ...(hasWebShare()
+                      ? [
+                          {
+                            key: 'share',
+                            label: i18n.formatMessage({ id: 'share' }),
+                            icon: <ShareAltOutlined />,
+                            onClick: () => {
+                              navigator.share({
+                                title: i18n.formatMessage({ id: 'site' }),
+                                text: i18n.formatMessage({ id: 'site' }),
+                                url: window.location.href,
+                              });
+                            },
+                          },
+                        ]
+                      : []),
+                    {
+                      key: 'txc',
+                      label: i18n.formatMessage({ id: 'txc' }),
+                      icon: <MessageOutlined />,
+                      onClick: () => {
+                        window.location.href =
+                          'https://txc.qq.com/products/634520';
+                      },
+                    },
+                    {
+                      key: 'settings',
+                      label: i18n.formatMessage({ id: 'settings' }),
+                      icon: <SettingOutlined />,
+                      onClick: () => {
+                        setOpenSettingsModal(true);
+                      },
+                    },
+                    {
+                      key: 'darkMode',
+                      label: i18n.formatMessage({ id: 'darkMode' }),
+                      icon: isDark ? <Moon /> : <SunOne />,
+                      onClick: () => {
+                        setIsDark(!isDark);
+                      },
+                    },
+                  ],
+                }}
+              >
+                <Button type="text" size="large">
+                  <XubeiLogo
+                    style={{
+                      width: '1.5rem',
+                      height: '1.5rem',
+                      fill: token.colorTextSecondary,
+                    }}
+                  />
+                </Button>
+              </Dropdown>
+            )}
           </div>
         </div>
       </div>
