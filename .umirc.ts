@@ -27,9 +27,9 @@ export default defineConfig({
   },
   extraPostCSSPlugins: [require('tailwindcss'), require('autoprefixer')],
   npmClient: 'yarn',
-  history: {
-    type: 'hash',
-  },
+  // history: {
+  //   type: 'hash',
+  // },
   analytics: {
     ga_v2: 'G-BB6KZMZJHH',
   },
@@ -51,4 +51,16 @@ export default defineConfig({
                 })();`,
     },
   ],
+  favicons: ['/favicon.png'],
+  links: [
+    {
+      href: '/manifest.json',
+      rel: 'manifest',
+    },
+    {
+      href: '/assets/fonts/MiSans/MiSans.css',
+      rel: 'stylesheet',
+    },
+  ],
+  metas: [],
 });

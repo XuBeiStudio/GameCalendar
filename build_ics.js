@@ -20,7 +20,7 @@ for (let j = 0; j < games.length; j++) {
       .utc()
       .format('YYYYMMDD[T]HHmmss[Z]'),
     duration: { hours: 24 },
-    url: 'https://game-calendar.liziyi0914.com',
+    url: 'https://gaming-epochs-assets.liziyi0914.com',
     organizer: { name: '序碑工作室', email: 'games@xu-bei.cn' },
     location: platforms.join(', '),
   });

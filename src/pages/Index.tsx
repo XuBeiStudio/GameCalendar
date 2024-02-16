@@ -1,13 +1,17 @@
 import { ReactComponent as XubeiLogo } from '@/assets/imgs/logo.svg';
-import GameList from '@/components/GameList';
-import { GameDataType } from '@/utils/types';
+import { ReactComponent as GELogo } from '@/assets/imgs/logo_ge.svg';
+import GameList, { GameListContext, GameListCtx } from '@/components/GameList';
+import { getGames } from '@/utils/api';
+import { SITE_ASSETS } from '@/utils/constants';
+import { hasWebShare } from '@/utils/functions';
 import {
   CalendarOutlined,
   GithubOutlined,
   MessageOutlined,
+  ShareAltOutlined,
 } from '@ant-design/icons';
 import { Moon, SunOne } from '@icon-park/react';
-import { history, request, useIntl, useModel, useQuery } from '@umijs/max';
+import { history, useIntl, useModel, useQuery } from '@umijs/max';
 import {
   App,
   Button,
@@ -47,7 +51,7 @@ const Page: React.FC = () => {
   const i18n = useIntl();
 
   const { data: gameDatas, isLoading } = useQuery(['gameDatas'], async () =>
-    request<GameDataType[]>('/games.json'),
+    getGames(),
   );
 
   const [openSubscribeModal, setOpenSubscribeModal] = useState(false);
@@ -63,42 +67,20 @@ const Page: React.FC = () => {
       >
         <Space.Compact style={{ width: '100%' }}>
           <Input
-            value="https://game-calendar.liziyi0914.com/games.ics"
+            value={`${SITE_ASSETS}/games.ics`}
             className="select-all"
             onFocus={(e) => e.target.select()}
           />
-          <CopyButton text="https://game-calendar.liziyi0914.com/games.ics">
+          <CopyButton text={`${SITE_ASSETS}/games.ics`}>
             <Button type="primary">{i18n.formatMessage({ id: 'copy' })}</Button>
           </CopyButton>
         </Space.Compact>
       </Modal>
       <div className="flex justify-center">
-        <div className="w-full max-w-128">
-          <div className="fixed left-4 bottom-4">
-            <XubeiLogo
-              width={256}
-              height={256}
-              style={{
-                fill: token.colorTextQuaternary,
-              }}
-            />
-          </div>
-        </div>
-      </div>
-      <Skeleton loading={isLoading} active>
-        <GameList
-          data={gameDatas}
-          onClickGame={(game) => {
-            history.push(`/game/${game.id}`);
-          }}
-          autoScroll={true}
-        />
-      </Skeleton>
-      <div className="fixed left-0 right-0 top-2 z-40">
-        <div className="flex justify-center">
-          <div className="w-full max-w-128 px-6 py-2">
+        <div className="w-full max-w-128 px-6 py-2">
+          <div className="fixed top-4 z-40">
             <Dropdown
-              trigger={['click', 'hover', 'contextMenu']}
+              trigger={['click']}
               menu={{
                 items: [
                   {
@@ -107,9 +89,25 @@ const Page: React.FC = () => {
                     icon: <GithubOutlined />,
                     onClick: () => {
                       window.location.href =
-                        'https://github.com/liziyi0914/GameCalendar';
+                        'https://github.com/XuBeiStudio/GameCalendar';
                     },
                   },
+                  ...(hasWebShare()
+                    ? [
+                        {
+                          key: 'share',
+                          label: i18n.formatMessage({ id: 'share' }),
+                          icon: <ShareAltOutlined />,
+                          onClick: () => {
+                            navigator.share({
+                              title: i18n.formatMessage({ id: 'site' }),
+                              text: i18n.formatMessage({ id: 'site' }),
+                              url: window.location.href,
+                            });
+                          },
+                        },
+                      ]
+                    : []),
                   {
                     key: 'txc',
                     label: i18n.formatMessage({ id: 'txc' }),
@@ -151,6 +149,31 @@ const Page: React.FC = () => {
           </div>
         </div>
       </div>
+      <div className="flex justify-center">
+        <div className="w-full max-w-128">
+          <div className="fixed left-4 bottom-4">
+            <GELogo
+              width={256}
+              height={256}
+              style={{
+                fill: isDark ? '#555' : '#ccc',
+                stroke: isDark ? '#555' : '#ccc',
+              }}
+            />
+          </div>
+        </div>
+      </div>
+      <Skeleton loading={isLoading} active>
+        <GameListCtx.Provider value={new GameListContext()}>
+          <GameList
+            data={gameDatas}
+            onClickGame={(game) => {
+              history.push(`/game/${game.id}`);
+            }}
+            autoScroll={true}
+          />
+        </GameListCtx.Provider>
+      </Skeleton>
     </div>
   );
 };

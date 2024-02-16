@@ -1,1793 +1,1894 @@
 [
   {
-    "id": "de6d66a1-67dc-494e-b463-903c586b5fee",
-    "title": "最终幻想7：重生",
-    "subtitle": ["Final Fantasy VII Rebirth"],
-    "releaseDate": "2024.02.29",
-    "platforms": ["PlayStation"],
-    "bg": "https://cdn2.steamgriddb.com/hero/42dfe7995107a551bada87b685acf285.png",
-    "logo": "https://cdn2.steamgriddb.com/logo/e8afafac24a24dd767b87d9f8a596b0f.png",
-    "leftColor": "white",
-    "rightColor": "white"
-  },
-  {
-    "id": "af2d435d-2606-434b-a05f-fc2fed4e9021",
-    "title": "马力欧vs.咚奇刚 重制版",
-    "subtitle": ["Mario vs. Donkey Kong"],
-    "releaseDate": "2024.02.16",
-    "platforms": ["Switch"],
-    "bg": "https://cdn2.steamgriddb.com/grid/6a70f623a594d32f41f410047a0450ce.png",
-    "leftColor": "#FFFFFF",
-    "rightColor": "white"
-  },
-  {
-    "id": "56567a1c-ac0d-41e3-86c8-f55ad937b1c5",
-    "title": "绝地潜兵2",
-    "subtitle": ["Helldivers 2"],
-    "releaseDate": "2024.02.08",
-    "platforms": ["PlayStation", "Steam"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/553850/library_hero.jpg?t=1705423007",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/553850/logo.png?t=1705423007",
-    "leftColor": "#FFFFFF",
-    "rightColor": "#FFFFFF"
-  },
-  {
-    "id": "5abf8030-b2c3-4391-8974-c35164908948",
-    "title": "泡沫之星",
-    "subtitle": ["Foamstars"],
-    "releaseDate": "2024.02.06",
-    "platforms": ["PlayStation"],
-    "free": ["PSPlus"],
-    "bg": "https://www.square-enix.com/asia/newsportal/ja/topics/img/FOAMSTARS_1920x706.jpg",
-    "leftColor": "#ffffff",
-    "rightColor": "#FFFFFF"
-  },
-  {
-    "id": "db2b8789-540e-42b5-b786-720da5f46c39",
-    "title": "自杀小队：消灭正义联盟",
-    "subtitle": ["Suicide Squad:", "Kill the Justice League"],
-    "releaseDate": "2024.02.02",
-    "platforms": ["Xbox", "PlayStation"],
-    "bg": "https://cdn2.steamgriddb.com/hero/439d098c32d07e695014220aca9ed223.jpg",
-    "logo": "https://cdn2.steamgriddb.com/logo/d2fb7247a8585505ca84d40afe37eea6.png",
-    "leftColor": "#FFFFFF",
-    "rightColor": "#FFFFFF"
-  },
-  {
-    "id": "2f505ed2-0717-44d7-99d5-ad6cebf3c307",
-    "title": "女神异闻录3：Reload",
-    "subtitle": ["Persona 3 Reload"],
-    "releaseDate": "2024.02.02",
-    "platforms": ["Steam", "Xbox", "PlayStation"],
-    "free": ["XGP"],
-    "bg": "https://cdn2.steamgriddb.com/hero/0055871c6bd13e2d1378d3779e84843c.png",
-    "logo": "https://cdn2.steamgriddb.com/logo/be9a22cb85032b37ebb2eee3938bdb9b.png",
-    "leftColor": "#ffffff",
-    "rightColor": "#FFFFFF"
-  },
-  {
-    "id": "275d4f09-3431-4384-9902-9a70d410d403",
-    "title": "咒术回战 双华乱舞",
-    "subtitle": ["Jujutsu Kaisen Cursed Clash"],
-    "releaseDate": "2024.02.02",
-    "platforms": ["PlayStation", "Steam", "Xbox", "Switch"],
-    "bg": "https://cdn2.steamgriddb.com/hero/149cacc4e92e77a029c2fabfa2b365f2.png",
-    "leftColor": "#FFFFFF",
-    "rightColor": "#FFFFFF"
-  },
-  {
-    "id": "b96d0911-1949-44f0-8ea4-bb548c110cf6",
-    "title": "碧蓝幻想：Relink",
-    "subtitle": ["Granblue Fantasy: Relink"],
-    "releaseDate": "2024.02.01",
-    "platforms": ["Steam", "PlayStation"],
-    "bg": "https://cdn2.steamgriddb.com/hero/08e85df7974a9ba85cb40d8a168d1dd1.jpg",
-    "leftColor": "#000000",
-    "rightColor": "#FFFFFF"
-  },
-  {
-    "id": "37befdc1-5df1-4c58-a3ff-77f3cec36ac4",
-    "title": "古龙风云录",
-    "subtitle": ["古龍風雲錄"],
-    "releaseDate": "2024.02.01",
-    "platforms": ["Steam"],
-    "bg": "https://cdn2.steamgriddb.com/hero/483e968a8be73f8c2aaa285f32c5ed75.png",
-    "logo": "https://cdn2.steamgriddb.com/logo/ee83e37561fad19564424946e7e7cc12.png",
-    "leftColor": "#FFFFFF",
-    "rightColor": "#FFFFFF"
-  },
-  {
-    "id": "53de8354-3756-4e80-8352-62785bf87961",
-    "title": "苍翼：混沌效应",
-    "subtitle": ["BlazBlue Entropy Effect"],
-    "releaseDate": "2024.01.31",
-    "platforms": ["Steam", "Android", "Apple"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2273430/library_hero.jpg?t=1706709849",
-    "leftColor": "#ffffff",
-    "rightColor": "#FFFFFF"
-  },
-  {
-    "id": "7c3f06f9-626c-484a-b85a-b527cbaf79a6",
-    "title": "铁拳8",
-    "subtitle": ["Tekken 8"],
-    "releaseDate": "2024.01.26",
-    "platforms": ["Steam", "PlayStation", "Xbox"],
-    "bg": "https://cdn2.steamgriddb.com/hero/b1dda493901cc6875f04ebece9cdb093.jpg",
-    "leftColor": "#FFFFFF",
-    "rightColor": "#FFFFFF"
-  },
-  {
-    "id": "89bc484d-4b73-4246-af40-1d2b3cd3dcc5",
-    "title": "如龙8",
-    "subtitle": ["Like a Dragon:", "Infinite Wealth"],
-    "releaseDate": "2024.01.26",
-    "platforms": ["Steam", "Xbox", "PlayStation"],
-    "bg": "https://cdn2.steamgriddb.com/hero/06a68b5e97b4f834f58e777a4dceaed0.png",
-    "logo": "https://cdn2.steamgriddb.com/logo/0496c3742ecdd81d8fa84e4878b76bbd.png",
-    "leftColor": "#000000",
-    "rightColor": "#FFFFFF"
-  },
-  {
-    "id": "81d2836a-abaf-45ac-ae5e-fa4d0fbcf5d0",
-    "title": "赵云传:云汉腾龙",
-    "subtitle": ["Three Kingdoms Zhao Yun"],
-    "releaseDate": "2024.01.18",
-    "platforms": ["Steam"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2201710/library_hero.jpg?t=1705989969",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/2201710/logo_schinese.png?t=1705989969",
-    "leftColor": "#000000",
-    "rightColor": "#FFFFFF"
-  },
-  {
-    "id": "b6611327-8cbd-4949-b8eb-af13f1fa3f8a",
-    "title": "幻兽帕鲁",
-    "subtitle": ["Palworld"],
-    "releaseDate": "2024.01.19",
-    "platforms": ["Steam", "Epic", "Xbox"],
-    "free": ["XGP"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1623730/library_hero.jpg?t=1705661524",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1623730/logo.png?t=1705661524",
-    "leftColor": "#FFFFFF",
-    "rightColor": "#FFFFFF"
-  },
-  {
-    "id": "cd4198d5-53e3-487f-8754-fcdeb74a9d22",
-    "title": "异色代码 回忆录",
-    "subtitle": ["两种记忆/记忆之门", "Another Code:Recollection"],
-    "releaseDate": "2024.01.19",
-    "platforms": ["Switch"],
-    "bg": "https://cdn2.steamgriddb.com/hero/9cb9be7338a236adb160f2d3cf5f5f15.png",
-    "leftColor": "#000000",
-    "rightColor": "#000000"
-  },
-  {
-    "id": "fad75f28-4286-433a-bc73-f076bd7e726a",
-    "title": "湮灭线",
-    "subtitle": ["Oblivion Override"],
-    "releaseDate": "2024.01.25",
-    "platforms": ["Steam", "Android", "Apple"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1952370/library_hero_schinese.jpg?t=1706166053",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1952370/logo_schinese.png?t=1706166053",
-    "leftColor": "#FFFFFF",
-    "rightColor": "#FFFFFF"
-  },
-  {
-    "id": "33c598e8-3e0c-4056-ad02-2086d922dd52",
-    "title": "逆转裁判456:王泥喜精选集",
-    "subtitle": ["Apollo Justice:", "Ace Attorney Trilogy"],
-    "releaseDate": "2024.01.25",
-    "platforms": ["PlayStation", "Steam", "Xbox", "Switch"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2187220/library_hero.jpg?t=1706177141",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/2187220/logo.png?t=1706177141",
-    "leftColor": "#FFFFFF",
-    "rightColor": "#FFFFFF"
-  },
-  {
-    "id": "7b22c82c-2502-4500-a0a1-45b1dc630822",
-    "title": "夜下降生2 Sys:Celes",
-    "subtitle": ["Under Night", "In-Birth II Sys:Celes"],
-    "releaseDate": "2024.01.25",
-    "platforms": ["PlayStation", "Steam", "Switch"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2076010/library_hero.jpg?t=1706264035",
-    "leftColor": "#FFFFFF",
-    "rightColor": "#FFFFFF"
-  },
-  {
-    "id": "daaa938c-dd28-4574-b27c-183933036540",
-    "title": "蕾斯莱莉娅娜的炼金工房",
-    "subtitle": ["～忘却的炼金术与极夜的解放者～"],
-    "releaseDate": "2024.01.25",
-    "platforms": ["Steam"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2586520/library_hero.jpg?t=1705908043",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/2586520/logo.png?t=1705908043",
-    "leftColor": "white",
-    "rightColor": "#FFFFFF"
-  },
-  {
-    "id": "5698a870-2263-46e3-8cd2-4d80acd71a30",
-    "title": "塞尔达传说：王国之泪",
-    "subtitle": ["The Legend of Zelda:", "Tears of Kingdom"],
-    "releaseDate": "2023.05.12",
-    "platforms": ["Switch"],
-    "bg": "https://cdn2.steamgriddb.com/hero/b61248fcbcb76b463231d88a39b5d4cb.jpg",
-    "logo": "https://cdn2.steamgriddb.com/logo/19e524e7aa887f6311e8b6ae061bf5d7.png",
-    "leftColor": "#000000",
-    "rightColor": "#FFFFFF"
-  },
-  {
-    "id": "82305dd4-fdcb-4f44-b6bb-3f35ae85972d",
-    "title": "家园3",
-    "subtitle": ["Homeworld3"],
-    "releaseDate": "2024.03.09",
-    "platforms": ["Steam"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1840080/library_hero.jpg?t=1701373553",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1840080/logo.png?t=1701373553",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "39c589cf-927d-4ea3-8c22-65795b51ab24",
-    "title": "伊苏10:北境历险",
-    "subtitle": ["Ys X: Nordics"],
-    "releaseDate": "2023.09.28",
-    "platforms": ["Switch", "PlayStation"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2570810/library_hero.jpg?t=1706320486",
-    "logo": "",
-    "leftColor": "black",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "1b366627-6f86-4cf1-9cc0-c9a9cdbdbe26",
-    "title": "浪人崛起",
-    "subtitle": ["Rise of the Ronin"],
-    "releaseDate": "2024.03.22",
-    "platforms": ["PlayStation"],
-    "bg": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2022/09/rise-ronin-2813113.jpg?tf=1920x",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "29bf6e0f-0bcd-4b83-96b2-4fc3f6df4bb3",
-    "title": "龙之信条2",
-    "subtitle": ["Dragon's Dogma 2"],
-    "releaseDate": "2024.03.22",
-    "platforms": ["Steam", "Xbox", "PlayStation"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2054970/library_hero.jpg?t=1701216051",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/2054970/logo.png?t=1701216051",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "7de8bbc6-1663-4962-9294-2b1e91bf1771",
-    "title": "动物园之星",
-    "subtitle": ["Planet Zoo"],
-    "releaseDate": "2024.03.26",
-    "platforms": ["Steam", "Xbox", "PlayStation"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/703080/library_hero.jpg?t=1695117792",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/703080/logo.png?t=1695117792",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "e3793bea-1f68-412f-aa7a-1ed5e50b66b9",
-    "title": "重装前哨",
-    "subtitle": ["Outpost "],
-    "releaseDate": "2024.03.27",
-    "platforms": ["Steam"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1566690/library_hero.jpg?t=1706252867",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1566690/logo_schinese.png?t=1706252867",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "698d8059-a9ce-421d-9335-856e984747eb",
-    "title": "雨魂",
-    "subtitle": ["- AMEDAMA -"],
-    "releaseDate": "2024.03.31",
-    "platforms": ["Steam"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2411980/header.jpg?t=1702508900",
-    "logo": "",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "d715ce00-41e0-4108-927e-fa784da51f5f",
-    "title": "木卫二",
-    "subtitle": ["Europa"],
-    "releaseDate": "2024.04.17",
-    "platforms": ["Steam"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2214880/library_hero.jpg?t=1701895258",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/2214880/logo.png?t=1701895258",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "89c26da1-11a6-4420-9d50-6646785191a9",
-    "title": "百英雄传",
-    "subtitle": ["Eiyuden Chronicle: ", "Hundred Heroes"],
-    "releaseDate": "2024.04.23",
-    "platforms": ["Steam", "Xbox", "PlayStation"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1658280/library_hero.jpg?t=1705604074",
-    "logo": "https://cdn2.steamgriddb.com/logo/6e3b2788095cf836b276d237310f872f.png",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "8ee4a5da-e875-45f1-9230-08af6577e292",
-    "title": "庄园领主",
-    "subtitle": ["Manor Lords"],
-    "releaseDate": "2024.04.26",
-    "platforms": ["Steam"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1363080/library_hero.jpg?t=1705495408",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1363080/logo.png?t=1705495408",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "37c9c37c-7f8f-42ba-99bd-1a37365de8b1",
-    "title": "剑星",
-    "subtitle": ["Stellar Blade"],
-    "releaseDate": "2024.04.26",
-    "platforms": ["PlayStation"],
-    "bg": "https://th.bing.com/th/id/OIF.Tvqksw0MXZmpZrbpOmLTDA?rs=1&pid=ImgDetMain",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "cb9d50b6-8277-46e0-9c54-0e3dbf35913a",
-    "title": "地狱之刃2：塞娜的献祭",
-    "subtitle": ["Senua’s Saga: Hellblade II"],
-    "releaseDate": "2024.05.21",
-    "platforms": ["Steam", "Xbox"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2461850/library_hero.jpg?t=1705609661",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/2461850/logo.png?t=1705609661",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "3e74af89-c371-4491-be2c-70b52f578979",
-    "title": "黑神话：悟空",
-    "name": [
-      {
-        "lang": "zh_CN",
-        "content": "黑神话：悟空"
-      },
-      {
-        "lang": "en_US",
-        "content": "Black Myth: WuKong"
-      }
-    ],
-    "badges": [
-      {
-        "type": "steam",
-        "value": "2358720"
-      },
-      {
-        "type": "epic",
-        "value": "black-myth-wukong-87a72b"
-      }
-    ],
-    "developer": [
-      {
-        "name": "Game Science"
-      }
-    ],
-    "publisher": [
-      {
-        "name": "Game Science"
-      }
-    ],
-    "subtitle": ["Black Myth: WuKong"],
-    "releaseDate": "2024.08.20",
-    "platforms": ["Steam"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2358720/library_hero.jpg?t=1701874841",
-    "logo": "https://cdn2.steamgriddb.com/logo/59dce7652ebe3f1c66ea871560889d5c.png",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff",
-    "markdown": "## 关于这款游戏\n\n《黑神话：悟空》是一款以中国神话为背景的动作角色扮演游戏。故事取材于中国古典小说“四大名著”之一的《西游记》。你将扮演一位“天命人”，为了探寻昔日传说的真相，踏上一条充满危险与惊奇的西游之路。\n\n![](https://media.st.dl.eccdnx.com/steam/apps/2358720/extras/SteamGIF_Scene.gif?t=1702002024)\n\n### 雄奇壮丽，光怪陆离\n\n别有世间曾未见，一行一步一花新。欢迎来到亦真亦幻的东方魔幻世界！天命人将前往多个引人入胜又风格迥异的西游故地，再次谱写前所未见的冒险史诗。\n\n![](https://media.st.dl.eccdnx.com/steam/apps/2358720/extras/SteamGIF_Boss.gif?t=1702002024)\n\n### 妖魔鬼怪，卷土重来\n\n行者名声大，魔王手段强。《西游记》的一大看点，便是各有所长的厉害妖怪。西行的旅途并非只有风光旖旎，天命人还将遭遇许多强大的敌人与可敬的对手，与他们豪快战斗，至死方休。\n\n![](https://media.st.dl.eccdnx.com/steam/apps/2358720/extras/SteamGIF_Battle.gif?t=1702002024)\n\n### 山摇地动，各显神通\n\n炼就长生多少法，学来变化广无边。五光十色又相生相克的法术、变化与法宝，一直都是中国神话中最为招牌的战斗要素。天命人除了精通不同棍术，更可自由搭配多样化的法术、变化、天赋、武器与披挂，找到最契合自身战斗风格的制胜之道。\n\n![](https://media.st.dl.eccdnx.com/steam/apps/2358720/extras/SteamGIF_NPC.gif?t=1702002024)\n\n### 千形万象，荡气回肠\n\n六般体相六般兵，六样形骸六样情。敌人的凶恶狡猾只是表象，他们的来历、个性与动机，往往更加耐人寻味。天命人在战斗之外，也会探寻各色人物背后的故事，了解他们的爱与恨，贪与嗔，前世与今生。\n\n## 成人内容描述\n\n开发者对内容描述如下：\n\n此游戏包含的内容可能不适合所有年龄段，或不宜在工作期间访问：频繁出现暴力或血腥, 常见成人内容\n"
-  },
-  {
-    "id": "a1e14b1e-3ef7-408d-8bf4-23a7a6bf88c6",
-    "title": "潜行者2:切尔诺贝利之心",
-    "subtitle": ["S.T.A.L.K.E.R. 2: ", "Heart of Chernobyl"],
-    "releaseDate": "2024.09.05",
-    "platforms": ["Steam", "Xbox"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1643320/library_hero.jpg?t=1705419504",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1643320/logo.png?t=1705419504",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "1ed83d72-91d2-4681-a8b3-88b8fdbe94e6",
-    "title": "ONE:辉之季节 重制版",
-    "subtitle": ["ONE."],
-    "releaseDate": "2023.12.22",
-    "platforms": ["Steam", "Switch"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2432100/library_hero.jpg?t=1703171035",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/2432100/logo.png?t=1703171035",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "e1379ce7-38ec-4933-b50e-30111b983df6",
-    "title": "吾王保卫战",
-    "subtitle": ["Just King"],
-    "releaseDate": "2023.12.19",
-    "platforms": ["Steam"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1059980/library_hero.jpg?t=1703128611",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1059980/logo.png?t=1703128611",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "879fc6ec-6957-46af-b4ae-006d1ddde7a3",
-    "title": "地心归途",
-    "subtitle": ["Return from Core"],
-    "releaseDate": "2023.12.16",
-    "platforms": ["Steam"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2171630/library_hero.jpg?t=1704436844",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/2171630/logo_schinese.png?t=1704436844",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "3604f417-b551-46b7-9a6b-9561dc15f66b",
-    "title": "魔法使之夜",
-    "subtitle": ["Witch on the Holy Night"],
-    "releaseDate": "2023.12.14",
-    "platforms": ["Steam", "Switch", "PlayStation"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2052410/library_hero_japanese.jpg?t=1701915094",
-    "logo": "",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "436e9b2b-2c09-4fce-8681-6225442913c3",
-    "title": "碧蓝幻想 Versus：崛起",
-    "subtitle": ["Granblue Fantasy", "Versus: Rising"],
-    "releaseDate": "2023.12.14",
-    "platforms": ["Steam", "PlayStation"],
-    "bg": "https://cdn2.steamgriddb.com/hero/c3bfe1482f41063ec17701dbfab7167f.jpg",
-    "logo": "https://cdn2.steamgriddb.com/logo/6e0a55c3f006ba348a32242ac3caa6dd.png",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "42170f0d-d571-4a23-bf17-c887a38d5ecd",
-    "title": "严阵以待",
-    "subtitle": ["Ready or Not"],
-    "releaseDate": "2023.12.14",
-    "platforms": ["Steam"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1144200/library_hero.jpg?t=1705678412",
-    "logo": "https://cdn2.steamgriddb.com/logo/b4ac75fb0770998bda4910782f116fc5.webp",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "1aa7d9fd-e06b-4c7b-8835-98e2038755d2",
-    "title": "The Finals",
-    "releaseDate": "2023.12.08",
-    "platforms": ["Steam", "Epic", "Xbox", "PlayStation"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2073850/library_hero.jpg?t=1706708313",
-    "logo": "https://cdn2.steamgriddb.com/logo/c68912e060e5e85f62390fcfe16da8e2.webp",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "db27932d-ec1b-4595-abc4-3fca69749caa",
-    "title": "战锤40K：行商浪人",
-    "subtitle": ["Warhammer 40,000", "Rogue Trader"],
-    "releaseDate": "2023.12.08",
-    "platforms": ["Steam", "Xbox", "PlayStation"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2186680/library_hero.jpg?t=1705439317",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/2186680/logo.png?t=1705439317",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "22830d2b-35e8-4870-8fb8-302bd3669227",
-    "title": "风暴之城",
-    "subtitle": ["Against the Storm"],
-    "releaseDate": "2023.12.08",
-    "platforms": ["Steam"],
-    "free": ["XGP"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1336490/library_hero.jpg?t=1703400024",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1336490/logo.png?t=1703400024",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "a53b6d01-c03b-4fc3-8b1c-9a66c4025b70",
-    "title": "星际拓荒",
-    "subtitle": ["Outer Wilds"],
-    "releaseDate": "2023.12.07",
-    "platforms": ["Steam", "Xbox", "Switch", "PlayStation"],
-    "free": ["PSPlus"],
-    "bg": "https://cdn2.steamgriddb.com/hero/3a3a75fb9f688895a3878e22719e8c53.png",
-    "logo": "https://cdn2.steamgriddb.com/logo/6937a522264a52ef9e2ac283812fd4db.png",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "67fe3323-ed4b-4953-b185-919a98421d5e",
-    "title": "江华号",
-    "releaseDate": "2023.12.07",
-    "platforms": ["Steam"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2513140/library_hero.jpg?t=1701935542",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/2513140/logo.png?t=1701935542",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "5adfd8a1-de6f-4303-993d-c73afdd7a13f",
-    "title": "平寇志",
-    "releaseDate": "2023.12.07",
-    "platforms": ["Steam"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2494450/library_hero.jpg?t=1702968621",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/2494450/logo.png?t=1702968621",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "6ade332f-37a2-4ca7-a48d-2ad8dd0c3ee6",
-    "title": "勇者斗恶龙 怪物仙境3：魔族王子与艾尔芙的旅程",
-    "subtitle": ["DRAGON QUEST MONSTERS:", "The Dark Prince"],
-    "releaseDate": "2023.12.01",
-    "platforms": ["Switch"],
-    "bg": "https://cdn2.steamgriddb.com/hero/b2b19a06070c7ca2726ef5909054d54c.png",
-    "logo": "",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "4d89222e-d1cf-42c9-9eb7-593a867818ed",
-    "title": "舍伍德侠盗团",
-    "subtitle": ["Gangs of Sherwood"],
-    "releaseDate": "2023.11.30",
-    "platforms": ["Steam", "Xbox", "PlayStation"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1351000/library_hero.jpg?t=1702378869",
-    "logo": "https://cdn2.steamgriddb.com/logo/0277063b9350b1206df1c0125ffcdec9.png",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "7c240807-4874-41b4-98f4-3c1752a25b8a",
-    "title": "Tevi",
-    "subtitle": ["采维"],
-    "releaseDate": "2023.11.30",
-    "platforms": ["Steam", "Xbox", "Switch", "PlayStation"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2230650/library_hero.jpg?t=1703064943",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/2230650/logo.png?t=1703064943",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "99e72ae4-664d-44b2-9216-3124fa0a49d8",
-    "title": "梦灯花",
-    "subtitle": ["Noctuary"],
-    "releaseDate": "2023.11.28",
-    "platforms": ["Steam"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2143680/library_hero.jpg?t=1701331004",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/2143680/logo.png?t=1701331004",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "cdea3100-c25e-46a9-b18b-d814ee40c3cd",
-    "title": "虚时异境：迷离时空",
-    "subtitle": ["Dyschronia: Chronos Alternate"],
-    "releaseDate": "2023.11.22",
-    "platforms": ["Steam", "Switch", "PlayStation"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2023920/header.jpg?t=1705982585",
-    "logo": "",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "8be9d281-9d8c-44f4-b9c2-4f02dbf616df",
-    "title": "吃香",
-    "subtitle": ["Ghost Feed"],
-    "releaseDate": "2023.11.17",
-    "platforms": ["Steam"],
-    "bg": "https://alioss.yystv.cn/games/1689b3de1abab62db05a97ebce097b35.jpg_mw680",
-    "leftColor": "#ff0000",
-    "rightColor": "#ff0000"
-  },
-  {
-    "id": "7ca75b49-5e67-4bbe-bff5-39615140eebe",
-    "title": "战锤西格玛时代：毁灭之境",
-    "subtitle": ["Warhammer Age of Sigmar:", "Realms of Ruin"],
-    "releaseDate": "2023.11.18",
-    "platforms": ["Steam"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1844380/library_hero.jpg?t=1700213711",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1844380/logo.png?t=1700213711",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "b06f2c7f-0ce6-47f8-9103-c34b8a27a84a",
-    "title": "女神异闻录5：战略版",
-    "subtitle": ["Persona 5 Tactica"],
-    "releaseDate": "2023.11.17",
-    "platforms": ["Steam", "Xbox", "Switch", "PlayStation"],
-    "free": ["XGP"],
-    "bg": "https://cdn2.steamgriddb.com/hero/d36c77b99feeb7272809f44f1f0b0fec.jpg",
-    "logo": "https://cdn2.steamgriddb.com/logo/48af63907473b9bd6eae96d74eae218e.png",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "6ad6a7fc-8181-4e9b-8330-c4005160f0b3",
-    "title": "创造都市岛物语",
-    "subtitle": ["Dream Town Island"],
-    "releaseDate": "2023.11.16",
-    "platforms": ["Steam", "Switch", "Android", "Apple"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2488340/library_hero.jpg?t=1699854929",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/2488340/logo_japanese.png?t=1699854929",
-    "leftColor": "black",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "b9ee99d7-1613-4a90-a09e-d95a7270787b",
-    "title": "火影忍者 终极风暴羁绊",
-    "subtitle": ["NARUTO X BORUTO Ultimate Ninja ", "STORM CONNECTIONS"],
-    "releaseDate": "2023.11.16",
-    "platforms": ["Steam", "Xbox", "Switch", "PlayStation"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1020790/library_hero.jpg?t=1701218331",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1020790/logo_tchinese.png?t=1701218331",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "3f461c54-df04-4d5a-957b-2a633c7a3de1",
-    "title": "大侠立志传：碧血丹心",
-    "subtitle": ["Hero's Adventure:", "Road to Passion"],
-    "releaseDate": "2023.11.16",
-    "platforms": ["Steam", "Android", "Apple"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1948980/library_hero_schinese.jpg?t=1706263925",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1948980/logo_schinese.png?t=1706263925",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "893687b7-f722-422c-8fe5-0aa6ce27ccc0",
-    "title": "诸子无双",
-    "subtitle": ["Skybreakers", "Hakou Watcher"],
-    "releaseDate": "2023.11.15",
-    "platforms": ["Steam"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2439710/library_hero.jpg?t=1703235107",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/2439710/logo_schinese.png?t=1703235107",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "aaf24c1b-ed10-4459-a29f-e0522748077a",
-    "title": "忆我：一个性格测试游戏",
-    "subtitle": ["Refind Self: The Personality Test Game"],
-    "releaseDate": "2023.11.14",
-    "platforms": ["Steam", "Android", "Apple"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2514960/library_hero_schinese.jpg?t=1703139519",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/2514960/logo_schinese.png?t=1703139519",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "bf075819-0ab2-409b-8612-acc955368587",
-    "title": "使命召唤：现代战争3 2023",
-    "subtitle": ["Call of Duty: Modern Warfare III"],
-    "releaseDate": "2023.11.10",
-    "platforms": ["Steam", "Xbox", "PlayStation"],
-    "bg": "https://cdn2.steamgriddb.com/hero/5dc3139c3385d0fa2d7cdfd6c6f3e3ca.jpg",
-    "logo": "",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "5a404523-c134-4761-8bd7-173dfe882007",
-    "title": "战火英雄 重制版",
-    "subtitle": ["Strike Force Heroes"],
-    "releaseDate": "2023.11.10",
-    "platforms": ["Steam"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1981820/library_hero.jpg?t=1703213579",
-    "logo": "",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "ec4a8643-a06d-480f-b647-dbc537ac58dc",
-    "title": "闪避刺客",
-    "subtitle": ["SANABI: The Revenant"],
-    "releaseDate": "2023.11.09",
-    "platforms": ["Steam", "Switch"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1562700/library_hero.jpg?t=1699333681",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1562700/logo.png?t=1699333681",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "1d71626f-df22-4f38-a2be-5489f195ad3c",
-    "title": "雨中冒险：回归",
-    "subtitle": ["Risk of Rain Returns"],
-    "releaseDate": "2023.11.09",
-    "platforms": ["Steam", "Switch"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1337520/library_hero.jpg?t=1699398407",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1337520/logo.png?t=1699398407",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "f38752ed-f2c4-47b5-b73a-f0769da156ee",
-    "title": "如龙7外传：无名之龙",
-    "subtitle": ["Like a Dragon Gaiden: ", "The Man Who Erased His Name"],
-    "releaseDate": "2023.11.08",
-    "platforms": ["Steam", "Xbox", "Switch", "PlayStation"],
-    "free": ["XGP"],
-    "bg": "https://cdn2.steamgriddb.com/hero/c29092a46b25eda8de0e39ca7348d48b.png",
-    "logo": "",
-    "leftColor": "#000000",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "e7acfcc4-fbf3-4242-9338-70b26fcff1f7",
-    "title": "盐与献祭",
-    "subtitle": ["Salt and Sacrifice"],
-    "releaseDate": "2023.11.07",
-    "platforms": ["Steam", "Switch", "PlayStation"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1437400/library_hero.jpg?t=1697726328",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1437400/logo.png?t=1697726328",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "ae2dc34d-9657-47e0-9b7a-6f363cd175bd",
-    "title": "黑兽2‧改",
-    "subtitle": ["Kuroinu 2 Redux"],
-    "releaseDate": "2023.11.07",
-    "platforms": ["Steam"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2544760/library_hero.jpg?t=1697532528",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/2544760/logo_schinese.png?t=1697532528",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "0149b7f6-adb9-4b4c-91f8-2d68d27d2150",
-    "title": "足球经理2024",
-    "subtitle": ["Football Manager 2024"],
-    "releaseDate": "2023.11.07",
-    "platforms": ["Steam", "Xbox", "PlayStation"],
-    "free": ["XGP"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2252570/library_hero.jpg?t=1702976768",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/2252570/logo.png?t=1702976768",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "1987cf18-73f5-48cf-b947-71e0b8360959",
-    "title": "丁丁历险记：法老的雪茄",
-    "subtitle": ["Tintin Reporter - Cigars of the Pharaoh"],
-    "releaseDate": "2023.11.07",
-    "platforms": ["Steam", "Epic", "Xbox", "Switch", "PlayStation"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2125090/library_hero.jpg?t=1699375941",
-    "logo": "",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "4e2c8b7e-1968-4c2a-9237-26ffc6bf834a",
-    "title": "觉醒者：遗忘之誓",
-    "subtitle": ["The Awakener: Forgotten Oath"],
-    "releaseDate": "2023.11.07",
-    "platforms": ["Steam"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2527660/library_hero.jpg?t=1699357715",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/2527660/logo_schinese.png?t=1699357715",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "5e903960-e746-45f9-abf9-3b43673aabfb",
-    "title": "无敌号",
-    "subtitle": ["The Invincible"],
-    "releaseDate": "2023.11.06",
-    "platforms": ["Steam", "Xbox", "PlayStation"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/731040/library_hero.jpg?t=1704810943",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/731040/logo.png?t=1704810943",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "a0306b5a-803b-48f5-ba00-522f73d45787",
-    "title": "始于谎言的夏日恋情",
-    "subtitle": ["嘘から始まる恋の夏"],
-    "releaseDate": "2023.10.04",
-    "platforms": ["Steam"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1575980/header_japanese.jpg?t=1699398693",
-    "logo": "",
-    "leftColor": "#000000",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "f6f0a608-321b-4e3a-a74f-9e1d07936a87",
-    "title": "影之刃：断罪者",
-    "subtitle": ["Phantom Blade: Executioners"],
-    "releaseDate": "2023.10.16",
-    "platforms": ["Steam", "PlayStation", "Android", "Apple"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2365940/library_hero.jpg?t=1682419660",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/2365940/logo_schinese.png?t=1682419660",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "ea90d4fe-656f-41f9-a2a3-49af49897f75",
-    "title": "机械战警：暴戾都市",
-    "subtitle": ["RoboCop: Rogue City"],
-    "releaseDate": "2023.11.02",
-    "platforms": ["Steam", "Xbox", "PlayStation"],
-    "bg": "https://cdn2.steamgriddb.com/hero/04b87e76cf69fae8913f00c979d2fdf5.png",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1681430/logo.png?t=1706023649",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "c2308051-60c9-4dff-9ce1-2e3d2956dbc2",
-    "title": "星之海洋：第二个故事R",
-    "subtitle": ["Star Ocean The Second Story R"],
-    "releaseDate": "2023.11.02",
-    "platforms": ["Steam", "Switch", "PlayStation"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2238900/library_hero.jpg?t=1698916355",
-    "logo": "",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "5f3e96f4-dd12-4abc-ac24-7f13346af3f8",
-    "title": "为了吾王2",
-    "subtitle": ["For The King II"],
-    "releaseDate": "2023.11.03",
-    "platforms": ["Steam"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1676840/library_hero.jpg?t=1706275155",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1676840/logo_schinese.png?t=1706275155",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "5b62c292-d744-40e2-85b5-5579675e42d0",
-    "title": "动物迷城",
-    "subtitle": ["Back to the Dawn "],
-    "releaseDate": "2023.11.03",
-    "platforms": ["Steam"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1735700/library_hero.jpg?t=1703844971",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1735700/logo_schinese.png?t=1703844971",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "07ceeb1e-e700-4cee-8f11-7897900e3d65",
-    "title": "塔罗斯的法则2",
-    "subtitle": ["The Talos Principle 2"],
-    "releaseDate": "2023.11.02",
-    "platforms": ["Steam", "Xbox", "PlayStation"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/835960/library_hero.jpg?t=1706269937",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/835960/logo.png?t=1706269937",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "c14cce7a-3752-485a-94a1-6a4853170bd3",
-    "title": "魔法工艺",
-    "subtitle": ["Magicraft"],
-    "releaseDate": "2023.11.02",
-    "platforms": ["Steam"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2103140/library_hero_tchinese.jpg?t=1698832411",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/2103140/logo_schinese.png?t=1698832411",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "0f48fbbd-d7f9-470c-a5ae-5a5e0607b0b1",
-    "title": "时尚造梦",
-    "subtitle": ["Fashion Dreamer"],
-    "releaseDate": "2023.11.02",
-    "platforms": ["Switch"],
-    "bg": "https://cdn2.steamgriddb.com/hero/c8597142f3399b19f8e26229a123c26b.png",
-    "logo": "https://cdn2.steamgriddb.com/logo/9fac918bf72f4c9e065905c6a19d9532.png",
-    "leftColor": "#000000",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "60cd6919-54c7-474d-a38b-dc47135953f6",
-    "title": "沙石镇时光",
-    "subtitle": ["My Time at Sandrock"],
-    "releaseDate": "2023.11.02",
-    "platforms": ["Steam", "Android", "Apple"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1084600/library_hero_schinese.jpg?t=1703258239",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1084600/logo_schinese.png?t=1703258239",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "e9add5a1-f156-4033-8cec-a9d0731892a9",
-    "title": "努努之歌：英雄联盟外传",
-    "subtitle": ["Song of Nunu:", "A League of Legends Story"],
-    "releaseDate": "2023.11.01",
-    "platforms": ["Steam", "Switch"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1333200/library_hero.jpg?t=1702617462",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1333200/logo.png?t=1702617462",
-    "leftColor": "#00f2ff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "ff95e6d1-695a-4d23-95d0-593308dd31bc",
-    "title": "退潮",
-    "subtitle": ["Jusant"],
-    "releaseDate": "2023.10.31",
-    "platforms": ["Steam", "Xbox", "PlayStation"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1977170/library_hero.jpg?t=1705932423",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1977170/logo.png?t=1705932423",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "e359a839-25ab-4b76-b85f-0fec4f3bbc56",
-    "title": "心灵杀手2",
-    "subtitle": ["Alan Wake 2"],
-    "releaseDate": "2023.10.27",
-    "platforms": ["Steam", "Xbox", "PlayStation"],
-    "bg": "https://cdn2.steamgriddb.com/hero/e13147c18aa5e4aa4cf75185d01cf826.png",
-    "logo": "https://cdn2.steamgriddb.com/logo/b31b6920f096faf37f1e50abdb0c0448.png",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "40235b39-4b06-4659-8c20-2a9def4c6132",
-    "title": "不要尖叫",
-    "subtitle": ["Don't Scream"],
-    "releaseDate": "2023.10.27",
-    "platforms": ["Steam"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2497900/library_hero.jpg?t=1698540400",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/2497900/logo.png?t=1698540400",
-    "leftColor": "#f95656",
-    "rightColor": "#ff4444"
-  },
-  {
-    "id": "53b554a1-5737-4ba9-a530-f8a606edface",
-    "title": "方舟：生存飞升",
-    "subtitle": ["ARK: Survival Ascended"],
-    "releaseDate": "2023.10.26",
-    "platforms": ["Steam", "Xbox", "PlayStation"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2399830/library_hero.jpg?t=1698251949",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/2399830/logo.png?t=1698251949",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "e58d7476-5cb4-4f21-aa61-1ffb2dbd91fd",
-    "title": "Ginka",
-    "releaseDate": "2023.10.26",
-    "platforms": ["Steam"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2536840/library_hero.jpg?t=1702628303",
-    "logo": "",
-    "leftColor": "#000000",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "8666d1c0-db3c-4331-9123-780f770fc767",
-    "title": "幽灵行者2",
-    "subtitle": ["Ghostrunner 2"],
-    "releaseDate": "2023.10.26",
-    "platforms": ["Steam", "Xbox", "PlayStation"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2144740/library_hero.jpg?t=1706742765",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/2144740/logo.png?t=1706742765",
-    "leftColor": "#fcff00",
-    "rightColor": "#fcff00"
-  },
-  {
-    "id": "b2b76098-65e3-424e-a179-d4d273c9feac",
-    "title": "恸哭奇机",
-    "subtitle": ["Crymachina"],
-    "releaseDate": "2023.07.27",
-    "platforms": ["Steam", "Switch", "PlayStation"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2258500/library_hero.jpg?t=1698166345",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/2258500/logo_tchinese.png?t=1698166345",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "04341da6-fa85-4b7c-82d4-cfc5ddc56050",
-    "title": "都市：天际线2",
-    "subtitle": ["Cities: Skylines II"],
-    "releaseDate": "2023.10.25",
-    "platforms": ["Steam", "Xbox", "PlayStation"],
-    "free": ["XGP"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/949230/library_hero.jpg?t=1700213822",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/949230/logo.png?t=1700213822",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "69f56001-abfc-436d-a179-4c75cd279bf2",
-    "title": "致命公司",
-    "subtitle": ["Lethal Company"],
-    "releaseDate": "2023.10.24",
-    "platforms": ["Steam"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1966720/library_hero.jpg?t=1690906579",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1966720/logo.png?t=1690906579",
-    "leftColor": "#000000",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "a9ca0f51-721b-469a-a780-425619cb0b26",
-    "title": "舞力全开2024",
-    "subtitle": ["Just Dance ", "2024 Edition"],
-    "releaseDate": "2023.10.24",
-    "platforms": ["Steam", "Switch", "PlayStation"],
-    "bg": "https://cdn2.steamgriddb.com/grid/056950938dd78f586783739913f7e20f.png",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "1fef9281-ddea-42c2-bea9-4cafbd07455d",
-    "title": "合金装备：大师合集 Vol.1",
-    "subtitle": ["Metal Gear Solid:", "Master Collection Vol.1"],
-    "releaseDate": "2023.10.24",
-    "platforms": ["Steam", "Xbox", "Switch", "PlayStation"],
-    "bg": "https://cdn2.steamgriddb.com/hero/6d11a7cb045836a8fbedbac190ea9759.png",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "96a77cc4-fc24-48f6-afd4-e41a3294154c",
-    "title": "指环王：重返莫瑞亚",
-    "subtitle": ["The Lord of the Rings:", "Return to Moria"],
-    "releaseDate": "2023.10.24",
-    "platforms": ["Steam", "Xbox", "PlayStation"],
-    "bg": "https://cdn2.steamgriddb.com/hero/ef973b17689de8f52c4b073e0df426bc.png",
-    "logo": "https://cdn2.steamgriddb.com/logo/a806203fb141181dcf5e12930d92b0bd.png",
-    "leftColor": "#9dd7c2",
-    "rightColor": "#8ab3a4"
-  },
-  {
-    "id": "f5bf4a4d-4f56-43e9-a540-fbd385cb3560",
-    "title": "提早绽放的黑百合",
-    "subtitle": ["早咲きのくろゆり"],
-    "releaseDate": "2023.10.24",
-    "platforms": ["Steam"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1931940/library_hero_schinese.jpg?t=1696048178",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1931940/logo_schinese.png?t=1696048178",
-    "leftColor": "#ffdada",
-    "rightColor": "#f1cccc"
-  },
-  {
-    "id": "61d69d45-a8a8-41e7-bf12-75b278e54a22",
-    "title": "杀死公主",
-    "subtitle": ["Slay the Princess"],
-    "releaseDate": "2023.10.23",
-    "platforms": ["Steam"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1989270/library_hero.jpg?t=1706299326",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1989270/logo.png?t=1706299326",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "bbc09fc2-82a7-4346-9565-97de7376cbaa",
-    "title": "恐怖的世界",
-    "subtitle": ["World of Horror"],
-    "releaseDate": "2023.10.19",
-    "platforms": ["Steam", "Switch", "PlayStation"],
-    "bg": "https://cdn2.steamgriddb.com/hero/c8d78b45fa50313f2cb4e6089139acb3.png",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/913740/logo.png?t=1705062627",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "df7a661e-1ca1-46db-a296-776e5565c91e",
-    "title": "超级马力欧兄弟惊奇",
-    "subtitle": ["Super Mario Bros. Wonder"],
-    "releaseDate": "2023.10.20",
-    "platforms": ["Switch"],
-    "bg": "https://cdn2.steamgriddb.com/hero/b92e26a764c530314cd8e5cb41f288b0.png",
-    "logo": "https://cdn2.steamgriddb.com/logo/2426af4e20a955e5b25da3ae3d881121.png",
-    "leftColor": "#ff0000",
-    "rightColor": "#ff0000"
-  },
-  {
-    "id": "e9807a90-cf5c-4c79-aef7-7e4bad028134",
-    "title": "漫威蜘蛛侠2",
-    "subtitle": ["Marvel's Spider-Man 2"],
-    "releaseDate": "2023.10.20",
-    "platforms": ["PlayStation"],
-    "bg": "https://cdn2.steamgriddb.com/hero/74c12bbaa74d13c2b891cd7673d61370.png",
-    "logo": "",
-    "leftColor": "#ff0000",
-    "rightColor": "#ff8c8c"
-  },
-  {
-    "id": "7beb033d-0e1b-4bda-b8cb-682dd365064a",
-    "title": "莱卡：鲜血铸就",
-    "subtitle": ["Laika: Aged Through Blood"],
-    "releaseDate": "2023.10.19",
-    "platforms": ["Steam"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1796220/library_hero.jpg?t=1697793531",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1796220/logo.png?t=1697793531",
-    "leftColor": "#ffffff",
-    "rightColor": "black"
-  },
-  {
-    "id": "eadc656b-091a-40e0-b108-bbdcf8bd7009",
-    "title": "暗黑破坏神4",
-    "subtitle": ["Diablo IV"],
-    "releaseDate": "2023.06.06",
-    "platforms": ["Steam", "Xbox", "PlayStation"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2344520/library_hero.jpg?t=1706032720",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/2344520/logo.png?t=1706032720",
-    "leftColor": "#e71b1b",
-    "rightColor": "#ff2121"
-  },
-  {
-    "id": "f7d752d3-6de4-4a88-bcdd-65c81d951247",
-    "title": "完蛋！我被美女包围了！",
-    "subtitle": ["Love Is All Around"],
-    "releaseDate": "2023.10.18",
-    "platforms": ["Steam"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2322560/library_hero.jpg?t=1705667689",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/2322560/logo.png?t=1705667689",
-    "leftColor": "black",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "6cb0608c-e4c3-44ea-8247-ecbd6ea88da8",
-    "title": "和阶堂真的事件簿 豪华三部曲",
-    "subtitle": ["MAKOTO WAKAIDO’s Case Files", " TRILOGY DELUXE"],
-    "releaseDate": "2023.10.18",
-    "platforms": ["Steam", "Switch"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1562910/library_hero.jpg?t=1689173601",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1562910/logo_japanese.png?t=1689173601",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "e8ca8a92-3395-4763-8048-bf505dcaec2f",
-    "title": "荒野枪巫",
-    "subtitle": ["Wizard with a Gun"],
-    "releaseDate": "2023.10.17",
-    "platforms": ["Steam"],
-    "free": ["XGP"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1150530/library_hero.jpg?t=1705657435",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1150530/logo_schinese.png?t=1705657435",
-    "leftColor": "#e8c364",
-    "rightColor": "#ffce4f"
-  },
-  {
-    "id": "511b88b4-d980-4480-bef7-33fdb5e55c92",
-    "title": "索尼克 超级巨星",
-    "subtitle": ["Sonic Superstars"],
-    "releaseDate": "2023.10.17",
-    "platforms": ["Steam", "Xbox", "Switch", "PlayStation"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2022670/library_hero.jpg?t=1701949445",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/2022670/logo.png?t=1701949445",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "8d94ba46-0722-456d-8631-d1938eeb3119",
-    "title": "堕落之主",
-    "subtitle": ["The Lords of the Fallen"],
-    "releaseDate": "2023.10.13",
-    "platforms": ["Steam", "PlayStation"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1501750/library_hero.jpg?t=1705932446",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1501750/logo.png?t=1705932446",
-    "leftColor": "#d7d7d7",
-    "rightColor": "#d4d1d1"
-  },
-  {
-    "id": "e4241797-864e-41aa-9a48-56f472113ed0",
-    "title": "极限竞速（2023）",
-    "subtitle": ["Forza Motorsport"],
-    "releaseDate": "2023.10.10",
-    "platforms": ["Steam", "Xbox"],
-    "free": ["XGP"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2440510/library_hero.jpg?t=1699549904",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/2440510/logo.png?t=1699549904",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "ac5459fd-dc01-439d-801a-8ee4ad4fb086",
-    "title": "刀剑神域 异绊集结",
-    "subtitle": ["SWORD ART ONLINE Last Recollection"],
-    "releaseDate": "2023.10.06",
-    "platforms": ["Steam", "Xbox", "Switch", "PlayStation"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1566880/library_hero.jpg?t=1704791129",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1566880/logo.png?t=1704791129",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "f4cd0843-56e5-4f4c-9381-1460beb4fffe",
-    "title": "赫尔的海底都市计划",
-    "subtitle": ["～在梦幻箱庭里种植空气的SLG～"],
-    "releaseDate": "2023.10.06",
-    "platforms": ["Steam"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2502940/library_hero.jpg?t=1695633203",
-    "logo": "",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "b93368d7-4fda-4835-ae44-c6256ef6451c",
-    "title": "名侦探皮卡丘 闪电回归",
-    "subtitle": ["Detective Pikachu Returns"],
-    "releaseDate": "2023.10.06",
-    "platforms": ["Switch"],
-    "bg": "https://cdn2.steamgriddb.com/hero/569223c56b2cc29a789db49341ca4084.png",
-    "logo": "",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "0715fd77-e830-4815-8ba1-cefeacf0edb5",
-    "title": "时代之下2：神话与魔法",
-    "subtitle": ["Hidden Through Time 2:", " Myths & Magic"],
-    "releaseDate": "2023.10.05",
-    "platforms": ["Steam"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2304640/library_hero.jpg?t=1702385819",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/2304640/logo.png?t=1702385819",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "3115866c-ae46-4eb7-88e8-993e30d69a4b",
-    "title": "刺客信条：幻景",
-    "subtitle": ["Assassin's Creed Mirage"],
-    "releaseDate": "2023.10.05",
-    "platforms": ["Steam", "Xbox", "PlayStation"],
-    "bg": "https://cdn2.steamgriddb.com/hero/054b8179f7fdf5d0178969c287cd4259.jpg",
-    "logo": "https://cdn2.steamgriddb.com/logo/aaa1999ae54e0ac012e81f57308e4011.png",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "10f6c97c-ad8a-4d22-a751-e68cf836d7ce",
-    "title": "塑战核心",
-    "subtitle": ["Battle Shapers"],
-    "releaseDate": "2023.10.04",
-    "platforms": ["Steam"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1421290/library_hero.jpg?t=1702994497",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1421290/logo.png?t=1702994497",
-    "leftColor": "#ff6a6a",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "c895692d-5725-412e-be24-546bc4a15843",
-    "title": "果冻快递",
-    "subtitle": ["Jelly Express"],
-    "releaseDate": "2023.09.28",
-    "platforms": ["Steam", "Switch"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1945260/library_hero.jpg?t=1696247673",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1945260/logo.png?t=1696247673",
-    "leftColor": "black",
-    "rightColor": "black"
-  },
-  {
-    "id": "bf113b85-7577-464c-bbf8-f1eeb7ef51bc",
-    "title": "茧",
-    "subtitle": ["Cocoon"],
-    "releaseDate": "2023.09.29",
-    "platforms": ["Steam", "Xbox", "Switch", "PlayStation"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1497440/library_hero.jpg?t=1704925513",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1497440/logo.png?t=1704925513",
-    "leftColor": "#c1bbb7",
-    "rightColor": "#c1bbb7"
-  },
-  {
-    "id": "b78895d8-fec9-4c39-9b92-7241d8dacf5f",
-    "title": "流离归途",
-    "subtitle": ["Torn Away"],
-    "releaseDate": "2023.09.29",
-    "platforms": ["Steam", "Xbox"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1568970/library_hero.jpg?t=1703163867",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1568970/logo.png?t=1703163867",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "f4267681-183b-4a20-9c4a-d2fe80c16e39",
-    "title": "EA Sports FC 24",
-    "releaseDate": "2023.09.28",
-    "platforms": ["Steam"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2195250/library_hero.jpg?t=1705958151",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/2195250/logo.png?t=1705958151",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "5089ead7-70c4-4c46-9653-8384ff311f6b",
-    "title": "无限神速斩 勇者斗恶龙",
-    "subtitle": ["达伊的大冒险"],
-    "releaseDate": "2023.09.28",
-    "platforms": ["Steam", "Xbox", "Switch", "PlayStation"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1895810/library_hero.jpg?t=1695918758",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1895810/logo_tchinese.png?t=1695918758",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "65964f95-02cf-4c7a-9e64-3463277282b3",
-    "title": "反恐精英2",
-    "subtitle": ["Counter-Strike 2"],
-    "releaseDate": "2023.09.28",
-    "platforms": ["Steam"],
-    "bg": "https://cdn2.steamgriddb.com/hero/155cce39112748579e46da788c7c53f7.png",
-    "logo": "https://cdn2.steamgriddb.com/logo/bfe02f81ad5d8d45bb23db5e026e898b.png",
-    "leftColor": "black",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "3585adb5-4dd1-41d6-b916-6343f27a85bd",
-    "title": "地铁繁花",
-    "subtitle": ["Underground Blossom"],
-    "releaseDate": "2023.09.27",
-    "platforms": ["Steam", "Android", "Apple"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2291850/library_hero.jpg?t=1695807277",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/2291850/logo.png?t=1695807277",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "4617eaf4-352a-4136-a889-dd753c695132",
-    "title": "未音子的夜市",
-    "subtitle": ["Mineko's Night Market"],
-    "releaseDate": "2023.09.27",
-    "platforms": ["Steam", "Switch"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/762940/library_hero.jpg?t=1695236533",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/762940/logo.png?t=1695236533",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "9da61cf4-2a8e-4c52-8fb6-131215c42f14",
-    "title": "星之终途",
-    "subtitle": ["終のステラ"],
-    "releaseDate": "2023.09.26",
-    "platforms": ["Steam"],
-    "bg": "https://alioss.yystv.cn/games/f39ae3c700953b71d363c136bf18f5cb.jpg_mw680",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "7f3220d3-749f-4854-b78c-5866449e6a90",
-    "title": "魔女之泉R",
-    "subtitle": ["WitchSpring R"],
-    "releaseDate": "2023.09.26",
-    "platforms": ["Steam"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1958220/library_hero.jpg?t=1698161819",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1958220/logo.png?t=1698161819",
-    "leftColor": "black",
-    "rightColor": "#fffafa"
-  },
-  {
-    "id": "9ae0aaad-2662-4fbb-8f80-278d2c82d4c9",
-    "title": "真人快打1",
-    "subtitle": ["Mortal Kombat 1"],
-    "releaseDate": "2023.09.19",
-    "platforms": ["Steam", "Xbox", "Switch", "PlayStation"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1971870/library_hero.jpg?t=1696029508",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1971870/logo.png?t=1696029508",
-    "leftColor": "black",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "1a9f88ad-4380-4f70-9848-001954388b07",
-    "title": "猛兽派对",
-    "subtitle": ["Party Animals "],
-    "releaseDate": "2023.09.20",
-    "platforms": ["Steam", "Xbox"],
-    "free": ["XGP"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1260320/library_hero.jpg?t=1701418770",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1260320/logo.png?t=1701418770",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "e6772079-8d7c-495b-92e1-60e0575e6194",
-    "title": "蔷薇与椿 〜豪华绚烂版〜",
-    "subtitle": ["薔薇與椿 〜豪華絢爛版〜"],
-    "releaseDate": "2023.09.19",
-    "platforms": ["Switch"],
-    "bg": "https://alioss.yystv.cn/games/5a9a43b847dcf9655f48418ce6b0a363.jpg_mw680",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "4ee6cb82-50c6-4985-8a1f-a15b7fcdcdce",
-    "title": "匹诺曹的谎言",
-    "subtitle": ["Lies Of P"],
-    "releaseDate": "2023.09.18",
-    "platforms": ["Steam", "Xbox", "PlayStation"],
-    "free": ["XGP"],
-    "bg": "https://cdn2.steamgriddb.com/hero/575977901a43b7e5d68b119533189cb3.png",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1627720/logo.png?t=1703825186",
-    "leftColor": "#92f6ff",
-    "rightColor": "#abeff6"
-  },
-  {
-    "id": "0ee3f31c-e452-4581-b4b2-4b2e498b1fd9",
-    "title": "飙酷车神：轰鸣盛典",
-    "subtitle": ["Codename: ", "Wandering Sword"],
-    "releaseDate": "2023.09.14",
-    "platforms": ["Steam", "Xbox", "PlayStation"],
-    "bg": "https://cdn2.steamgriddb.com/hero/85a6969ff87a4819f5fa8f43c23dfb92.png",
-    "logo": "https://cdn2.steamgriddb.com/logo/f468de140c422d1e9905385a45ace640.png",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "348ea085-9ddd-439e-87e4-87efd70b33da",
-    "title": "我们曾到此探险：友谊考验",
-    "subtitle": ["We Were Here Expeditions: ", "The FriendShip"],
-    "releaseDate": "2023.09.14",
-    "platforms": ["Steam", "Xbox", "PlayStation"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2296990/library_hero.jpg?t=1700228248",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/2296990/logo.png?t=1700228248",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "a521fbe7-6182-4ca6-bf89-ef7828955e17",
-    "title": "枪伞游侠",
-    "subtitle": ["Gunbrella"],
-    "releaseDate": "2023.09.13",
-    "platforms": ["Steam", "Switch"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1580180/library_hero.jpg?t=1695065781",
-    "logo": "",
-    "leftColor": "#fc4b4b",
-    "rightColor": "#fd6363"
-  },
-  {
-    "id": "fb730ced-9f74-4648-804b-9fae99065658",
-    "title": "超级炸弹人 R 2",
-    "subtitle": ["Super Bomberman R 2"],
-    "releaseDate": "2023.09.13",
-    "platforms": ["Steam", "Xbox", "Switch", "PlayStation"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1913740/library_hero.jpg?t=1680866964",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1913740/logo.png?t=1680866964",
-    "leftColor": "#000000",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "704db7a5-a9b1-45f7-841b-0c5f482d5e52",
-    "title": "永夜",
-    "subtitle": ["Eternights"],
-    "releaseDate": "2023.09.12",
-    "platforms": ["Steam", "PlayStation"],
+    "bg": "/games/de6d66a1-67dc-494e-b463-903c586b5fee/cover.png",
     "free": [],
-    "bg": "https://cdn2.steamgriddb.com/hero/7da972d166ecdad370f47f20610e2e2d.png",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1402110/logo.png?t=1695201260",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
+    "id": "de6d66a1-67dc-494e-b463-903c586b5fee",
+    "leftColor": "white",
+    "logo": "/games/de6d66a1-67dc-494e-b463-903c586b5fee/logo.png",
+    "platforms": ["PlayStation"],
+    "releaseDate": "2024.02.29",
+    "rightColor": "white",
+    "subtitle": ["Final Fantasy VII Rebirth"],
+    "title": "最终幻想7：重生"
   },
   {
-    "id": "62625422-4eea-4d72-a75d-3e1020ea44ec",
-    "title": "匿名代码",
-    "subtitle": ["Anonymous;Code"],
-    "releaseDate": "2022.07.28",
-    "platforms": ["Steam", "PlayStation"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2291020/library_hero.jpg?t=1694137799",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/2291020/logo.png?t=1694137799",
-    "leftColor": "#ffffff",
-    "rightColor": "#00e5ff"
-  },
-  {
-    "id": "231510db-c4fd-4da1-a61c-8d7db18e972d",
-    "title": "重生边缘",
-    "subtitle": ["SYNCED"],
-    "releaseDate": "2023.09.08",
-    "platforms": ["Steam"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1008080/library_hero.jpg?t=1706111457",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1008080/logo.png?t=1706111457",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "a7103b0f-7a05-4b00-a6a8-0e8a79f9f015",
-    "title": "最终幻想7：永恒危机",
-    "subtitle": ["Final Fantasy VII: Ever Crisis"],
-    "releaseDate": "2023.09.07",
-    "platforms": ["Android", "Apple"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2484110/library_hero.jpg?t=1701826861",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/2484110/logo.png?t=1701826861",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "65bc10dd-6314-4bef-b12b-a04346a0dfd8",
-    "title": "博德之门3",
-    "subtitle": ["Baldur's Gate 3"],
-    "releaseDate": "2023.08.03",
-    "platforms": ["Steam", "PlayStation"],
-    "bg": "https://cdn2.steamgriddb.com/hero/bc87cc63a0113bb4af7c90f4035defb8.webp",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1086940/logo.png?t=1705604404",
-    "leftColor": "#ff8c8c",
-    "rightColor": "#81a0ca"
-  },
-  {
-    "id": "6a3e85e0-057b-4c1c-b5cd-724fd3adffba",
-    "title": "星空",
-    "subtitle": ["Starfield"],
-    "releaseDate": "2023.09.06",
-    "platforms": ["Steam", "Xbox"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1716740/library_hero.jpg?t=1694713504",
-    "logo": "https://cdn2.steamgriddb.com/logo/adc58640629f11d54e75b3904d37a5b3.webp",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "7b497763-4fd6-456e-8d21-9e32078c6ef3",
-    "title": "如何逃脱",
-    "subtitle": ["How 2 Escape"],
-    "releaseDate": "2023.08.31",
-    "platforms": ["Steam", "Xbox", "Switch", "PlayStation"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2264140/library_hero.jpg?t=1700051721",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/2264140/logo.png?t=1700051721",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "11ec1883-3825-4c81-80fe-814afd50d8e9",
-    "title": "三位一体5：发条阴谋",
-    "subtitle": ["Trine 5: A Clockwork Conspiracy"],
-    "releaseDate": "2023.08.31",
-    "platforms": ["Steam", "Xbox", "Switch", "PlayStation"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1436700/library_hero.jpg?t=1701879055",
-    "logo": "",
-    "leftColor": "black",
-    "rightColor": "#fceddb"
-  },
-  {
-    "id": "8dde8d01-00fc-4480-8c2c-6332b8a6854b",
-    "title": "白日梦魇：沙堡1994",
-    "subtitle": ["Daymare: 1994 Sandcastle"],
-    "releaseDate": "2023.08.30",
-    "platforms": ["Steam", "Xbox", "PlayStation"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1530470/library_hero.jpg?t=1698239810",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1530470/logo.png?t=1698239810",
-    "leftColor": "#ffffff",
-    "rightColor": "#ff0000"
-  },
-  {
-    "id": "7df5af1c-9c51-4a75-8a95-03ea1efe703e",
-    "title": "欢乐摇摇派对",
-    "subtitle": ["Samba de Amigo:", " Party Central"],
-    "releaseDate": "2023.08.30",
+    "bg": "/games/af2d435d-2606-434b-a05f-fc2fed4e9021/cover.png",
+    "free": [],
+    "id": "af2d435d-2606-434b-a05f-fc2fed4e9021",
+    "leftColor": "#FFFFFF",
     "platforms": ["Switch"],
-    "bg": "https://cdn2.steamgriddb.com/hero/cdff826337522ff07d0c4e5258d2827a.jpg",
-    "logo": "https://cdn2.steamgriddb.com/logo/b98ae623445eae394c07b7964f7c1ede.png",
-    "leftColor": "#ffe2b2",
-    "rightColor": "#ffffff"
+    "releaseDate": "2024.02.16",
+    "rightColor": "white",
+    "subtitle": ["Mario vs. Donkey Kong"],
+    "title": "马力欧vs.咚奇刚 重制版"
   },
   {
-    "id": "deefb5f6-7610-404c-a75b-f41e214d5354",
-    "title": "绝世好武功",
-    "subtitle": ["The Matchless KungFu"],
-    "releaseDate": "2023.08.30",
-    "platforms": ["Steam", "Android"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1696440/library_hero.jpg?t=1706679103",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1696440/logo_schinese.png?t=1706679103",
-    "leftColor": "black",
-    "rightColor": "#c61900"
+    "bg": "/games/56567a1c-ac0d-41e3-86c8-f55ad937b1c5/cover.jpg",
+    "free": [],
+    "id": "56567a1c-ac0d-41e3-86c8-f55ad937b1c5",
+    "leftColor": "#FFFFFF",
+    "logo": "/games/56567a1c-ac0d-41e3-86c8-f55ad937b1c5/logo.png",
+    "platforms": ["PlayStation", "Steam"],
+    "releaseDate": "2024.02.08",
+    "rightColor": "#FFFFFF",
+    "subtitle": ["Helldivers 2"],
+    "title": "绝地潜兵2"
   },
   {
-    "id": "a67a444e-19a2-48a0-8775-c7ffa78decce",
-    "title": "星之海",
-    "subtitle": ["Sea of Stars"],
-    "releaseDate": "2023.08.29",
-    "platforms": ["Steam", "Xbox", "Switch", "PlayStation"],
+    "bg": "/games/5abf8030-b2c3-4391-8974-c35164908948/cover.jpg",
     "free": ["PSPlus"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1244090/library_hero.jpg?t=1705940342",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1244090/logo_schinese.png?t=1705940342",
-    "leftColor": "#97e7fa",
-    "rightColor": "#97e7fa"
+    "id": "5abf8030-b2c3-4391-8974-c35164908948",
+    "leftColor": "#ffffff",
+    "platforms": ["PlayStation"],
+    "releaseDate": "2024.02.06",
+    "rightColor": "#FFFFFF",
+    "subtitle": ["Foamstars"],
+    "title": "泡沫之星"
   },
   {
-    "id": "6776f630-3613-43ed-b4ef-f80e7cb333c4",
-    "title": "碧波之下",
-    "subtitle": ["Under The Waves"],
-    "releaseDate": "2023.08.29",
+    "bg": "/games/db2b8789-540e-42b5-b786-720da5f46c39/cover.jpg",
+    "free": [],
+    "id": "db2b8789-540e-42b5-b786-720da5f46c39",
+    "leftColor": "#FFFFFF",
+    "logo": "/games/db2b8789-540e-42b5-b786-720da5f46c39/logo.png",
+    "platforms": ["Xbox", "PlayStation"],
+    "releaseDate": "2024.02.02",
+    "rightColor": "#FFFFFF",
+    "subtitle": ["Suicide Squad:", "Kill the Justice League"],
+    "title": "自杀小队：消灭正义联盟"
+  },
+  {
+    "bg": "/games/2f505ed2-0717-44d7-99d5-ad6cebf3c307/cover.png",
+    "free": ["XGP"],
+    "id": "2f505ed2-0717-44d7-99d5-ad6cebf3c307",
+    "leftColor": "#ffffff",
+    "logo": "/games/2f505ed2-0717-44d7-99d5-ad6cebf3c307/logo.png",
     "platforms": ["Steam", "Xbox", "PlayStation"],
-    "bg": "https://cdn2.steamgriddb.com/hero/86db75f9eb404bc1bf9c5665983b4036.webp",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1975440/logo.png?t=1695312611",
-    "leftColor": "#76b7dc",
-    "rightColor": "#76b7dc"
+    "releaseDate": "2024.02.02",
+    "rightColor": "#FFFFFF",
+    "subtitle": ["Persona 3 Reload"],
+    "title": "女神异闻录3：Reload"
   },
   {
-    "id": "a9e1182a-9be0-4472-953c-a03298f49ab0",
-    "title": "沉没之地",
-    "subtitle": ["Sunkenland"],
-    "releaseDate": "2023.08.26",
-    "platforms": ["Steam"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2080690/library_hero.jpg?t=1698078232",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/2080690/logo.png?t=1698078232",
-    "leftColor": "#b2d4ff",
-    "rightColor": "#add1ff"
+    "bg": "/games/275d4f09-3431-4384-9902-9a70d410d403/cover.png",
+    "free": [],
+    "id": "275d4f09-3431-4384-9902-9a70d410d403",
+    "leftColor": "#FFFFFF",
+    "platforms": ["PlayStation", "Steam", "Xbox", "Switch"],
+    "releaseDate": "2024.02.02",
+    "rightColor": "#FFFFFF",
+    "subtitle": ["Jujutsu Kaisen Cursed Clash"],
+    "title": "咒术回战 双华乱舞"
   },
   {
-    "id": "19f948be-cc92-4113-bce1-5b487ef3fe2e",
-    "title": "装甲核心6：境界天火",
-    "subtitle": ["Armored Core VI", " Fires of Rubicon"],
-    "releaseDate": "2023.08.25",
-    "platforms": ["Steam", "Xbox", "PlayStation"],
-    "bg": "https://cdn2.steamgriddb.com/grid/2744b81fb2756f06014aba0004a1e13d.webp",
-    "leftColor": "#d4d4d4",
-    "rightColor": "#d6d6d6"
-  },
-  {
-    "id": "27a02401-e163-4052-8a3c-c59e9e3cb356",
-    "title": "特修斯协议",
-    "subtitle": ["Theseus Protocol"],
-    "releaseDate": "2023.08.22",
-    "platforms": ["Steam"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2095290/library_hero.jpg?t=1688043394",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/2095290/logo.png?t=1688043394",
-    "leftColor": "#d2dfff",
-    "rightColor": "#b5cbff"
-  },
-  {
-    "id": "d85b7276-098c-4c94-9606-4fc78feb99ef",
-    "title": "索利斯堡",
-    "subtitle": ["Fort Solis"],
-    "releaseDate": "2023.08.22",
-    "platforms": ["Steam", "PlayStation"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1931730/library_hero.jpg?t=1703772489",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1931730/logo.png?t=1703772489",
-    "leftColor": "#9f4733",
-    "rightColor": "#9f4733"
-  },
-  {
-    "id": "0acd8378-b7e1-4712-8e33-e8307de8204e",
-    "title": "不朽者传奇",
-    "subtitle": ["Immortals of Aveum"],
-    "releaseDate": "2023.08.22",
-    "platforms": ["Steam", "Xbox", "PlayStation"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2009100/library_hero.jpg?t=1705928877",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/2009100/logo.png?t=1705928877",
-    "leftColor": "#6e571d",
-    "rightColor": "#362b0f"
-  },
-  {
-    "id": "a1b94e56-2aba-4821-a381-deefd520d05e",
-    "title": "物宅空间",
-    "subtitle": ["Cozy Space"],
-    "releaseDate": "2023.08.20",
-    "platforms": ["Steam"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2524480/library_hero.jpg?t=1692543480",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/2524480/logo_schinese.png?t=1692543480",
+    "bg": "/games/b96d0911-1949-44f0-8ea4-bb548c110cf6/cover.jpg",
+    "free": [],
+    "id": "b96d0911-1949-44f0-8ea4-bb548c110cf6",
     "leftColor": "#000000",
-    "rightColor": "#d8ebb2"
+    "platforms": ["Steam", "PlayStation"],
+    "releaseDate": "2024.02.01",
+    "rightColor": "#FFFFFF",
+    "subtitle": ["Granblue Fantasy: Relink"],
+    "title": "碧蓝幻想：Relink"
   },
   {
-    "id": "f397d11b-2f16-4342-9a05-f511f4f8a777",
-    "title": "戈德",
-    "subtitle": ["Gord"],
-    "releaseDate": "2023.08.17",
-    "platforms": ["Steam", "Xbox", "PlayStation"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1351210/library_hero.jpg?t=1698322898",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1351210/logo.png?t=1698322898",
-    "leftColor": "#c4c4b6",
-    "rightColor": "#c9c8bf"
-  },
-  {
-    "id": "d73086e7-b261-4502-a17a-9df88a723aab",
-    "title": "影子诡局：被诅咒的海盗",
-    "subtitle": ["Shadow Gambit: The Cursed Crew"],
-    "releaseDate": "2023.08.18",
-    "platforms": ["Steam", "Xbox", "PlayStation"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1545560/library_hero.jpg?t=1701872517",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1545560/logo.png?t=1701872517",
-    "leftColor": "#82c195",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "39be171d-1afd-4269-8d3b-fab20ab75ed3",
-    "title": "司辰之书",
-    "subtitle": ["Book of Hours"],
-    "releaseDate": "2023.08.18",
+    "bg": "/games/37befdc1-5df1-4c58-a3ff-77f3cec36ac4/cover.png",
+    "free": [],
+    "id": "37befdc1-5df1-4c58-a3ff-77f3cec36ac4",
+    "leftColor": "#FFFFFF",
+    "logo": "/games/37befdc1-5df1-4c58-a3ff-77f3cec36ac4/logo.png",
     "platforms": ["Steam"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1028310/library_hero.jpg?t=1692978586",
-    "logo": "",
+    "releaseDate": "2024.02.01",
+    "rightColor": "#FFFFFF",
+    "subtitle": ["古龍風雲錄"],
+    "title": "古龙风云录"
+  },
+  {
+    "bg": "/games/53de8354-3756-4e80-8352-62785bf87961/cover.jpg",
+    "free": [],
+    "id": "53de8354-3756-4e80-8352-62785bf87961",
     "leftColor": "#ffffff",
-    "rightColor": "#ff0000"
+    "platforms": ["Steam", "Android", "Apple"],
+    "releaseDate": "2024.01.31",
+    "rightColor": "#FFFFFF",
+    "subtitle": ["BlazBlue Entropy Effect"],
+    "title": "苍翼：混沌效应"
   },
   {
-    "id": "d76abf8e-c9d6-4322-aa55-014c9d35cd1c",
-    "title": "Bomb Rush Cyberfunk",
-    "releaseDate": "2023.08.18",
-    "platforms": ["Steam", "Switch"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1353230/library_hero.jpg?t=1692382431",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1353230/logo.png?t=1692382431",
-    "leftColor": "#a2efa2",
-    "rightColor": "#7ac77a"
+    "bg": "/games/7c3f06f9-626c-484a-b85a-b527cbaf79a6/cover.jpg",
+    "free": [],
+    "id": "7c3f06f9-626c-484a-b85a-b527cbaf79a6",
+    "leftColor": "#FFFFFF",
+    "platforms": ["Steam", "PlayStation", "Xbox"],
+    "releaseDate": "2024.01.26",
+    "rightColor": "#FFFFFF",
+    "subtitle": ["Tekken 8"],
+    "title": "铁拳8"
   },
   {
-    "id": "b36d7515-6054-42d8-8f91-30707e668e31",
-    "title": "矮人军团自走棋",
-    "subtitle": ["Dwarves: Glory, Death and Loot"],
-    "releaseDate": "2023.08.17",
-    "platforms": ["Steam"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2205850/library_hero.jpg?t=1706176364",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/2205850/logo.png?t=1706176364",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "c97cc431-b01e-4c64-ac60-0459055d92c3",
-    "title": "荒野大镖客：救赎",
-    "subtitle": ["Red Dead Redemption"],
-    "releaseDate": "2010.05.18",
-    "platforms": ["Xbox", "Switch", "PlayStation"],
-    "bg": "https://cdn2.steamgriddb.com/hero/7f2b2f3993942d8fffe0959b532816ea.png",
-    "logo": "",
-    "leftColor": "black",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "14566b2b-67d6-4d6d-9b23-8c5f65425826",
-    "title": "加把劲魔女",
-    "subtitle": ["Affogato"],
-    "releaseDate": "2023.08.17",
-    "platforms": ["Steam"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1983970/library_hero.jpg?t=1692258289",
-    "logo": "",
-    "leftColor": "#cdccea",
-    "rightColor": "#dedafd"
-  },
-  {
-    "id": "fc46eef9-4a1a-48b5-b38e-0b4e784cedd9",
-    "title": "胡闹搬家2",
-    "subtitle": ["Moving Out 2"],
-    "releaseDate": "2023.08.15",
-    "platforms": ["Steam", "Epic", "Xbox", "Switch", "PlayStation"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1641700/library_hero.jpg?t=1702396116",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1641700/logo.png?t=1702396116",
-    "leftColor": "#080808",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "870d17d2-c412-49e3-8f06-0b9af8838a87",
-    "title": "尘封大陆",
-    "subtitle": ["Atlas Fallen"],
-    "releaseDate": "2023.08.10",
+    "bg": "/games/89bc484d-4b73-4246-af40-1d2b3cd3dcc5/cover.png",
+    "free": [],
+    "id": "89bc484d-4b73-4246-af40-1d2b3cd3dcc5",
+    "leftColor": "#000000",
+    "logo": "/games/89bc484d-4b73-4246-af40-1d2b3cd3dcc5/logo.png",
     "platforms": ["Steam", "Xbox", "PlayStation"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1230530/library_hero.jpg?t=1691670284",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1230530/logo.png?t=1691670284",
-    "leftColor": "black",
-    "rightColor": "#ffffff"
+    "releaseDate": "2024.01.26",
+    "rightColor": "#FFFFFF",
+    "subtitle": ["Like a Dragon:", "Infinite Wealth"],
+    "title": "如龙8"
   },
   {
-    "id": "9d29b83f-a417-458b-9add-7157e819cac3",
-    "title": "30XX",
-    "subtitle": ["30XX"],
-    "releaseDate": "2023.08.09",
+    "bg": "/games/81d2836a-abaf-45ac-ae5e-fa4d0fbcf5d0/cover.jpg",
+    "free": [],
+    "id": "81d2836a-abaf-45ac-ae5e-fa4d0fbcf5d0",
+    "leftColor": "#000000",
+    "logo": "/games/81d2836a-abaf-45ac-ae5e-fa4d0fbcf5d0/logo.png",
+    "platforms": ["Steam"],
+    "releaseDate": "2024.01.18",
+    "rightColor": "#FFFFFF",
+    "subtitle": ["Three Kingdoms Zhao Yun"],
+    "title": "赵云传:云汉腾龙"
+  },
+  {
+    "bg": "/games/b6611327-8cbd-4949-b8eb-af13f1fa3f8a/cover.jpg",
+    "free": ["XGP"],
+    "id": "b6611327-8cbd-4949-b8eb-af13f1fa3f8a",
+    "leftColor": "#FFFFFF",
+    "logo": "/games/b6611327-8cbd-4949-b8eb-af13f1fa3f8a/logo.png",
+    "platforms": ["Steam", "Epic", "Xbox"],
+    "releaseDate": "2024.01.19",
+    "rightColor": "#FFFFFF",
+    "subtitle": ["Palworld"],
+    "title": "幻兽帕鲁"
+  },
+  {
+    "bg": "/games/cd4198d5-53e3-487f-8754-fcdeb74a9d22/cover.png",
+    "free": [],
+    "id": "cd4198d5-53e3-487f-8754-fcdeb74a9d22",
+    "leftColor": "#000000",
     "platforms": ["Switch"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1029210/library_hero.jpg?t=1702566968",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1029210/logo.png?t=1702566968",
-    "leftColor": "#82f7de",
-    "rightColor": "#89f5de"
+    "releaseDate": "2024.01.19",
+    "rightColor": "#000000",
+    "subtitle": ["两种记忆/记忆之门", "Another Code:Recollection"],
+    "title": "异色代码 回忆录"
   },
   {
-    "id": "0d45b927-ad83-4cea-bcb0-3d5b3d3bd885",
-    "title": "贪婪大地",
-    "subtitle": ["Greedland"],
-    "releaseDate": "2023.08.04",
+    "bg": "/games/fad75f28-4286-433a-bc73-f076bd7e726a/cover.jpg",
+    "free": [],
+    "id": "fad75f28-4286-433a-bc73-f076bd7e726a",
+    "leftColor": "#FFFFFF",
+    "logo": "/games/fad75f28-4286-433a-bc73-f076bd7e726a/logo.png",
+    "platforms": ["Steam", "Android", "Apple"],
+    "releaseDate": "2024.01.25",
+    "rightColor": "#FFFFFF",
+    "subtitle": ["Oblivion Override"],
+    "title": "湮灭线"
+  },
+  {
+    "bg": "/games/33c598e8-3e0c-4056-ad02-2086d922dd52/cover.jpg",
+    "free": [],
+    "id": "33c598e8-3e0c-4056-ad02-2086d922dd52",
+    "leftColor": "#FFFFFF",
+    "logo": "/games/33c598e8-3e0c-4056-ad02-2086d922dd52/logo.png",
+    "platforms": ["PlayStation", "Steam", "Xbox", "Switch"],
+    "releaseDate": "2024.01.25",
+    "rightColor": "#FFFFFF",
+    "subtitle": ["Apollo Justice:", "Ace Attorney Trilogy"],
+    "title": "逆转裁判456:王泥喜精选集"
+  },
+  {
+    "bg": "/games/7b22c82c-2502-4500-a0a1-45b1dc630822/cover.jpg",
+    "free": [],
+    "id": "7b22c82c-2502-4500-a0a1-45b1dc630822",
+    "leftColor": "#FFFFFF",
+    "platforms": ["PlayStation", "Steam", "Switch"],
+    "releaseDate": "2024.01.25",
+    "rightColor": "#FFFFFF",
+    "subtitle": ["Under Night", "In-Birth II Sys:Celes"],
+    "title": "夜下降生2 Sys:Celes"
+  },
+  {
+    "bg": "/games/daaa938c-dd28-4574-b27c-183933036540/cover.jpg",
+    "free": [],
+    "id": "daaa938c-dd28-4574-b27c-183933036540",
+    "leftColor": "white",
+    "logo": "/games/daaa938c-dd28-4574-b27c-183933036540/logo.png",
     "platforms": ["Steam"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2218400/library_hero.jpg?t=1706167110",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/2218400/logo_schinese.png?t=1706167110",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
+    "releaseDate": "2024.01.25",
+    "rightColor": "#FFFFFF",
+    "subtitle": ["～忘却的炼金术与极夜的解放者～"],
+    "title": "蕾斯莱莉娅娜的炼金工房"
   },
   {
+    "bg": "/games/5698a870-2263-46e3-8cd2-4d80acd71a30/cover.jpg",
+    "free": [],
+    "id": "5698a870-2263-46e3-8cd2-4d80acd71a30",
+    "leftColor": "#000000",
+    "logo": "/games/5698a870-2263-46e3-8cd2-4d80acd71a30/logo.png",
+    "platforms": ["Switch"],
+    "releaseDate": "2023.05.12",
+    "rightColor": "#FFFFFF",
+    "subtitle": ["The Legend of Zelda:", "Tears of Kingdom"],
+    "title": "塞尔达传说：王国之泪"
+  },
+  {
+    "bg": "/games/82305dd4-fdcb-4f44-b6bb-3f35ae85972d/cover.jpg",
+    "free": [],
+    "id": "82305dd4-fdcb-4f44-b6bb-3f35ae85972d",
+    "leftColor": "#ffffff",
+    "logo": "/games/82305dd4-fdcb-4f44-b6bb-3f35ae85972d/logo.png",
+    "platforms": ["Steam"],
+    "releaseDate": "2024.03.09",
+    "rightColor": "#ffffff",
+    "subtitle": ["Homeworld3"],
+    "title": "家园3"
+  },
+  {
+    "bg": "/games/39c589cf-927d-4ea3-8c22-65795b51ab24/cover.jpg",
+    "free": [],
+    "id": "39c589cf-927d-4ea3-8c22-65795b51ab24",
+    "leftColor": "black",
+    "platforms": ["Switch", "PlayStation"],
+    "releaseDate": "2023.09.28",
+    "rightColor": "#ffffff",
+    "subtitle": ["Ys X: Nordics"],
+    "title": "伊苏10:北境历险"
+  },
+  {
+    "bg": "/games/1b366627-6f86-4cf1-9cc0-c9a9cdbdbe26/cover.jpg",
+    "free": [],
+    "id": "1b366627-6f86-4cf1-9cc0-c9a9cdbdbe26",
+    "leftColor": "#ffffff",
+    "platforms": ["PlayStation"],
+    "releaseDate": "2024.03.22",
+    "rightColor": "#ffffff",
+    "subtitle": ["Rise of the Ronin"],
+    "title": "浪人崛起"
+  },
+  {
+    "bg": "/games/29bf6e0f-0bcd-4b83-96b2-4fc3f6df4bb3/cover.jpg",
+    "free": [],
+    "id": "29bf6e0f-0bcd-4b83-96b2-4fc3f6df4bb3",
+    "leftColor": "#ffffff",
+    "logo": "/games/29bf6e0f-0bcd-4b83-96b2-4fc3f6df4bb3/logo.png",
+    "platforms": ["Steam", "Xbox", "PlayStation"],
+    "releaseDate": "2024.03.22",
+    "rightColor": "#ffffff",
+    "subtitle": ["Dragon's Dogma 2"],
+    "title": "龙之信条2"
+  },
+  {
+    "bg": "/games/7de8bbc6-1663-4962-9294-2b1e91bf1771/cover.jpg",
+    "free": [],
+    "id": "7de8bbc6-1663-4962-9294-2b1e91bf1771",
+    "leftColor": "#ffffff",
+    "logo": "/games/7de8bbc6-1663-4962-9294-2b1e91bf1771/logo.png",
+    "platforms": ["Steam", "Xbox", "PlayStation"],
+    "releaseDate": "2024.03.26",
+    "rightColor": "#ffffff",
+    "subtitle": ["Planet Zoo"],
+    "title": "动物园之星"
+  },
+  {
+    "bg": "/games/e3793bea-1f68-412f-aa7a-1ed5e50b66b9/cover.jpg",
+    "free": [],
+    "id": "e3793bea-1f68-412f-aa7a-1ed5e50b66b9",
+    "leftColor": "#ffffff",
+    "logo": "/games/e3793bea-1f68-412f-aa7a-1ed5e50b66b9/logo.png",
+    "platforms": ["Steam"],
+    "releaseDate": "2024.03.27",
+    "rightColor": "#ffffff",
+    "subtitle": ["Outpost "],
+    "title": "重装前哨"
+  },
+  {
+    "bg": "/games/698d8059-a9ce-421d-9335-856e984747eb/cover.jpg",
+    "free": [],
+    "id": "698d8059-a9ce-421d-9335-856e984747eb",
+    "leftColor": "#ffffff",
+    "platforms": ["Steam"],
+    "releaseDate": "2024.03.31",
+    "rightColor": "#ffffff",
+    "subtitle": ["- AMEDAMA -"],
+    "title": "雨魂"
+  },
+  {
+    "bg": "/games/d715ce00-41e0-4108-927e-fa784da51f5f/cover.jpg",
+    "free": [],
+    "id": "d715ce00-41e0-4108-927e-fa784da51f5f",
+    "leftColor": "#ffffff",
+    "logo": "/games/d715ce00-41e0-4108-927e-fa784da51f5f/logo.png",
+    "platforms": ["Steam"],
+    "releaseDate": "2024.04.17",
+    "rightColor": "#ffffff",
+    "subtitle": ["Europa"],
+    "title": "木卫二"
+  },
+  {
+    "bg": "/games/89c26da1-11a6-4420-9d50-6646785191a9/cover.jpg",
+    "free": [],
+    "id": "89c26da1-11a6-4420-9d50-6646785191a9",
+    "leftColor": "#ffffff",
+    "logo": "/games/89c26da1-11a6-4420-9d50-6646785191a9/logo.png",
+    "platforms": ["Steam", "Xbox", "PlayStation"],
+    "releaseDate": "2024.04.23",
+    "rightColor": "#ffffff",
+    "subtitle": ["Eiyuden Chronicle: ", "Hundred Heroes"],
+    "title": "百英雄传"
+  },
+  {
+    "bg": "/games/8ee4a5da-e875-45f1-9230-08af6577e292/cover.jpg",
+    "free": [],
+    "id": "8ee4a5da-e875-45f1-9230-08af6577e292",
+    "leftColor": "#ffffff",
+    "logo": "/games/8ee4a5da-e875-45f1-9230-08af6577e292/logo.png",
+    "platforms": ["Steam"],
+    "releaseDate": "2024.04.26",
+    "rightColor": "#ffffff",
+    "subtitle": ["Manor Lords"],
+    "title": "庄园领主"
+  },
+  {
+    "bg": "/games/37c9c37c-7f8f-42ba-99bd-1a37365de8b1/cover.jpg",
+    "free": [],
+    "id": "37c9c37c-7f8f-42ba-99bd-1a37365de8b1",
+    "leftColor": "#ffffff",
+    "platforms": ["PlayStation"],
+    "releaseDate": "2024.04.26",
+    "rightColor": "#ffffff",
+    "subtitle": ["Stellar Blade"],
+    "title": "剑星"
+  },
+  {
+    "bg": "/games/cb9d50b6-8277-46e0-9c54-0e3dbf35913a/cover.jpg",
+    "free": [],
+    "id": "cb9d50b6-8277-46e0-9c54-0e3dbf35913a",
+    "leftColor": "#ffffff",
+    "logo": "/games/cb9d50b6-8277-46e0-9c54-0e3dbf35913a/logo.png",
+    "platforms": ["Steam", "Xbox"],
+    "releaseDate": "2024.05.21",
+    "rightColor": "#ffffff",
+    "subtitle": ["Senua’s Saga: Hellblade II"],
+    "title": "地狱之刃2：塞娜的献祭"
+  },
+  {
+    "bg": "/games/3e74af89-c371-4491-be2c-70b52f578979/cover.jpg",
+    "free": [],
+    "id": "3e74af89-c371-4491-be2c-70b52f578979",
+    "leftColor": "#ffffff",
+    "logo": "/games/3e74af89-c371-4491-be2c-70b52f578979/logo.png",
+    "platforms": ["Steam"],
+    "releaseDate": "2024.08.20",
+    "rightColor": "#ffffff",
+    "subtitle": ["Black Myth: WuKong"],
+    "title": "黑神话：悟空"
+  },
+  {
+    "bg": "/games/a1e14b1e-3ef7-408d-8bf4-23a7a6bf88c6/cover.jpg",
+    "free": [],
+    "id": "a1e14b1e-3ef7-408d-8bf4-23a7a6bf88c6",
+    "leftColor": "#ffffff",
+    "logo": "/games/a1e14b1e-3ef7-408d-8bf4-23a7a6bf88c6/logo.png",
+    "platforms": ["Steam", "Xbox"],
+    "releaseDate": "2024.09.05",
+    "rightColor": "#ffffff",
+    "subtitle": ["S.T.A.L.K.E.R. 2: ", "Heart of Chernobyl"],
+    "title": "潜行者2:切尔诺贝利之心"
+  },
+  {
+    "bg": "/games/1ed83d72-91d2-4681-a8b3-88b8fdbe94e6/cover.jpg",
+    "free": [],
+    "id": "1ed83d72-91d2-4681-a8b3-88b8fdbe94e6",
+    "leftColor": "#ffffff",
+    "logo": "/games/1ed83d72-91d2-4681-a8b3-88b8fdbe94e6/logo.png",
+    "platforms": ["Steam", "Switch"],
+    "releaseDate": "2023.12.22",
+    "rightColor": "#ffffff",
+    "subtitle": ["ONE."],
+    "title": "ONE:辉之季节 重制版"
+  },
+  {
+    "bg": "/games/e1379ce7-38ec-4933-b50e-30111b983df6/cover.jpg",
+    "free": [],
+    "id": "e1379ce7-38ec-4933-b50e-30111b983df6",
+    "leftColor": "#ffffff",
+    "logo": "/games/e1379ce7-38ec-4933-b50e-30111b983df6/logo.png",
+    "platforms": ["Steam"],
+    "releaseDate": "2023.12.19",
+    "rightColor": "#ffffff",
+    "subtitle": ["Just King"],
+    "title": "吾王保卫战"
+  },
+  {
+    "bg": "/games/879fc6ec-6957-46af-b4ae-006d1ddde7a3/cover.jpg",
+    "free": [],
+    "id": "879fc6ec-6957-46af-b4ae-006d1ddde7a3",
+    "leftColor": "#ffffff",
+    "logo": "/games/879fc6ec-6957-46af-b4ae-006d1ddde7a3/logo.png",
+    "platforms": ["Steam"],
+    "releaseDate": "2023.12.16",
+    "rightColor": "#ffffff",
+    "subtitle": ["Return from Core"],
+    "title": "地心归途"
+  },
+  {
+    "bg": "/games/3604f417-b551-46b7-9a6b-9561dc15f66b/cover.jpg",
+    "free": [],
+    "id": "3604f417-b551-46b7-9a6b-9561dc15f66b",
+    "leftColor": "#ffffff",
+    "platforms": ["Steam", "Switch", "PlayStation"],
+    "releaseDate": "2023.12.14",
+    "rightColor": "#ffffff",
+    "subtitle": ["Witch on the Holy Night"],
+    "title": "魔法使之夜"
+  },
+  {
+    "bg": "/games/436e9b2b-2c09-4fce-8681-6225442913c3/cover.jpg",
+    "free": [],
+    "id": "436e9b2b-2c09-4fce-8681-6225442913c3",
+    "leftColor": "#ffffff",
+    "logo": "/games/436e9b2b-2c09-4fce-8681-6225442913c3/logo.png",
+    "platforms": ["Steam", "PlayStation"],
+    "releaseDate": "2023.12.14",
+    "rightColor": "#ffffff",
+    "subtitle": ["Granblue Fantasy", "Versus: Rising"],
+    "title": "碧蓝幻想 Versus：崛起"
+  },
+  {
+    "bg": "/games/42170f0d-d571-4a23-bf17-c887a38d5ecd/cover.jpg",
+    "free": [],
+    "id": "42170f0d-d571-4a23-bf17-c887a38d5ecd",
+    "leftColor": "#ffffff",
+    "logo": "/games/42170f0d-d571-4a23-bf17-c887a38d5ecd/logo.webp",
+    "platforms": ["Steam"],
+    "releaseDate": "2023.12.14",
+    "rightColor": "#ffffff",
+    "subtitle": ["Ready or Not"],
+    "title": "严阵以待"
+  },
+  {
+    "bg": "/games/1aa7d9fd-e06b-4c7b-8835-98e2038755d2/cover.jpg",
+    "free": [],
+    "id": "1aa7d9fd-e06b-4c7b-8835-98e2038755d2",
+    "leftColor": "#ffffff",
+    "logo": "/games/1aa7d9fd-e06b-4c7b-8835-98e2038755d2/logo.webp",
+    "platforms": ["Steam", "Epic", "Xbox", "PlayStation"],
+    "releaseDate": "2023.12.08",
+    "rightColor": "#ffffff",
+    "subtitle": [],
+    "title": "The Finals"
+  },
+  {
+    "bg": "/games/db27932d-ec1b-4595-abc4-3fca69749caa/cover.jpg",
+    "free": [],
+    "id": "db27932d-ec1b-4595-abc4-3fca69749caa",
+    "leftColor": "#ffffff",
+    "logo": "/games/db27932d-ec1b-4595-abc4-3fca69749caa/logo.png",
+    "platforms": ["Steam", "Xbox", "PlayStation"],
+    "releaseDate": "2023.12.08",
+    "rightColor": "#ffffff",
+    "subtitle": ["Warhammer 40,000", "Rogue Trader"],
+    "title": "战锤40K：行商浪人"
+  },
+  {
+    "bg": "/games/22830d2b-35e8-4870-8fb8-302bd3669227/cover.jpg",
+    "free": ["XGP"],
+    "id": "22830d2b-35e8-4870-8fb8-302bd3669227",
+    "leftColor": "#ffffff",
+    "logo": "/games/22830d2b-35e8-4870-8fb8-302bd3669227/logo.png",
+    "platforms": ["Steam"],
+    "releaseDate": "2023.12.08",
+    "rightColor": "#ffffff",
+    "subtitle": ["Against the Storm"],
+    "title": "风暴之城"
+  },
+  {
+    "bg": "/games/a53b6d01-c03b-4fc3-8b1c-9a66c4025b70/cover.png",
+    "free": ["PSPlus"],
+    "id": "a53b6d01-c03b-4fc3-8b1c-9a66c4025b70",
+    "leftColor": "#ffffff",
+    "logo": "/games/a53b6d01-c03b-4fc3-8b1c-9a66c4025b70/logo.png",
+    "platforms": ["Steam", "Xbox", "Switch", "PlayStation"],
+    "releaseDate": "2023.12.07",
+    "rightColor": "#ffffff",
+    "subtitle": ["Outer Wilds"],
+    "title": "星际拓荒"
+  },
+  {
+    "bg": "/games/67fe3323-ed4b-4953-b185-919a98421d5e/cover.jpg",
+    "free": [],
+    "id": "67fe3323-ed4b-4953-b185-919a98421d5e",
+    "leftColor": "#ffffff",
+    "logo": "/games/67fe3323-ed4b-4953-b185-919a98421d5e/logo.png",
+    "platforms": ["Steam"],
+    "releaseDate": "2023.12.07",
+    "rightColor": "#ffffff",
+    "subtitle": [],
+    "title": "江华号"
+  },
+  {
+    "bg": "/games/5adfd8a1-de6f-4303-993d-c73afdd7a13f/cover.jpg",
+    "free": [],
+    "id": "5adfd8a1-de6f-4303-993d-c73afdd7a13f",
+    "leftColor": "#ffffff",
+    "logo": "/games/5adfd8a1-de6f-4303-993d-c73afdd7a13f/logo.png",
+    "platforms": ["Steam"],
+    "releaseDate": "2023.12.07",
+    "rightColor": "#ffffff",
+    "subtitle": [],
+    "title": "平寇志"
+  },
+  {
+    "bg": "/games/6ade332f-37a2-4ca7-a48d-2ad8dd0c3ee6/cover.png",
+    "free": [],
+    "id": "6ade332f-37a2-4ca7-a48d-2ad8dd0c3ee6",
+    "leftColor": "#ffffff",
+    "platforms": ["Switch"],
+    "releaseDate": "2023.12.01",
+    "rightColor": "#ffffff",
+    "subtitle": ["DRAGON QUEST MONSTERS:", "The Dark Prince"],
+    "title": "勇者斗恶龙 怪物仙境3：魔族王子与艾尔芙的旅程"
+  },
+  {
+    "bg": "/games/4d89222e-d1cf-42c9-9eb7-593a867818ed/cover.jpg",
+    "free": [],
+    "id": "4d89222e-d1cf-42c9-9eb7-593a867818ed",
+    "leftColor": "#ffffff",
+    "logo": "/games/4d89222e-d1cf-42c9-9eb7-593a867818ed/logo.png",
+    "platforms": ["Steam", "Xbox", "PlayStation"],
+    "releaseDate": "2023.11.30",
+    "rightColor": "#ffffff",
+    "subtitle": ["Gangs of Sherwood"],
+    "title": "舍伍德侠盗团"
+  },
+  {
+    "bg": "/games/7c240807-4874-41b4-98f4-3c1752a25b8a/cover.jpg",
+    "free": [],
+    "id": "7c240807-4874-41b4-98f4-3c1752a25b8a",
+    "leftColor": "#ffffff",
+    "logo": "/games/7c240807-4874-41b4-98f4-3c1752a25b8a/logo.png",
+    "platforms": ["Steam", "Xbox", "Switch", "PlayStation"],
+    "releaseDate": "2023.11.30",
+    "rightColor": "#ffffff",
+    "subtitle": ["采维"],
+    "title": "Tevi"
+  },
+  {
+    "bg": "/games/99e72ae4-664d-44b2-9216-3124fa0a49d8/cover.jpg",
+    "free": [],
+    "id": "99e72ae4-664d-44b2-9216-3124fa0a49d8",
+    "leftColor": "#ffffff",
+    "logo": "/games/99e72ae4-664d-44b2-9216-3124fa0a49d8/logo.png",
+    "platforms": ["Steam"],
+    "releaseDate": "2023.11.28",
+    "rightColor": "#ffffff",
+    "subtitle": ["Noctuary"],
+    "title": "梦灯花"
+  },
+  {
+    "bg": "/games/cdea3100-c25e-46a9-b18b-d814ee40c3cd/cover.jpg",
+    "free": [],
+    "id": "cdea3100-c25e-46a9-b18b-d814ee40c3cd",
+    "leftColor": "#ffffff",
+    "platforms": ["Steam", "Switch", "PlayStation"],
+    "releaseDate": "2023.11.22",
+    "rightColor": "#ffffff",
+    "subtitle": ["Dyschronia: Chronos Alternate"],
+    "title": "虚时异境：迷离时空"
+  },
+  {
+    "bg": "/games/8be9d281-9d8c-44f4-b9c2-4f02dbf616df/cover.jpg",
+    "free": [],
+    "id": "8be9d281-9d8c-44f4-b9c2-4f02dbf616df",
+    "leftColor": "#ff0000",
+    "platforms": ["Steam"],
+    "releaseDate": "2023.11.17",
+    "rightColor": "#ff0000",
+    "subtitle": ["Ghost Feed"],
+    "title": "吃香"
+  },
+  {
+    "bg": "/games/7ca75b49-5e67-4bbe-bff5-39615140eebe/cover.jpg",
+    "free": [],
+    "id": "7ca75b49-5e67-4bbe-bff5-39615140eebe",
+    "leftColor": "#ffffff",
+    "logo": "/games/7ca75b49-5e67-4bbe-bff5-39615140eebe/logo.png",
+    "platforms": ["Steam"],
+    "releaseDate": "2023.11.18",
+    "rightColor": "#ffffff",
+    "subtitle": ["Warhammer Age of Sigmar:", "Realms of Ruin"],
+    "title": "战锤西格玛时代：毁灭之境"
+  },
+  {
+    "bg": "/games/b06f2c7f-0ce6-47f8-9103-c34b8a27a84a/cover.jpg",
+    "free": ["XGP"],
+    "id": "b06f2c7f-0ce6-47f8-9103-c34b8a27a84a",
+    "leftColor": "#ffffff",
+    "logo": "/games/b06f2c7f-0ce6-47f8-9103-c34b8a27a84a/logo.png",
+    "platforms": ["Steam", "Xbox", "Switch", "PlayStation"],
+    "releaseDate": "2023.11.17",
+    "rightColor": "#ffffff",
+    "subtitle": ["Persona 5 Tactica"],
+    "title": "女神异闻录5：战略版"
+  },
+  {
+    "bg": "/games/6ad6a7fc-8181-4e9b-8330-c4005160f0b3/cover.jpg",
+    "free": [],
+    "id": "6ad6a7fc-8181-4e9b-8330-c4005160f0b3",
+    "leftColor": "black",
+    "logo": "/games/6ad6a7fc-8181-4e9b-8330-c4005160f0b3/logo.png",
+    "platforms": ["Steam", "Switch", "Android", "Apple"],
+    "releaseDate": "2023.11.16",
+    "rightColor": "#ffffff",
+    "subtitle": ["Dream Town Island"],
+    "title": "创造都市岛物语"
+  },
+  {
+    "bg": "/games/b9ee99d7-1613-4a90-a09e-d95a7270787b/cover.jpg",
+    "free": [],
+    "id": "b9ee99d7-1613-4a90-a09e-d95a7270787b",
+    "leftColor": "#ffffff",
+    "logo": "/games/b9ee99d7-1613-4a90-a09e-d95a7270787b/logo.png",
+    "platforms": ["Steam", "Xbox", "Switch", "PlayStation"],
+    "releaseDate": "2023.11.16",
+    "rightColor": "#ffffff",
+    "subtitle": ["NARUTO X BORUTO Ultimate Ninja ", "STORM CONNECTIONS"],
+    "title": "火影忍者 终极风暴羁绊"
+  },
+  {
+    "bg": "/games/3f461c54-df04-4d5a-957b-2a633c7a3de1/cover.jpg",
+    "free": [],
+    "id": "3f461c54-df04-4d5a-957b-2a633c7a3de1",
+    "leftColor": "#ffffff",
+    "logo": "/games/3f461c54-df04-4d5a-957b-2a633c7a3de1/logo.png",
+    "platforms": ["Steam", "Android", "Apple"],
+    "releaseDate": "2023.11.16",
+    "rightColor": "#ffffff",
+    "subtitle": ["Hero's Adventure:", "Road to Passion"],
+    "title": "大侠立志传：碧血丹心"
+  },
+  {
+    "bg": "/games/893687b7-f722-422c-8fe5-0aa6ce27ccc0/cover.jpg",
+    "free": [],
+    "id": "893687b7-f722-422c-8fe5-0aa6ce27ccc0",
+    "leftColor": "#ffffff",
+    "logo": "/games/893687b7-f722-422c-8fe5-0aa6ce27ccc0/logo.png",
+    "platforms": ["Steam"],
+    "releaseDate": "2023.11.15",
+    "rightColor": "#ffffff",
+    "subtitle": ["Skybreakers", "Hakou Watcher"],
+    "title": "诸子无双"
+  },
+  {
+    "bg": "/games/aaf24c1b-ed10-4459-a29f-e0522748077a/cover.jpg",
+    "free": [],
+    "id": "aaf24c1b-ed10-4459-a29f-e0522748077a",
+    "leftColor": "#ffffff",
+    "logo": "/games/aaf24c1b-ed10-4459-a29f-e0522748077a/logo.png",
+    "platforms": ["Steam", "Android", "Apple"],
+    "releaseDate": "2023.11.14",
+    "rightColor": "#ffffff",
+    "subtitle": ["Refind Self: The Personality Test Game"],
+    "title": "忆我：一个性格测试游戏"
+  },
+  {
+    "bg": "/games/bf075819-0ab2-409b-8612-acc955368587/cover.jpg",
+    "free": [],
+    "id": "bf075819-0ab2-409b-8612-acc955368587",
+    "leftColor": "#ffffff",
+    "platforms": ["Steam", "Xbox", "PlayStation"],
+    "releaseDate": "2023.11.10",
+    "rightColor": "#ffffff",
+    "subtitle": ["Call of Duty: Modern Warfare III"],
+    "title": "使命召唤：现代战争3 2023"
+  },
+  {
+    "bg": "/games/5a404523-c134-4761-8bd7-173dfe882007/cover.jpg",
+    "free": [],
+    "id": "5a404523-c134-4761-8bd7-173dfe882007",
+    "leftColor": "#ffffff",
+    "platforms": ["Steam"],
+    "releaseDate": "2023.11.10",
+    "rightColor": "#ffffff",
+    "subtitle": ["Strike Force Heroes"],
+    "title": "战火英雄 重制版"
+  },
+  {
+    "bg": "/games/ec4a8643-a06d-480f-b647-dbc537ac58dc/cover.jpg",
+    "free": [],
+    "id": "ec4a8643-a06d-480f-b647-dbc537ac58dc",
+    "leftColor": "#ffffff",
+    "logo": "/games/ec4a8643-a06d-480f-b647-dbc537ac58dc/logo.png",
+    "platforms": ["Steam", "Switch"],
+    "releaseDate": "2023.11.09",
+    "rightColor": "#ffffff",
+    "subtitle": ["SANABI: The Revenant"],
+    "title": "闪避刺客"
+  },
+  {
+    "bg": "/games/1d71626f-df22-4f38-a2be-5489f195ad3c/cover.jpg",
+    "free": [],
+    "id": "1d71626f-df22-4f38-a2be-5489f195ad3c",
+    "leftColor": "#ffffff",
+    "logo": "/games/1d71626f-df22-4f38-a2be-5489f195ad3c/logo.png",
+    "platforms": ["Steam", "Switch"],
+    "releaseDate": "2023.11.09",
+    "rightColor": "#ffffff",
+    "subtitle": ["Risk of Rain Returns"],
+    "title": "雨中冒险：回归"
+  },
+  {
+    "bg": "/games/f38752ed-f2c4-47b5-b73a-f0769da156ee/cover.png",
+    "free": ["XGP"],
+    "id": "f38752ed-f2c4-47b5-b73a-f0769da156ee",
+    "leftColor": "#000000",
+    "platforms": ["Steam", "Xbox", "Switch", "PlayStation"],
+    "releaseDate": "2023.11.08",
+    "rightColor": "#ffffff",
+    "subtitle": ["Like a Dragon Gaiden: ", "The Man Who Erased His Name"],
+    "title": "如龙7外传：无名之龙"
+  },
+  {
+    "bg": "/games/e7acfcc4-fbf3-4242-9338-70b26fcff1f7/cover.jpg",
+    "free": [],
+    "id": "e7acfcc4-fbf3-4242-9338-70b26fcff1f7",
+    "leftColor": "#ffffff",
+    "logo": "/games/e7acfcc4-fbf3-4242-9338-70b26fcff1f7/logo.png",
+    "platforms": ["Steam", "Switch", "PlayStation"],
+    "releaseDate": "2023.11.07",
+    "rightColor": "#ffffff",
+    "subtitle": ["Salt and Sacrifice"],
+    "title": "盐与献祭"
+  },
+  {
+    "bg": "/games/ae2dc34d-9657-47e0-9b7a-6f363cd175bd/cover.jpg",
+    "free": [],
+    "id": "ae2dc34d-9657-47e0-9b7a-6f363cd175bd",
+    "leftColor": "#ffffff",
+    "logo": "/games/ae2dc34d-9657-47e0-9b7a-6f363cd175bd/logo.png",
+    "platforms": ["Steam"],
+    "releaseDate": "2023.11.07",
+    "rightColor": "#ffffff",
+    "subtitle": ["Kuroinu 2 Redux"],
+    "title": "黑兽2‧改"
+  },
+  {
+    "bg": "/games/0149b7f6-adb9-4b4c-91f8-2d68d27d2150/cover.jpg",
+    "free": ["XGP"],
+    "id": "0149b7f6-adb9-4b4c-91f8-2d68d27d2150",
+    "leftColor": "#ffffff",
+    "logo": "/games/0149b7f6-adb9-4b4c-91f8-2d68d27d2150/logo.png",
+    "platforms": ["Steam", "Xbox", "PlayStation"],
+    "releaseDate": "2023.11.07",
+    "rightColor": "#ffffff",
+    "subtitle": ["Football Manager 2024"],
+    "title": "足球经理2024"
+  },
+  {
+    "bg": "/games/1987cf18-73f5-48cf-b947-71e0b8360959/cover.jpg",
+    "free": [],
+    "id": "1987cf18-73f5-48cf-b947-71e0b8360959",
+    "leftColor": "#ffffff",
+    "platforms": ["Steam", "Epic", "Xbox", "Switch", "PlayStation"],
+    "releaseDate": "2023.11.07",
+    "rightColor": "#ffffff",
+    "subtitle": ["Tintin Reporter - Cigars of the Pharaoh"],
+    "title": "丁丁历险记：法老的雪茄"
+  },
+  {
+    "bg": "/games/4e2c8b7e-1968-4c2a-9237-26ffc6bf834a/cover.jpg",
+    "free": [],
+    "id": "4e2c8b7e-1968-4c2a-9237-26ffc6bf834a",
+    "leftColor": "#ffffff",
+    "logo": "/games/4e2c8b7e-1968-4c2a-9237-26ffc6bf834a/logo.png",
+    "platforms": ["Steam"],
+    "releaseDate": "2023.11.07",
+    "rightColor": "#ffffff",
+    "subtitle": ["The Awakener: Forgotten Oath"],
+    "title": "觉醒者：遗忘之誓"
+  },
+  {
+    "bg": "/games/5e903960-e746-45f9-abf9-3b43673aabfb/cover.jpg",
+    "free": [],
+    "id": "5e903960-e746-45f9-abf9-3b43673aabfb",
+    "leftColor": "#ffffff",
+    "logo": "/games/5e903960-e746-45f9-abf9-3b43673aabfb/logo.png",
+    "platforms": ["Steam", "Xbox", "PlayStation"],
+    "releaseDate": "2023.11.06",
+    "rightColor": "#ffffff",
+    "subtitle": ["The Invincible"],
+    "title": "无敌号"
+  },
+  {
+    "bg": "/games/a0306b5a-803b-48f5-ba00-522f73d45787/cover.jpg",
+    "free": [],
+    "id": "a0306b5a-803b-48f5-ba00-522f73d45787",
+    "leftColor": "#000000",
+    "platforms": ["Steam"],
+    "releaseDate": "2023.10.04",
+    "rightColor": "#ffffff",
+    "subtitle": ["嘘から始まる恋の夏"],
+    "title": "始于谎言的夏日恋情"
+  },
+  {
+    "bg": "/games/f6f0a608-321b-4e3a-a74f-9e1d07936a87/cover.jpg",
+    "free": [],
+    "id": "f6f0a608-321b-4e3a-a74f-9e1d07936a87",
+    "leftColor": "#ffffff",
+    "logo": "/games/f6f0a608-321b-4e3a-a74f-9e1d07936a87/logo.png",
+    "platforms": ["Steam", "PlayStation", "Android", "Apple"],
+    "releaseDate": "2023.10.16",
+    "rightColor": "#ffffff",
+    "subtitle": ["Phantom Blade: Executioners"],
+    "title": "影之刃：断罪者"
+  },
+  {
+    "bg": "/games/ea90d4fe-656f-41f9-a2a3-49af49897f75/cover.png",
+    "free": [],
+    "id": "ea90d4fe-656f-41f9-a2a3-49af49897f75",
+    "leftColor": "#ffffff",
+    "logo": "/games/ea90d4fe-656f-41f9-a2a3-49af49897f75/logo.png",
+    "platforms": ["Steam", "Xbox", "PlayStation"],
+    "releaseDate": "2023.11.02",
+    "rightColor": "#ffffff",
+    "subtitle": ["RoboCop: Rogue City"],
+    "title": "机械战警：暴戾都市"
+  },
+  {
+    "bg": "/games/c2308051-60c9-4dff-9ce1-2e3d2956dbc2/cover.jpg",
+    "free": [],
+    "id": "c2308051-60c9-4dff-9ce1-2e3d2956dbc2",
+    "leftColor": "#ffffff",
+    "platforms": ["Steam", "Switch", "PlayStation"],
+    "releaseDate": "2023.11.02",
+    "rightColor": "#ffffff",
+    "subtitle": ["Star Ocean The Second Story R"],
+    "title": "星之海洋：第二个故事R"
+  },
+  {
+    "bg": "/games/5f3e96f4-dd12-4abc-ac24-7f13346af3f8/cover.jpg",
+    "free": [],
+    "id": "5f3e96f4-dd12-4abc-ac24-7f13346af3f8",
+    "leftColor": "#ffffff",
+    "logo": "/games/5f3e96f4-dd12-4abc-ac24-7f13346af3f8/logo.png",
+    "platforms": ["Steam"],
+    "releaseDate": "2023.11.03",
+    "rightColor": "#ffffff",
+    "subtitle": ["For The King II"],
+    "title": "为了吾王2"
+  },
+  {
+    "bg": "/games/5b62c292-d744-40e2-85b5-5579675e42d0/cover.jpg",
+    "free": [],
+    "id": "5b62c292-d744-40e2-85b5-5579675e42d0",
+    "leftColor": "#ffffff",
+    "logo": "/games/5b62c292-d744-40e2-85b5-5579675e42d0/logo.png",
+    "platforms": ["Steam"],
+    "releaseDate": "2023.11.03",
+    "rightColor": "#ffffff",
+    "subtitle": ["Back to the Dawn "],
+    "title": "动物迷城"
+  },
+  {
+    "bg": "/games/07ceeb1e-e700-4cee-8f11-7897900e3d65/cover.jpg",
+    "free": [],
+    "id": "07ceeb1e-e700-4cee-8f11-7897900e3d65",
+    "leftColor": "#ffffff",
+    "logo": "/games/07ceeb1e-e700-4cee-8f11-7897900e3d65/logo.png",
+    "platforms": ["Steam", "Xbox", "PlayStation"],
+    "releaseDate": "2023.11.02",
+    "rightColor": "#ffffff",
+    "subtitle": ["The Talos Principle 2"],
+    "title": "塔罗斯的法则2"
+  },
+  {
+    "bg": "/games/c14cce7a-3752-485a-94a1-6a4853170bd3/cover.jpg",
+    "free": [],
+    "id": "c14cce7a-3752-485a-94a1-6a4853170bd3",
+    "leftColor": "#ffffff",
+    "logo": "/games/c14cce7a-3752-485a-94a1-6a4853170bd3/logo.png",
+    "platforms": ["Steam"],
+    "releaseDate": "2023.11.02",
+    "rightColor": "#ffffff",
+    "subtitle": ["Magicraft"],
+    "title": "魔法工艺"
+  },
+  {
+    "bg": "/games/0f48fbbd-d7f9-470c-a5ae-5a5e0607b0b1/cover.png",
+    "free": [],
+    "id": "0f48fbbd-d7f9-470c-a5ae-5a5e0607b0b1",
+    "leftColor": "#000000",
+    "logo": "/games/0f48fbbd-d7f9-470c-a5ae-5a5e0607b0b1/logo.png",
+    "platforms": ["Switch"],
+    "releaseDate": "2023.11.02",
+    "rightColor": "#ffffff",
+    "subtitle": ["Fashion Dreamer"],
+    "title": "时尚造梦"
+  },
+  {
+    "bg": "/games/60cd6919-54c7-474d-a38b-dc47135953f6/cover.jpg",
+    "free": [],
+    "id": "60cd6919-54c7-474d-a38b-dc47135953f6",
+    "leftColor": "#ffffff",
+    "logo": "/games/60cd6919-54c7-474d-a38b-dc47135953f6/logo.png",
+    "platforms": ["Steam", "Android", "Apple"],
+    "releaseDate": "2023.11.02",
+    "rightColor": "#ffffff",
+    "subtitle": ["My Time at Sandrock"],
+    "title": "沙石镇时光"
+  },
+  {
+    "bg": "/games/e9add5a1-f156-4033-8cec-a9d0731892a9/cover.jpg",
+    "free": [],
+    "id": "e9add5a1-f156-4033-8cec-a9d0731892a9",
+    "leftColor": "#00f2ff",
+    "logo": "/games/e9add5a1-f156-4033-8cec-a9d0731892a9/logo.png",
+    "platforms": ["Steam", "Switch"],
+    "releaseDate": "2023.11.01",
+    "rightColor": "#ffffff",
+    "subtitle": ["Song of Nunu:", "A League of Legends Story"],
+    "title": "努努之歌：英雄联盟外传"
+  },
+  {
+    "bg": "/games/ff95e6d1-695a-4d23-95d0-593308dd31bc/cover.jpg",
+    "free": [],
+    "id": "ff95e6d1-695a-4d23-95d0-593308dd31bc",
+    "leftColor": "#ffffff",
+    "logo": "/games/ff95e6d1-695a-4d23-95d0-593308dd31bc/logo.png",
+    "platforms": ["Steam", "Xbox", "PlayStation"],
+    "releaseDate": "2023.10.31",
+    "rightColor": "#ffffff",
+    "subtitle": ["Jusant"],
+    "title": "退潮"
+  },
+  {
+    "bg": "/games/e359a839-25ab-4b76-b85f-0fec4f3bbc56/cover.png",
+    "free": [],
+    "id": "e359a839-25ab-4b76-b85f-0fec4f3bbc56",
+    "leftColor": "#ffffff",
+    "logo": "/games/e359a839-25ab-4b76-b85f-0fec4f3bbc56/logo.png",
+    "platforms": ["Steam", "Xbox", "PlayStation"],
+    "releaseDate": "2023.10.27",
+    "rightColor": "#ffffff",
+    "subtitle": ["Alan Wake 2"],
+    "title": "心灵杀手2"
+  },
+  {
+    "bg": "/games/40235b39-4b06-4659-8c20-2a9def4c6132/cover.jpg",
+    "free": [],
+    "id": "40235b39-4b06-4659-8c20-2a9def4c6132",
+    "leftColor": "#f95656",
+    "logo": "/games/40235b39-4b06-4659-8c20-2a9def4c6132/logo.png",
+    "platforms": ["Steam"],
+    "releaseDate": "2023.10.27",
+    "rightColor": "#ff4444",
+    "subtitle": ["Don't Scream"],
+    "title": "不要尖叫"
+  },
+  {
+    "bg": "/games/53b554a1-5737-4ba9-a530-f8a606edface/cover.jpg",
+    "free": [],
+    "id": "53b554a1-5737-4ba9-a530-f8a606edface",
+    "leftColor": "#ffffff",
+    "logo": "/games/53b554a1-5737-4ba9-a530-f8a606edface/logo.png",
+    "platforms": ["Steam", "Xbox", "PlayStation"],
+    "releaseDate": "2023.10.26",
+    "rightColor": "#ffffff",
+    "subtitle": ["ARK: Survival Ascended"],
+    "title": "方舟：生存飞升"
+  },
+  {
+    "bg": "/games/e58d7476-5cb4-4f21-aa61-1ffb2dbd91fd/cover.jpg",
+    "free": [],
+    "id": "e58d7476-5cb4-4f21-aa61-1ffb2dbd91fd",
+    "leftColor": "#000000",
+    "platforms": ["Steam"],
+    "releaseDate": "2023.10.26",
+    "rightColor": "#ffffff",
+    "subtitle": [],
+    "title": "Ginka"
+  },
+  {
+    "bg": "/games/8666d1c0-db3c-4331-9123-780f770fc767/cover.jpg",
+    "free": [],
+    "id": "8666d1c0-db3c-4331-9123-780f770fc767",
+    "leftColor": "#fcff00",
+    "logo": "/games/8666d1c0-db3c-4331-9123-780f770fc767/logo.png",
+    "platforms": ["Steam", "Xbox", "PlayStation"],
+    "releaseDate": "2023.10.26",
+    "rightColor": "#fcff00",
+    "subtitle": ["Ghostrunner 2"],
+    "title": "幽灵行者2"
+  },
+  {
+    "bg": "/games/b2b76098-65e3-424e-a179-d4d273c9feac/cover.jpg",
+    "free": [],
+    "id": "b2b76098-65e3-424e-a179-d4d273c9feac",
+    "leftColor": "#ffffff",
+    "logo": "/games/b2b76098-65e3-424e-a179-d4d273c9feac/logo.png",
+    "platforms": ["Steam", "Switch", "PlayStation"],
+    "releaseDate": "2023.07.27",
+    "rightColor": "#ffffff",
+    "subtitle": ["Crymachina"],
+    "title": "恸哭奇机"
+  },
+  {
+    "bg": "/games/04341da6-fa85-4b7c-82d4-cfc5ddc56050/cover.jpg",
+    "free": ["XGP"],
+    "id": "04341da6-fa85-4b7c-82d4-cfc5ddc56050",
+    "leftColor": "#ffffff",
+    "logo": "/games/04341da6-fa85-4b7c-82d4-cfc5ddc56050/logo.png",
+    "platforms": ["Steam", "Xbox", "PlayStation"],
+    "releaseDate": "2023.10.25",
+    "rightColor": "#ffffff",
+    "subtitle": ["Cities: Skylines II"],
+    "title": "都市：天际线2"
+  },
+  {
+    "bg": "/games/69f56001-abfc-436d-a179-4c75cd279bf2/cover.jpg",
+    "free": [],
+    "id": "69f56001-abfc-436d-a179-4c75cd279bf2",
+    "leftColor": "#000000",
+    "logo": "/games/69f56001-abfc-436d-a179-4c75cd279bf2/logo.png",
+    "platforms": ["Steam"],
+    "releaseDate": "2023.10.24",
+    "rightColor": "#ffffff",
+    "subtitle": ["Lethal Company"],
+    "title": "致命公司"
+  },
+  {
+    "bg": "/games/a9ca0f51-721b-469a-a780-425619cb0b26/cover.png",
+    "free": [],
+    "id": "a9ca0f51-721b-469a-a780-425619cb0b26",
+    "leftColor": "#ffffff",
+    "platforms": ["Steam", "Switch", "PlayStation"],
+    "releaseDate": "2023.10.24",
+    "rightColor": "#ffffff",
+    "subtitle": ["Just Dance ", "2024 Edition"],
+    "title": "舞力全开2024"
+  },
+  {
+    "bg": "/games/1fef9281-ddea-42c2-bea9-4cafbd07455d/cover.png",
+    "free": [],
+    "id": "1fef9281-ddea-42c2-bea9-4cafbd07455d",
+    "leftColor": "#ffffff",
+    "platforms": ["Steam", "Xbox", "Switch", "PlayStation"],
+    "releaseDate": "2023.10.24",
+    "rightColor": "#ffffff",
+    "subtitle": ["Metal Gear Solid:", "Master Collection Vol.1"],
+    "title": "合金装备：大师合集 Vol.1"
+  },
+  {
+    "bg": "/games/96a77cc4-fc24-48f6-afd4-e41a3294154c/cover.png",
+    "free": [],
+    "id": "96a77cc4-fc24-48f6-afd4-e41a3294154c",
+    "leftColor": "#9dd7c2",
+    "logo": "/games/96a77cc4-fc24-48f6-afd4-e41a3294154c/logo.png",
+    "platforms": ["Steam", "Xbox", "PlayStation"],
+    "releaseDate": "2023.10.24",
+    "rightColor": "#8ab3a4",
+    "subtitle": ["The Lord of the Rings:", "Return to Moria"],
+    "title": "指环王：重返莫瑞亚"
+  },
+  {
+    "bg": "/games/f5bf4a4d-4f56-43e9-a540-fbd385cb3560/cover.jpg",
+    "free": [],
+    "id": "f5bf4a4d-4f56-43e9-a540-fbd385cb3560",
+    "leftColor": "#ffdada",
+    "logo": "/games/f5bf4a4d-4f56-43e9-a540-fbd385cb3560/logo.png",
+    "platforms": ["Steam"],
+    "releaseDate": "2023.10.24",
+    "rightColor": "#f1cccc",
+    "subtitle": ["早咲きのくろゆり"],
+    "title": "提早绽放的黑百合"
+  },
+  {
+    "bg": "/games/61d69d45-a8a8-41e7-bf12-75b278e54a22/cover.jpg",
+    "free": [],
+    "id": "61d69d45-a8a8-41e7-bf12-75b278e54a22",
+    "leftColor": "#ffffff",
+    "logo": "/games/61d69d45-a8a8-41e7-bf12-75b278e54a22/logo.png",
+    "platforms": ["Steam"],
+    "releaseDate": "2023.10.23",
+    "rightColor": "#ffffff",
+    "subtitle": ["Slay the Princess"],
+    "title": "杀死公主"
+  },
+  {
+    "bg": "/games/bbc09fc2-82a7-4346-9565-97de7376cbaa/cover.png",
+    "free": [],
+    "id": "bbc09fc2-82a7-4346-9565-97de7376cbaa",
+    "leftColor": "#ffffff",
+    "logo": "/games/bbc09fc2-82a7-4346-9565-97de7376cbaa/logo.png",
+    "platforms": ["Steam", "Switch", "PlayStation"],
+    "releaseDate": "2023.10.19",
+    "rightColor": "#ffffff",
+    "subtitle": ["World of Horror"],
+    "title": "恐怖的世界"
+  },
+  {
+    "bg": "/games/df7a661e-1ca1-46db-a296-776e5565c91e/cover.png",
+    "free": [],
+    "id": "df7a661e-1ca1-46db-a296-776e5565c91e",
+    "leftColor": "#ff0000",
+    "logo": "/games/df7a661e-1ca1-46db-a296-776e5565c91e/logo.png",
+    "platforms": ["Switch"],
+    "releaseDate": "2023.10.20",
+    "rightColor": "#ff0000",
+    "subtitle": ["Super Mario Bros. Wonder"],
+    "title": "超级马力欧兄弟惊奇"
+  },
+  {
+    "bg": "/games/e9807a90-cf5c-4c79-aef7-7e4bad028134/cover.png",
+    "free": [],
+    "id": "e9807a90-cf5c-4c79-aef7-7e4bad028134",
+    "leftColor": "#ff0000",
+    "platforms": ["PlayStation"],
+    "releaseDate": "2023.10.20",
+    "rightColor": "#ff8c8c",
+    "subtitle": ["Marvel's Spider-Man 2"],
+    "title": "漫威蜘蛛侠2"
+  },
+  {
+    "bg": "/games/7beb033d-0e1b-4bda-b8cb-682dd365064a/cover.jpg",
+    "free": [],
+    "id": "7beb033d-0e1b-4bda-b8cb-682dd365064a",
+    "leftColor": "#ffffff",
+    "logo": "/games/7beb033d-0e1b-4bda-b8cb-682dd365064a/logo.png",
+    "platforms": ["Steam"],
+    "releaseDate": "2023.10.19",
+    "rightColor": "black",
+    "subtitle": ["Laika: Aged Through Blood"],
+    "title": "莱卡：鲜血铸就"
+  },
+  {
+    "bg": "/games/eadc656b-091a-40e0-b108-bbdcf8bd7009/cover.jpg",
+    "free": [],
+    "id": "eadc656b-091a-40e0-b108-bbdcf8bd7009",
+    "leftColor": "#e71b1b",
+    "logo": "/games/eadc656b-091a-40e0-b108-bbdcf8bd7009/logo.png",
+    "platforms": ["Steam", "Xbox", "PlayStation"],
+    "releaseDate": "2023.06.06",
+    "rightColor": "#ff2121",
+    "subtitle": ["Diablo IV"],
+    "title": "暗黑破坏神4"
+  },
+  {
+    "bg": "/games/f7d752d3-6de4-4a88-bcdd-65c81d951247/cover.jpg",
+    "free": [],
+    "id": "f7d752d3-6de4-4a88-bcdd-65c81d951247",
+    "leftColor": "black",
+    "logo": "/games/f7d752d3-6de4-4a88-bcdd-65c81d951247/logo.png",
+    "platforms": ["Steam"],
+    "releaseDate": "2023.10.18",
+    "rightColor": "#ffffff",
+    "subtitle": ["Love Is All Around"],
+    "title": "完蛋！我被美女包围了！"
+  },
+  {
+    "bg": "/games/6cb0608c-e4c3-44ea-8247-ecbd6ea88da8/cover.jpg",
+    "free": [],
+    "id": "6cb0608c-e4c3-44ea-8247-ecbd6ea88da8",
+    "leftColor": "#ffffff",
+    "logo": "/games/6cb0608c-e4c3-44ea-8247-ecbd6ea88da8/logo.png",
+    "platforms": ["Steam", "Switch"],
+    "releaseDate": "2023.10.18",
+    "rightColor": "#ffffff",
+    "subtitle": ["MAKOTO WAKAIDO’s Case Files", " TRILOGY DELUXE"],
+    "title": "和阶堂真的事件簿 豪华三部曲"
+  },
+  {
+    "bg": "/games/e8ca8a92-3395-4763-8048-bf505dcaec2f/cover.jpg",
+    "free": ["XGP"],
+    "id": "e8ca8a92-3395-4763-8048-bf505dcaec2f",
+    "leftColor": "#e8c364",
+    "logo": "/games/e8ca8a92-3395-4763-8048-bf505dcaec2f/logo.png",
+    "platforms": ["Steam"],
+    "releaseDate": "2023.10.17",
+    "rightColor": "#ffce4f",
+    "subtitle": ["Wizard with a Gun"],
+    "title": "荒野枪巫"
+  },
+  {
+    "bg": "/games/511b88b4-d980-4480-bef7-33fdb5e55c92/cover.jpg",
+    "free": [],
+    "id": "511b88b4-d980-4480-bef7-33fdb5e55c92",
+    "leftColor": "#ffffff",
+    "logo": "/games/511b88b4-d980-4480-bef7-33fdb5e55c92/logo.png",
+    "platforms": ["Steam", "Xbox", "Switch", "PlayStation"],
+    "releaseDate": "2023.10.17",
+    "rightColor": "#ffffff",
+    "subtitle": ["Sonic Superstars"],
+    "title": "索尼克 超级巨星"
+  },
+  {
+    "bg": "/games/8d94ba46-0722-456d-8631-d1938eeb3119/cover.jpg",
+    "free": [],
+    "id": "8d94ba46-0722-456d-8631-d1938eeb3119",
+    "leftColor": "#d7d7d7",
+    "logo": "/games/8d94ba46-0722-456d-8631-d1938eeb3119/logo.png",
+    "platforms": ["Steam", "PlayStation"],
+    "releaseDate": "2023.10.13",
+    "rightColor": "#d4d1d1",
+    "subtitle": ["The Lords of the Fallen"],
+    "title": "堕落之主"
+  },
+  {
+    "bg": "/games/e4241797-864e-41aa-9a48-56f472113ed0/cover.jpg",
+    "free": ["XGP"],
+    "id": "e4241797-864e-41aa-9a48-56f472113ed0",
+    "leftColor": "#ffffff",
+    "logo": "/games/e4241797-864e-41aa-9a48-56f472113ed0/logo.png",
+    "platforms": ["Steam", "Xbox"],
+    "releaseDate": "2023.10.10",
+    "rightColor": "#ffffff",
+    "subtitle": ["Forza Motorsport"],
+    "title": "极限竞速（2023）"
+  },
+  {
+    "bg": "/games/ac5459fd-dc01-439d-801a-8ee4ad4fb086/cover.jpg",
+    "free": [],
+    "id": "ac5459fd-dc01-439d-801a-8ee4ad4fb086",
+    "leftColor": "#ffffff",
+    "logo": "/games/ac5459fd-dc01-439d-801a-8ee4ad4fb086/logo.png",
+    "platforms": ["Steam", "Xbox", "Switch", "PlayStation"],
+    "releaseDate": "2023.10.06",
+    "rightColor": "#ffffff",
+    "subtitle": ["SWORD ART ONLINE Last Recollection"],
+    "title": "刀剑神域 异绊集结"
+  },
+  {
+    "bg": "/games/f4cd0843-56e5-4f4c-9381-1460beb4fffe/cover.jpg",
+    "free": [],
+    "id": "f4cd0843-56e5-4f4c-9381-1460beb4fffe",
+    "leftColor": "#ffffff",
+    "platforms": ["Steam"],
+    "releaseDate": "2023.10.06",
+    "rightColor": "#ffffff",
+    "subtitle": ["～在梦幻箱庭里种植空气的SLG～"],
+    "title": "赫尔的海底都市计划"
+  },
+  {
+    "bg": "/games/b93368d7-4fda-4835-ae44-c6256ef6451c/cover.png",
+    "free": [],
+    "id": "b93368d7-4fda-4835-ae44-c6256ef6451c",
+    "leftColor": "#ffffff",
+    "platforms": ["Switch"],
+    "releaseDate": "2023.10.06",
+    "rightColor": "#ffffff",
+    "subtitle": ["Detective Pikachu Returns"],
+    "title": "名侦探皮卡丘 闪电回归"
+  },
+  {
+    "bg": "/games/0715fd77-e830-4815-8ba1-cefeacf0edb5/cover.jpg",
+    "free": [],
+    "id": "0715fd77-e830-4815-8ba1-cefeacf0edb5",
+    "leftColor": "#ffffff",
+    "logo": "/games/0715fd77-e830-4815-8ba1-cefeacf0edb5/logo.png",
+    "platforms": ["Steam"],
+    "releaseDate": "2023.10.05",
+    "rightColor": "#ffffff",
+    "subtitle": ["Hidden Through Time 2:", " Myths & Magic"],
+    "title": "时代之下2：神话与魔法"
+  },
+  {
+    "bg": "/games/3115866c-ae46-4eb7-88e8-993e30d69a4b/cover.jpg",
+    "free": [],
+    "id": "3115866c-ae46-4eb7-88e8-993e30d69a4b",
+    "leftColor": "#ffffff",
+    "logo": "/games/3115866c-ae46-4eb7-88e8-993e30d69a4b/logo.png",
+    "platforms": ["Steam", "Xbox", "PlayStation"],
+    "releaseDate": "2023.10.05",
+    "rightColor": "#ffffff",
+    "subtitle": ["Assassin's Creed Mirage"],
+    "title": "刺客信条：幻景"
+  },
+  {
+    "bg": "/games/10f6c97c-ad8a-4d22-a751-e68cf836d7ce/cover.jpg",
+    "free": [],
+    "id": "10f6c97c-ad8a-4d22-a751-e68cf836d7ce",
+    "leftColor": "#ff6a6a",
+    "logo": "/games/10f6c97c-ad8a-4d22-a751-e68cf836d7ce/logo.png",
+    "platforms": ["Steam"],
+    "releaseDate": "2023.10.04",
+    "rightColor": "#ffffff",
+    "subtitle": ["Battle Shapers"],
+    "title": "塑战核心"
+  },
+  {
+    "bg": "/games/c895692d-5725-412e-be24-546bc4a15843/cover.jpg",
+    "free": [],
+    "id": "c895692d-5725-412e-be24-546bc4a15843",
+    "leftColor": "black",
+    "logo": "/games/c895692d-5725-412e-be24-546bc4a15843/logo.png",
+    "platforms": ["Steam", "Switch"],
+    "releaseDate": "2023.09.28",
+    "rightColor": "black",
+    "subtitle": ["Jelly Express"],
+    "title": "果冻快递"
+  },
+  {
+    "bg": "/games/bf113b85-7577-464c-bbf8-f1eeb7ef51bc/cover.jpg",
+    "free": [],
+    "id": "bf113b85-7577-464c-bbf8-f1eeb7ef51bc",
+    "leftColor": "#c1bbb7",
+    "logo": "/games/bf113b85-7577-464c-bbf8-f1eeb7ef51bc/logo.png",
+    "platforms": ["Steam", "Xbox", "Switch", "PlayStation"],
+    "releaseDate": "2023.09.29",
+    "rightColor": "#c1bbb7",
+    "subtitle": ["Cocoon"],
+    "title": "茧"
+  },
+  {
+    "bg": "/games/b78895d8-fec9-4c39-9b92-7241d8dacf5f/cover.jpg",
+    "free": [],
+    "id": "b78895d8-fec9-4c39-9b92-7241d8dacf5f",
+    "leftColor": "#ffffff",
+    "logo": "/games/b78895d8-fec9-4c39-9b92-7241d8dacf5f/logo.png",
+    "platforms": ["Steam", "Xbox"],
+    "releaseDate": "2023.09.29",
+    "rightColor": "#ffffff",
+    "subtitle": ["Torn Away"],
+    "title": "流离归途"
+  },
+  {
+    "bg": "/games/f4267681-183b-4a20-9c4a-d2fe80c16e39/cover.jpg",
+    "free": [],
+    "id": "f4267681-183b-4a20-9c4a-d2fe80c16e39",
+    "leftColor": "#ffffff",
+    "logo": "/games/f4267681-183b-4a20-9c4a-d2fe80c16e39/logo.png",
+    "platforms": ["Steam"],
+    "releaseDate": "2023.09.28",
+    "rightColor": "#ffffff",
+    "subtitle": [],
+    "title": "EA Sports FC 24"
+  },
+  {
+    "bg": "/games/5089ead7-70c4-4c46-9653-8384ff311f6b/cover.jpg",
+    "free": [],
+    "id": "5089ead7-70c4-4c46-9653-8384ff311f6b",
+    "leftColor": "#ffffff",
+    "logo": "/games/5089ead7-70c4-4c46-9653-8384ff311f6b/logo.png",
+    "platforms": ["Steam", "Xbox", "Switch", "PlayStation"],
+    "releaseDate": "2023.09.28",
+    "rightColor": "#ffffff",
+    "subtitle": ["达伊的大冒险"],
+    "title": "无限神速斩 勇者斗恶龙"
+  },
+  {
+    "bg": "/games/65964f95-02cf-4c7a-9e64-3463277282b3/cover.png",
+    "free": [],
+    "id": "65964f95-02cf-4c7a-9e64-3463277282b3",
+    "leftColor": "black",
+    "logo": "/games/65964f95-02cf-4c7a-9e64-3463277282b3/logo.png",
+    "platforms": ["Steam"],
+    "releaseDate": "2023.09.28",
+    "rightColor": "#ffffff",
+    "subtitle": ["Counter-Strike 2"],
+    "title": "反恐精英2"
+  },
+  {
+    "bg": "/games/3585adb5-4dd1-41d6-b916-6343f27a85bd/cover.jpg",
+    "free": [],
+    "id": "3585adb5-4dd1-41d6-b916-6343f27a85bd",
+    "leftColor": "#ffffff",
+    "logo": "/games/3585adb5-4dd1-41d6-b916-6343f27a85bd/logo.png",
+    "platforms": ["Steam", "Android", "Apple"],
+    "releaseDate": "2023.09.27",
+    "rightColor": "#ffffff",
+    "subtitle": ["Underground Blossom"],
+    "title": "地铁繁花"
+  },
+  {
+    "bg": "/games/4617eaf4-352a-4136-a889-dd753c695132/cover.jpg",
+    "free": [],
+    "id": "4617eaf4-352a-4136-a889-dd753c695132",
+    "leftColor": "#ffffff",
+    "logo": "/games/4617eaf4-352a-4136-a889-dd753c695132/logo.png",
+    "platforms": ["Steam", "Switch"],
+    "releaseDate": "2023.09.27",
+    "rightColor": "#ffffff",
+    "subtitle": ["Mineko's Night Market"],
+    "title": "未音子的夜市"
+  },
+  {
+    "bg": "/games/9da61cf4-2a8e-4c52-8fb6-131215c42f14/cover.jpg",
+    "free": [],
+    "id": "9da61cf4-2a8e-4c52-8fb6-131215c42f14",
+    "leftColor": "#ffffff",
+    "platforms": ["Steam"],
+    "releaseDate": "2023.09.26",
+    "rightColor": "#ffffff",
+    "subtitle": ["終のステラ"],
+    "title": "星之终途"
+  },
+  {
+    "bg": "/games/7f3220d3-749f-4854-b78c-5866449e6a90/cover.jpg",
+    "free": [],
+    "id": "7f3220d3-749f-4854-b78c-5866449e6a90",
+    "leftColor": "black",
+    "logo": "/games/7f3220d3-749f-4854-b78c-5866449e6a90/logo.png",
+    "platforms": ["Steam"],
+    "releaseDate": "2023.09.26",
+    "rightColor": "#fffafa",
+    "subtitle": ["WitchSpring R"],
+    "title": "魔女之泉R"
+  },
+  {
+    "bg": "/games/9ae0aaad-2662-4fbb-8f80-278d2c82d4c9/cover.jpg",
+    "free": [],
+    "id": "9ae0aaad-2662-4fbb-8f80-278d2c82d4c9",
+    "leftColor": "black",
+    "logo": "/games/9ae0aaad-2662-4fbb-8f80-278d2c82d4c9/logo.png",
+    "platforms": ["Steam", "Xbox", "Switch", "PlayStation"],
+    "releaseDate": "2023.09.19",
+    "rightColor": "#ffffff",
+    "subtitle": ["Mortal Kombat 1"],
+    "title": "真人快打1"
+  },
+  {
+    "bg": "/games/1a9f88ad-4380-4f70-9848-001954388b07/cover.jpg",
+    "free": ["XGP"],
+    "id": "1a9f88ad-4380-4f70-9848-001954388b07",
+    "leftColor": "#ffffff",
+    "logo": "/games/1a9f88ad-4380-4f70-9848-001954388b07/logo.png",
+    "platforms": ["Steam", "Xbox"],
+    "releaseDate": "2023.09.20",
+    "rightColor": "#ffffff",
+    "subtitle": ["Party Animals "],
+    "title": "猛兽派对"
+  },
+  {
+    "bg": "/games/e6772079-8d7c-495b-92e1-60e0575e6194/cover.jpg",
+    "free": [],
+    "id": "e6772079-8d7c-495b-92e1-60e0575e6194",
+    "leftColor": "#ffffff",
+    "platforms": ["Switch"],
+    "releaseDate": "2023.09.19",
+    "rightColor": "#ffffff",
+    "subtitle": ["薔薇與椿 〜豪華絢爛版〜"],
+    "title": "蔷薇与椿 〜豪华绚烂版〜"
+  },
+  {
+    "bg": "/games/4ee6cb82-50c6-4985-8a1f-a15b7fcdcdce/cover.png",
+    "free": ["XGP"],
+    "id": "4ee6cb82-50c6-4985-8a1f-a15b7fcdcdce",
+    "leftColor": "#92f6ff",
+    "logo": "/games/4ee6cb82-50c6-4985-8a1f-a15b7fcdcdce/logo.png",
+    "platforms": ["Steam", "Xbox", "PlayStation"],
+    "releaseDate": "2023.09.18",
+    "rightColor": "#abeff6",
+    "subtitle": ["Lies Of P"],
+    "title": "匹诺曹的谎言"
+  },
+  {
+    "bg": "/games/0ee3f31c-e452-4581-b4b2-4b2e498b1fd9/cover.png",
+    "free": [],
+    "id": "0ee3f31c-e452-4581-b4b2-4b2e498b1fd9",
+    "leftColor": "#ffffff",
+    "logo": "/games/0ee3f31c-e452-4581-b4b2-4b2e498b1fd9/logo.png",
+    "platforms": ["Steam", "Xbox", "PlayStation"],
+    "releaseDate": "2023.09.14",
+    "rightColor": "#ffffff",
+    "subtitle": ["Codename: ", "Wandering Sword"],
+    "title": "飙酷车神：轰鸣盛典"
+  },
+  {
+    "bg": "/games/348ea085-9ddd-439e-87e4-87efd70b33da/cover.jpg",
+    "free": [],
+    "id": "348ea085-9ddd-439e-87e4-87efd70b33da",
+    "leftColor": "#ffffff",
+    "logo": "/games/348ea085-9ddd-439e-87e4-87efd70b33da/logo.png",
+    "platforms": ["Steam", "Xbox", "PlayStation"],
+    "releaseDate": "2023.09.14",
+    "rightColor": "#ffffff",
+    "subtitle": ["We Were Here Expeditions: ", "The FriendShip"],
+    "title": "我们曾到此探险：友谊考验"
+  },
+  {
+    "bg": "/games/a521fbe7-6182-4ca6-bf89-ef7828955e17/cover.jpg",
+    "free": [],
+    "id": "a521fbe7-6182-4ca6-bf89-ef7828955e17",
+    "leftColor": "#fc4b4b",
+    "platforms": ["Steam", "Switch"],
+    "releaseDate": "2023.09.13",
+    "rightColor": "#fd6363",
+    "subtitle": ["Gunbrella"],
+    "title": "枪伞游侠"
+  },
+  {
+    "bg": "/games/fb730ced-9f74-4648-804b-9fae99065658/cover.jpg",
+    "free": [],
+    "id": "fb730ced-9f74-4648-804b-9fae99065658",
+    "leftColor": "#000000",
+    "logo": "/games/fb730ced-9f74-4648-804b-9fae99065658/logo.png",
+    "platforms": ["Steam", "Xbox", "Switch", "PlayStation"],
+    "releaseDate": "2023.09.13",
+    "rightColor": "#ffffff",
+    "subtitle": ["Super Bomberman R 2"],
+    "title": "超级炸弹人 R 2"
+  },
+  {
+    "bg": "/games/704db7a5-a9b1-45f7-841b-0c5f482d5e52/cover.png",
+    "free": [],
+    "id": "704db7a5-a9b1-45f7-841b-0c5f482d5e52",
+    "leftColor": "#ffffff",
+    "logo": "/games/704db7a5-a9b1-45f7-841b-0c5f482d5e52/logo.png",
+    "platforms": ["Steam", "PlayStation"],
+    "releaseDate": "2023.09.12",
+    "rightColor": "#ffffff",
+    "subtitle": ["Eternights"],
+    "title": "永夜"
+  },
+  {
+    "bg": "/games/62625422-4eea-4d72-a75d-3e1020ea44ec/cover.jpg",
+    "free": [],
+    "id": "62625422-4eea-4d72-a75d-3e1020ea44ec",
+    "leftColor": "#ffffff",
+    "logo": "/games/62625422-4eea-4d72-a75d-3e1020ea44ec/logo.png",
+    "platforms": ["Steam", "PlayStation"],
+    "releaseDate": "2022.07.28",
+    "rightColor": "#00e5ff",
+    "subtitle": ["Anonymous;Code"],
+    "title": "匿名代码"
+  },
+  {
+    "bg": "/games/231510db-c4fd-4da1-a61c-8d7db18e972d/cover.jpg",
+    "free": [],
+    "id": "231510db-c4fd-4da1-a61c-8d7db18e972d",
+    "leftColor": "#ffffff",
+    "logo": "/games/231510db-c4fd-4da1-a61c-8d7db18e972d/logo.png",
+    "platforms": ["Steam"],
+    "releaseDate": "2023.09.08",
+    "rightColor": "#ffffff",
+    "subtitle": ["SYNCED"],
+    "title": "重生边缘"
+  },
+  {
+    "bg": "/games/a7103b0f-7a05-4b00-a6a8-0e8a79f9f015/cover.jpg",
+    "free": [],
+    "id": "a7103b0f-7a05-4b00-a6a8-0e8a79f9f015",
+    "leftColor": "#ffffff",
+    "logo": "/games/a7103b0f-7a05-4b00-a6a8-0e8a79f9f015/logo.png",
+    "platforms": ["Android", "Apple"],
+    "releaseDate": "2023.09.07",
+    "rightColor": "#ffffff",
+    "subtitle": ["Final Fantasy VII: Ever Crisis"],
+    "title": "最终幻想7：永恒危机"
+  },
+  {
+    "bg": "/games/65bc10dd-6314-4bef-b12b-a04346a0dfd8/cover.webp",
+    "free": [],
+    "id": "65bc10dd-6314-4bef-b12b-a04346a0dfd8",
+    "leftColor": "#ff8c8c",
+    "logo": "/games/65bc10dd-6314-4bef-b12b-a04346a0dfd8/logo.png",
+    "platforms": ["Steam", "PlayStation"],
+    "releaseDate": "2023.08.03",
+    "rightColor": "#81a0ca",
+    "subtitle": ["Baldur's Gate 3"],
+    "title": "博德之门3"
+  },
+  {
+    "bg": "/games/6a3e85e0-057b-4c1c-b5cd-724fd3adffba/cover.jpg",
+    "free": [],
+    "id": "6a3e85e0-057b-4c1c-b5cd-724fd3adffba",
+    "leftColor": "#ffffff",
+    "logo": "/games/6a3e85e0-057b-4c1c-b5cd-724fd3adffba/logo.webp",
+    "platforms": ["Steam", "Xbox"],
+    "releaseDate": "2023.09.06",
+    "rightColor": "#ffffff",
+    "subtitle": ["Starfield"],
+    "title": "星空"
+  },
+  {
+    "bg": "/games/7b497763-4fd6-456e-8d21-9e32078c6ef3/cover.jpg",
+    "free": [],
+    "id": "7b497763-4fd6-456e-8d21-9e32078c6ef3",
+    "leftColor": "#ffffff",
+    "logo": "/games/7b497763-4fd6-456e-8d21-9e32078c6ef3/logo.png",
+    "platforms": ["Steam", "Xbox", "Switch", "PlayStation"],
+    "releaseDate": "2023.08.31",
+    "rightColor": "#ffffff",
+    "subtitle": ["How 2 Escape"],
+    "title": "如何逃脱"
+  },
+  {
+    "bg": "/games/11ec1883-3825-4c81-80fe-814afd50d8e9/cover.jpg",
+    "free": [],
+    "id": "11ec1883-3825-4c81-80fe-814afd50d8e9",
+    "leftColor": "black",
+    "platforms": ["Steam", "Xbox", "Switch", "PlayStation"],
+    "releaseDate": "2023.08.31",
+    "rightColor": "#fceddb",
+    "subtitle": ["Trine 5: A Clockwork Conspiracy"],
+    "title": "三位一体5：发条阴谋"
+  },
+  {
+    "bg": "/games/8dde8d01-00fc-4480-8c2c-6332b8a6854b/cover.jpg",
+    "free": [],
+    "id": "8dde8d01-00fc-4480-8c2c-6332b8a6854b",
+    "leftColor": "#ffffff",
+    "logo": "/games/8dde8d01-00fc-4480-8c2c-6332b8a6854b/logo.png",
+    "platforms": ["Steam", "Xbox", "PlayStation"],
+    "releaseDate": "2023.08.30",
+    "rightColor": "#ff0000",
+    "subtitle": ["Daymare: 1994 Sandcastle"],
+    "title": "白日梦魇：沙堡1994"
+  },
+  {
+    "bg": "/games/7df5af1c-9c51-4a75-8a95-03ea1efe703e/cover.jpg",
+    "free": [],
+    "id": "7df5af1c-9c51-4a75-8a95-03ea1efe703e",
+    "leftColor": "#ffe2b2",
+    "logo": "/games/7df5af1c-9c51-4a75-8a95-03ea1efe703e/logo.png",
+    "platforms": ["Switch"],
+    "releaseDate": "2023.08.30",
+    "rightColor": "#ffffff",
+    "subtitle": ["Samba de Amigo:", " Party Central"],
+    "title": "欢乐摇摇派对"
+  },
+  {
+    "bg": "/games/deefb5f6-7610-404c-a75b-f41e214d5354/cover.jpg",
+    "free": [],
+    "id": "deefb5f6-7610-404c-a75b-f41e214d5354",
+    "leftColor": "black",
+    "logo": "/games/deefb5f6-7610-404c-a75b-f41e214d5354/logo.png",
+    "platforms": ["Steam", "Android"],
+    "releaseDate": "2023.08.30",
+    "rightColor": "#c61900",
+    "subtitle": ["The Matchless KungFu"],
+    "title": "绝世好武功"
+  },
+  {
+    "bg": "/games/a67a444e-19a2-48a0-8775-c7ffa78decce/cover.jpg",
+    "free": ["PSPlus"],
+    "id": "a67a444e-19a2-48a0-8775-c7ffa78decce",
+    "leftColor": "#97e7fa",
+    "logo": "/games/a67a444e-19a2-48a0-8775-c7ffa78decce/logo.png",
+    "platforms": ["Steam", "Xbox", "Switch", "PlayStation"],
+    "releaseDate": "2023.08.29",
+    "rightColor": "#97e7fa",
+    "subtitle": ["Sea of Stars"],
+    "title": "星之海"
+  },
+  {
+    "bg": "/games/6776f630-3613-43ed-b4ef-f80e7cb333c4/cover.webp",
+    "free": [],
+    "id": "6776f630-3613-43ed-b4ef-f80e7cb333c4",
+    "leftColor": "#76b7dc",
+    "logo": "/games/6776f630-3613-43ed-b4ef-f80e7cb333c4/logo.png",
+    "platforms": ["Steam", "Xbox", "PlayStation"],
+    "releaseDate": "2023.08.29",
+    "rightColor": "#76b7dc",
+    "subtitle": ["Under The Waves"],
+    "title": "碧波之下"
+  },
+  {
+    "bg": "/games/a9e1182a-9be0-4472-953c-a03298f49ab0/cover.jpg",
+    "free": [],
+    "id": "a9e1182a-9be0-4472-953c-a03298f49ab0",
+    "leftColor": "#b2d4ff",
+    "logo": "/games/a9e1182a-9be0-4472-953c-a03298f49ab0/logo.png",
+    "platforms": ["Steam"],
+    "releaseDate": "2023.08.26",
+    "rightColor": "#add1ff",
+    "subtitle": ["Sunkenland"],
+    "title": "沉没之地"
+  },
+  {
+    "bg": "/games/19f948be-cc92-4113-bce1-5b487ef3fe2e/cover.webp",
+    "free": [],
+    "id": "19f948be-cc92-4113-bce1-5b487ef3fe2e",
+    "leftColor": "#d4d4d4",
+    "platforms": ["Steam", "Xbox", "PlayStation"],
+    "releaseDate": "2023.08.25",
+    "rightColor": "#d6d6d6",
+    "subtitle": ["Armored Core VI", " Fires of Rubicon"],
+    "title": "装甲核心6：境界天火"
+  },
+  {
+    "bg": "/games/27a02401-e163-4052-8a3c-c59e9e3cb356/cover.jpg",
+    "free": [],
+    "id": "27a02401-e163-4052-8a3c-c59e9e3cb356",
+    "leftColor": "#d2dfff",
+    "logo": "/games/27a02401-e163-4052-8a3c-c59e9e3cb356/logo.png",
+    "platforms": ["Steam"],
+    "releaseDate": "2023.08.22",
+    "rightColor": "#b5cbff",
+    "subtitle": ["Theseus Protocol"],
+    "title": "特修斯协议"
+  },
+  {
+    "bg": "/games/d85b7276-098c-4c94-9606-4fc78feb99ef/cover.jpg",
+    "free": [],
+    "id": "d85b7276-098c-4c94-9606-4fc78feb99ef",
+    "leftColor": "#9f4733",
+    "logo": "/games/d85b7276-098c-4c94-9606-4fc78feb99ef/logo.png",
+    "platforms": ["Steam", "PlayStation"],
+    "releaseDate": "2023.08.22",
+    "rightColor": "#9f4733",
+    "subtitle": ["Fort Solis"],
+    "title": "索利斯堡"
+  },
+  {
+    "bg": "/games/0acd8378-b7e1-4712-8e33-e8307de8204e/cover.jpg",
+    "free": [],
+    "id": "0acd8378-b7e1-4712-8e33-e8307de8204e",
+    "leftColor": "#6e571d",
+    "logo": "/games/0acd8378-b7e1-4712-8e33-e8307de8204e/logo.png",
+    "platforms": ["Steam", "Xbox", "PlayStation"],
+    "releaseDate": "2023.08.22",
+    "rightColor": "#362b0f",
+    "subtitle": ["Immortals of Aveum"],
+    "title": "不朽者传奇"
+  },
+  {
+    "bg": "/games/a1b94e56-2aba-4821-a381-deefd520d05e/cover.jpg",
+    "free": [],
+    "id": "a1b94e56-2aba-4821-a381-deefd520d05e",
+    "leftColor": "#000000",
+    "logo": "/games/a1b94e56-2aba-4821-a381-deefd520d05e/logo.png",
+    "platforms": ["Steam"],
+    "releaseDate": "2023.08.20",
+    "rightColor": "#d8ebb2",
+    "subtitle": ["Cozy Space"],
+    "title": "物宅空间"
+  },
+  {
+    "bg": "/games/f397d11b-2f16-4342-9a05-f511f4f8a777/cover.jpg",
+    "free": [],
+    "id": "f397d11b-2f16-4342-9a05-f511f4f8a777",
+    "leftColor": "#c4c4b6",
+    "logo": "/games/f397d11b-2f16-4342-9a05-f511f4f8a777/logo.png",
+    "platforms": ["Steam", "Xbox", "PlayStation"],
+    "releaseDate": "2023.08.17",
+    "rightColor": "#c9c8bf",
+    "subtitle": ["Gord"],
+    "title": "戈德"
+  },
+  {
+    "bg": "/games/d73086e7-b261-4502-a17a-9df88a723aab/cover.jpg",
+    "free": [],
+    "id": "d73086e7-b261-4502-a17a-9df88a723aab",
+    "leftColor": "#82c195",
+    "logo": "/games/d73086e7-b261-4502-a17a-9df88a723aab/logo.png",
+    "platforms": ["Steam", "Xbox", "PlayStation"],
+    "releaseDate": "2023.08.18",
+    "rightColor": "#ffffff",
+    "subtitle": ["Shadow Gambit: The Cursed Crew"],
+    "title": "影子诡局：被诅咒的海盗"
+  },
+  {
+    "bg": "/games/39be171d-1afd-4269-8d3b-fab20ab75ed3/cover.jpg",
+    "free": [],
+    "id": "39be171d-1afd-4269-8d3b-fab20ab75ed3",
+    "leftColor": "#ffffff",
+    "platforms": ["Steam"],
+    "releaseDate": "2023.08.18",
+    "rightColor": "#ff0000",
+    "subtitle": ["Book of Hours"],
+    "title": "司辰之书"
+  },
+  {
+    "bg": "/games/d76abf8e-c9d6-4322-aa55-014c9d35cd1c/cover.jpg",
+    "free": [],
+    "id": "d76abf8e-c9d6-4322-aa55-014c9d35cd1c",
+    "leftColor": "#a2efa2",
+    "logo": "/games/d76abf8e-c9d6-4322-aa55-014c9d35cd1c/logo.png",
+    "platforms": ["Steam", "Switch"],
+    "releaseDate": "2023.08.18",
+    "rightColor": "#7ac77a",
+    "subtitle": [],
+    "title": "Bomb Rush Cyberfunk"
+  },
+  {
+    "bg": "/games/b36d7515-6054-42d8-8f91-30707e668e31/cover.jpg",
+    "free": [],
+    "id": "b36d7515-6054-42d8-8f91-30707e668e31",
+    "leftColor": "#ffffff",
+    "logo": "/games/b36d7515-6054-42d8-8f91-30707e668e31/logo.png",
+    "platforms": ["Steam"],
+    "releaseDate": "2023.08.17",
+    "rightColor": "#ffffff",
+    "subtitle": ["Dwarves: Glory, Death and Loot"],
+    "title": "矮人军团自走棋"
+  },
+  {
+    "bg": "/games/c97cc431-b01e-4c64-ac60-0459055d92c3/cover.png",
+    "free": [],
+    "id": "c97cc431-b01e-4c64-ac60-0459055d92c3",
+    "leftColor": "black",
+    "platforms": ["Xbox", "Switch", "PlayStation"],
+    "releaseDate": "2010.05.18",
+    "rightColor": "#ffffff",
+    "subtitle": ["Red Dead Redemption"],
+    "title": "荒野大镖客：救赎"
+  },
+  {
+    "bg": "/games/14566b2b-67d6-4d6d-9b23-8c5f65425826/cover.jpg",
+    "free": [],
+    "id": "14566b2b-67d6-4d6d-9b23-8c5f65425826",
+    "leftColor": "#cdccea",
+    "platforms": ["Steam"],
+    "releaseDate": "2023.08.17",
+    "rightColor": "#dedafd",
+    "subtitle": ["Affogato"],
+    "title": "加把劲魔女"
+  },
+  {
+    "bg": "/games/fc46eef9-4a1a-48b5-b38e-0b4e784cedd9/cover.jpg",
+    "free": [],
+    "id": "fc46eef9-4a1a-48b5-b38e-0b4e784cedd9",
+    "leftColor": "#080808",
+    "logo": "/games/fc46eef9-4a1a-48b5-b38e-0b4e784cedd9/logo.png",
+    "platforms": ["Steam", "Epic", "Xbox", "Switch", "PlayStation"],
+    "releaseDate": "2023.08.15",
+    "rightColor": "#ffffff",
+    "subtitle": ["Moving Out 2"],
+    "title": "胡闹搬家2"
+  },
+  {
+    "bg": "/games/870d17d2-c412-49e3-8f06-0b9af8838a87/cover.jpg",
+    "free": [],
+    "id": "870d17d2-c412-49e3-8f06-0b9af8838a87",
+    "leftColor": "black",
+    "logo": "/games/870d17d2-c412-49e3-8f06-0b9af8838a87/logo.png",
+    "platforms": ["Steam", "Xbox", "PlayStation"],
+    "releaseDate": "2023.08.10",
+    "rightColor": "#ffffff",
+    "subtitle": ["Atlas Fallen"],
+    "title": "尘封大陆"
+  },
+  {
+    "bg": "/games/9d29b83f-a417-458b-9add-7157e819cac3/cover.jpg",
+    "free": [],
+    "id": "9d29b83f-a417-458b-9add-7157e819cac3",
+    "leftColor": "#82f7de",
+    "logo": "/games/9d29b83f-a417-458b-9add-7157e819cac3/logo.png",
+    "platforms": ["Switch"],
+    "releaseDate": "2023.08.09",
+    "rightColor": "#89f5de",
+    "subtitle": ["30XX"],
+    "title": "30XX"
+  },
+  {
+    "bg": "/games/0d45b927-ad83-4cea-bcb0-3d5b3d3bd885/cover.jpg",
+    "free": [],
+    "id": "0d45b927-ad83-4cea-bcb0-3d5b3d3bd885",
+    "leftColor": "#ffffff",
+    "logo": "/games/0d45b927-ad83-4cea-bcb0-3d5b3d3bd885/logo.png",
+    "platforms": ["Steam"],
+    "releaseDate": "2023.08.04",
+    "rightColor": "#ffffff",
+    "subtitle": ["Greedland"],
+    "title": "贪婪大地"
+  },
+  {
+    "bg": "/games/4a85447d-7582-4373-8660-0bed534b069d/cover.jpg",
+    "free": ["XGP"],
     "id": "4a85447d-7582-4373-8660-0bed534b069d",
-    "title": "土豆兄弟",
-    "subtitle": ["Brotato"],
-    "releaseDate": "2023.06.23",
+    "leftColor": "#d6c191",
+    "logo": "/games/4a85447d-7582-4373-8660-0bed534b069d/logo.png",
     "platforms": [
       "Steam",
       "Epic",
@@ -1797,341 +1898,888 @@
       "Android",
       "Apple"
     ],
-    "free": ["XGP"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1942280/library_hero.jpg?t=1701867225",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1942280/logo.png?t=1701867225",
-    "leftColor": "#d6c191",
-    "rightColor": "#dcc5dc"
+    "releaseDate": "2023.06.23",
+    "rightColor": "#dcc5dc",
+    "subtitle": ["Brotato"],
+    "title": "土豆兄弟"
   },
   {
+    "bg": "/games/313828d6-e4e5-4d68-b588-a8600f2d04ab/cover.jpg",
+    "free": [],
     "id": "313828d6-e4e5-4d68-b588-a8600f2d04ab",
-    "title": "巴别号漫游指南",
-    "subtitle": ["A Guidebook Of Babel"],
-    "releaseDate": "2023.08.03",
-    "platforms": ["Steam", "Switch"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1467920/library_hero.jpg?t=1688832554",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1467920/logo.png?t=1688832554",
     "leftColor": "#ecff00",
-    "rightColor": "#ffc846"
+    "logo": "/games/313828d6-e4e5-4d68-b588-a8600f2d04ab/logo.png",
+    "platforms": ["Steam", "Switch"],
+    "releaseDate": "2023.08.03",
+    "rightColor": "#ffc846",
+    "subtitle": ["A Guidebook Of Babel"],
+    "title": "巴别号漫游指南"
   },
   {
+    "bg": "/games/336c735f-8dec-47fc-b0a0-4c070474611c/cover.jpg",
+    "free": [],
     "id": "336c735f-8dec-47fc-b0a0-4c070474611c",
-    "title": "薇妮巴一家",
-    "subtitle": ["Venba"],
+    "leftColor": "#000000",
+    "logo": "/games/336c735f-8dec-47fc-b0a0-4c070474611c/logo.png",
+    "platforms": ["Steam", "Xbox", "Switch", "PlayStation"],
     "releaseDate": "2023.07.31",
-    "platforms": ["Steam", "Xbox", "Switch", "PlayStation"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1491670/library_hero.jpg?t=1704394984",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1491670/logo.png?t=1704394984",
-    "leftColor": "#000000",
-    "rightColor": "#ffffff"
+    "rightColor": "#ffffff",
+    "subtitle": ["Venba"],
+    "title": "薇妮巴一家"
   },
   {
+    "bg": "/games/02da3e31-3b16-4563-86e1-b16d19444063/cover.jpg",
+    "free": [],
     "id": "02da3e31-3b16-4563-86e1-b16d19444063",
-    "title": "三伏",
+    "leftColor": "#ff0000",
+    "platforms": ["Steam"],
     "releaseDate": "2023.07.28",
-    "platforms": ["Steam"],
-    "bg": "https://alioss.yystv.cn/games/b2d05629fabd458ba0fcf82818a9da28.jpg_mw680",
-    "leftColor": "#ff0000",
-    "rightColor": "#ff0000"
+    "rightColor": "#ff0000",
+    "subtitle": [],
+    "title": "三伏"
   },
   {
+    "bg": "/games/dde5fc2d-911c-4b2c-ae65-2ce788b189c7/cover.png",
+    "free": [],
     "id": "dde5fc2d-911c-4b2c-ae65-2ce788b189c7",
-    "title": "双截龙外传：双龙出海",
+    "leftColor": "#ffffff",
+    "logo": "/games/dde5fc2d-911c-4b2c-ae65-2ce788b189c7/logo.png",
+    "platforms": ["Steam", "Xbox", "Switch", "PlayStation"],
+    "releaseDate": "2023.07.27",
+    "rightColor": "#ffffff",
     "subtitle": ["Double Dragon Gaiden: ", "Rise Of The Dragons"],
-    "releaseDate": "2023.07.27",
-    "platforms": ["Steam", "Xbox", "Switch", "PlayStation"],
-    "bg": "https://cdn2.steamgriddb.com/hero/89c89b39e24047fc7a2a5dac3f117cfc.png",
-    "logo": "https://cdn2.steamgriddb.com/logo/922bc22c11315bf7131e02eaf7617ab1.png",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
+    "title": "双截龙外传：双龙出海"
   },
   {
+    "bg": "/games/c3c3624f-a660-4fa9-a123-ffd56478bec6/cover.jpg",
+    "free": [],
     "id": "c3c3624f-a660-4fa9-a123-ffd56478bec6",
-    "title": "学园构想家",
+    "leftColor": "#ffffff",
+    "platforms": ["Steam"],
+    "releaseDate": "2023.07.27",
+    "rightColor": "#ffffff",
     "subtitle": ["Let's School"],
-    "releaseDate": "2023.07.27",
-    "platforms": ["Steam"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1937500/library_hero.jpg?t=1695291707",
-    "logo": "",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
+    "title": "学园构想家"
   },
   {
+    "bg": "/games/1a556840-028d-4b52-9755-8f59a8b51e77/cover.jpg",
+    "free": [],
     "id": "1a556840-028d-4b52-9755-8f59a8b51e77",
-    "title": "石头纪",
-    "subtitle": ["Stone Story RPG"],
-    "releaseDate": "2023.07.27",
+    "leftColor": "#ffffff",
+    "logo": "/games/1a556840-028d-4b52-9755-8f59a8b51e77/logo.png",
     "platforms": ["Steam", "Android", "Apple"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/603390/library_hero.jpg?t=1635872387",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/603390/logo.png?t=1635872387",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
+    "releaseDate": "2023.07.27",
+    "rightColor": "#ffffff",
+    "subtitle": ["Stone Story RPG"],
+    "title": "石头纪"
   },
   {
+    "bg": "/games/729b1190-b038-45bb-8045-765d1e913849/cover.jpg",
+    "free": ["XGP"],
     "id": "729b1190-b038-45bb-8045-765d1e913849",
-    "title": "遗迹：灰烬重生2 ",
-    "subtitle": ["Remnant II"],
-    "releaseDate": "2023.07.25",
-    "platforms": ["Steam", "Xbox", "PlayStation"],
-    "free": ["XGP"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1282100/library_hero.jpg?t=1706660434",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1282100/logo.png?t=1706660434",
     "leftColor": "#ff0000",
-    "rightColor": "#ff0000"
+    "logo": "/games/729b1190-b038-45bb-8045-765d1e913849/logo.png",
+    "platforms": ["Steam", "Xbox", "PlayStation"],
+    "releaseDate": "2023.07.25",
+    "rightColor": "#ff0000",
+    "subtitle": ["Remnant II"],
+    "title": "遗迹：灰烬重生2"
   },
   {
-    "id": "3d9d0ce9-8707-4084-9ffa-b9a3dce42de3",
-    "title": "瑞奇与叮当：时空跳转",
-    "subtitle": ["Ratchet & Clank: ", "Rift Apart"],
-    "releaseDate": "2021.06.11",
-    "platforms": ["Steam", "PlayStation"],
+    "bg": "/games/3d9d0ce9-8707-4084-9ffa-b9a3dce42de3/cover.webp",
     "free": ["PSPlus"],
-    "bg": "https://cdn2.steamgriddb.com/hero/3bf47241fd8ea682509ba6b7cc875f72.webp",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1895880/logo.png?t=1691423276",
+    "id": "3d9d0ce9-8707-4084-9ffa-b9a3dce42de3",
     "leftColor": "#ffd6aa",
-    "rightColor": "#abf1db"
+    "logo": "/games/3d9d0ce9-8707-4084-9ffa-b9a3dce42de3/logo.png",
+    "platforms": ["Steam", "PlayStation"],
+    "releaseDate": "2021.06.11",
+    "rightColor": "#abf1db",
+    "subtitle": ["Ratchet & Clank: ", "Rift Apart"],
+    "title": "瑞奇与叮当：时空跳转"
   },
   {
+    "bg": "/games/55ec68bc-11ac-431b-8903-aa1ca2643e72/cover.png",
+    "free": [],
     "id": "55ec68bc-11ac-431b-8903-aa1ca2643e72",
-    "title": "皮克敏4",
-    "subtitle": ["Pikmin 4"],
-    "releaseDate": "2023.07.21",
-    "platforms": ["Switch"],
-    "bg": "https://cdn2.steamgriddb.com/hero/4a88017f1f83c4e28a64117af5969140.png",
-    "logo": "https://cdn2.steamgriddb.com/logo/94b2da0fedccca119b1ae6ae30ccbcea.png",
     "leftColor": "#5eff00",
-    "rightColor": "#5eff00"
-  },
-  {
-    "id": "fe23b976-baf3-4056-897e-b260321a4b83",
-    "title": "勇者斗恶龙 寻宝探险团 ",
-    "subtitle": ["蓝色眼眸与天空罗盘", "Dragon Quest Treasures"],
-    "releaseDate": "2022.12.09",
-    "platforms": ["Steam", "Switch"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2021210/library_hero.jpg?t=1690472787",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/2021210/logo.png?t=1690472787",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "23b3365f-295b-410b-a432-579ebe1f2f1c",
-    "title": "东方New World",
-    "subtitle": ["Touhou: New World"],
-    "releaseDate": "2023.07.14",
-    "platforms": ["Steam", "Switch", "PlayStation"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2150660/library_hero.jpg?t=1694806792",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/2150660/logo.png?t=1694806792",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "c8a3bf67-0980-4eac-a0a8-af81c5484f96",
-    "title": "原始袭变",
-    "subtitle": ["Exoprimal"],
-    "releaseDate": "2023.07.14",
-    "platforms": ["Steam", "Xbox", "PlayStation"],
-    "free": ["XGP"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1286320/library_hero.jpg?t=1706736845",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1286320/logo.png?t=1706736845",
-    "leftColor": "#ffffff",
-    "rightColor": "#bcbaba"
-  },
-  {
-    "id": "17885945-4081-44c6-bb50-3850949f06a8",
-    "title": "玛莉的炼金工房 重制版 ",
-    "subtitle": ["～萨尔布鲁克的炼金术士～"],
-    "releaseDate": "2023.07.13",
-    "platforms": ["Steam", "Switch", "PlayStation"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2138090/library_hero.jpg?t=1705560417",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/2138090/logo_tchinese.png?t=1705560417",
-    "leftColor": "#ffffff",
-    "rightColor": "#f6f7e8"
-  },
-  {
-    "id": "aae85f87-0a87-4ce7-9612-200cc1228436",
-    "title": "无畏契约",
-    "subtitle": ["Valorant"],
-    "releaseDate": "2020.06.02",
-    "platforms": ["Steam", "Epic"],
-    "bg": "https://cdn2.steamgriddb.com/hero/388966d8d6ed9d50cf2224bb52890be8.webp",
-    "logo": "",
-    "leftColor": "#fffbfb",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "d840cb51-b73b-4de3-980f-c68b7cf6a4ad",
-    "title": "犯罪时刻",
-    "subtitle": ["Crime O'Clock"],
-    "releaseDate": "2023.07.22",
-    "platforms": ["Steam", "Switch"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1736290/library_hero.jpg?t=1689861425",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1736290/logo.png?t=1689861425https://cdn.cloudflare.steamstatic.com/steam/apps/1736290/logo.png?t=1689861425",
-    "leftColor": "#000000",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "420a6cb6-300f-4f6c-aba7-364597296ea7",
-    "title": "幽灵诡计：幻影侦探（2023）",
-    "subtitle": ["Ghost Trick: Phantom Detective"],
-    "releaseDate": "2023.06.30",
-    "platforms": ["Steam", "Xbox", "Switch", "PlayStation"],
-    "bg": "https://cdn2.steamgriddb.com/hero/f7c67babedafc73bfd48c1d5fac222a8.png",
-    "logo": "",
-    "leftColor": "#b1edd7",
-    "rightColor": "#66a68f"
-  },
-  {
-    "id": "0c42236d-a2c7-4dd4-a662-5143758f9c81",
-    "title": "超侦探事件簿：雾雨谜宫",
-    "subtitle": ["Master Detective Archives: ", "Rain Code"],
-    "releaseDate": "2023.06.30",
+    "logo": "/games/55ec68bc-11ac-431b-8903-aa1ca2643e72/logo.png",
     "platforms": ["Switch"],
-    "bg": "https://cdn2.steamgriddb.com/hero/d149ca841cfcafaa3c78166a8a60b9de.jpg",
-    "logo": "https://cdn2.steamgriddb.com/logo/f121d09285898f1c66d66f1e6f0455a6.png",
+    "releaseDate": "2023.07.21",
+    "rightColor": "#5eff00",
+    "subtitle": ["Pikmin 4"],
+    "title": "皮克敏4"
+  },
+  {
+    "bg": "/games/fe23b976-baf3-4056-897e-b260321a4b83/cover.jpg",
+    "free": [],
+    "id": "fe23b976-baf3-4056-897e-b260321a4b83",
     "leftColor": "#ffffff",
-    "rightColor": "#fdfdfd"
+    "logo": "/games/fe23b976-baf3-4056-897e-b260321a4b83/logo.png",
+    "platforms": ["Steam", "Switch"],
+    "releaseDate": "2022.12.09",
+    "rightColor": "#ffffff",
+    "subtitle": ["蓝色眼眸与天空罗盘", "Dragon Quest Treasures"],
+    "title": "勇者斗恶龙 寻宝探险团"
   },
   {
-    "id": "fb8168d2-8ee3-433e-bab2-a8fd5aa6ca4d",
-    "title": "潜水员戴夫",
-    "subtitle": ["Dave the Diver"],
-    "releaseDate": "2023.06.28",
-    "platforms": ["Steam"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1868140/library_hero.jpg?t=1705996605",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1868140/logo.png?t=1705996605",
-    "leftColor": "black",
-    "rightColor": "#9ed5f7"
-  },
-  {
-    "id": "ae52ff0b-877d-4233-9988-1ab26d7f6a92",
-    "title": "最终幻想16",
-    "subtitle": ["Final Fantasy XVI"],
-    "releaseDate": "2023.06.22",
-    "platforms": ["PlayStation"],
-    "bg": "https://cdn2.steamgriddb.com/hero/fc19a875132c3b030205f42c4913a17b.png",
-    "logo": "",
+    "bg": "/games/23b3365f-295b-410b-a432-579ebe1f2f1c/cover.jpg",
+    "free": [],
+    "id": "23b3365f-295b-410b-a432-579ebe1f2f1c",
     "leftColor": "#ffffff",
-    "rightColor": "black"
-  },
-  {
-    "id": "787df8dd-db48-4e96-bd3b-23d2391e0496",
-    "title": "牧场物语 Welcome！美丽人生",
-    "subtitle": ["STORY OF SEASONS: A Wonderful Life"],
-    "releaseDate": "2023.01.26",
+    "logo": "/games/23b3365f-295b-410b-a432-579ebe1f2f1c/logo.png",
     "platforms": ["Steam", "Switch", "PlayStation"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2111170/library_hero.jpg?t=1688480630",
-    "logo": "",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
+    "releaseDate": "2023.07.14",
+    "rightColor": "#ffffff",
+    "subtitle": ["Touhou: New World"],
+    "title": "东方New World"
   },
   {
-    "id": "f37f9b85-23bf-4622-9b20-c6499c5703f4",
-    "title": "BattleBit Remastered",
-    "releaseDate": "2023.06.15",
-    "platforms": ["Steam"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/671860/library_hero.jpg?t=1702933692",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/671860/logo.png?t=1702933692",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "335d1aac-e2da-4b5d-935f-274562fde194",
-    "title": "层层恐惧（2023）",
-    "subtitle": ["Layers of Fear"],
-    "releaseDate": "2023.06.15",
-    "platforms": ["Steam", "Xbox", "PlayStation"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1946700/library_hero.jpg?t=1681469623",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1946700/logo.png?t=1681469623",
-    "leftColor": "#f9b6b6",
-    "rightColor": "#f5bbbb"
-  },
-  {
-    "id": "45ad106f-fcaa-4e2a-8b43-d5d442e8e25c",
-    "title": "蓝色协议",
-    "subtitle": ["Blue Protocol"],
-    "releaseDate": "2023.06.14",
-    "platforms": ["Steam", "Xbox", "PlayStation"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2139230/library_hero.jpg?t=1690393833",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/2139230/logo.png?t=1690393833",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "53fec4d7-08e3-4535-9408-c3d11c78adb2",
-    "title": "灰山事件",
-    "subtitle": ["Greyhill Incident"],
-    "releaseDate": "2023.06.09",
-    "platforms": ["Steam", "Xbox", "PlayStation"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1905020/library_hero.jpg?t=1686319517",
-    "logo": "",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
-  },
-  {
-    "id": "8a2beebf-2c46-4424-a1d9-4107fbfbc4f4",
-    "title": "极限国度",
-    "subtitle": ["Riders Republic"],
-    "releaseDate": "2021.10.28",
-    "platforms": ["Steam", "Xbox", "PlayStation"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2290180/library_hero.jpg?t=1694711581",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/2290180/logo.png?t=1694711581",
-    "leftColor": "#ffffff",
-    "rightColor": "#f9edc2"
-  },
-  {
-    "id": "a122d741-0b2a-438f-888d-7ff6b86e9baa",
-    "title": "黎明前20分钟",
-    "subtitle": ["20 Minutes Till Dawn"],
-    "releaseDate": "2023.06.08",
-    "platforms": ["Steam", "Epic", "Switch", "Android", "Apple"],
+    "bg": "/games/c8a3bf67-0980-4eac-a0a8-af81c5484f96/cover.jpg",
     "free": ["XGP"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1966900/library_hero.jpg?t=1686419554",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1966900/logo.png?t=1686419554",
-    "leftColor": "#fd5061",
-    "rightColor": "#fd5061"
+    "id": "c8a3bf67-0980-4eac-a0a8-af81c5484f96",
+    "leftColor": "#ffffff",
+    "logo": "/games/c8a3bf67-0980-4eac-a0a8-af81c5484f96/logo.png",
+    "platforms": ["Steam", "Xbox", "PlayStation"],
+    "releaseDate": "2023.07.14",
+    "rightColor": "#bcbaba",
+    "subtitle": ["Exoprimal"],
+    "title": "原始袭变"
   },
   {
-    "id": "c33666b2-c665-4c19-a270-95a9e315e3d7",
-    "title": "离火长明",
-    "subtitle": ["Nocturnal"],
-    "releaseDate": "2023.06.07",
+    "bg": "/games/17885945-4081-44c6-bb50-3850949f06a8/cover.jpg",
+    "free": [],
+    "id": "17885945-4081-44c6-bb50-3850949f06a8",
+    "leftColor": "#ffffff",
+    "logo": "/games/17885945-4081-44c6-bb50-3850949f06a8/logo.png",
+    "platforms": ["Steam", "Switch", "PlayStation"],
+    "releaseDate": "2023.07.13",
+    "rightColor": "#f6f7e8",
+    "subtitle": ["～萨尔布鲁克的炼金术士～"],
+    "title": "玛莉的炼金工房 重制版"
+  },
+  {
+    "bg": "/games/aae85f87-0a87-4ce7-9612-200cc1228436/cover.webp",
+    "free": [],
+    "id": "aae85f87-0a87-4ce7-9612-200cc1228436",
+    "leftColor": "#fffbfb",
+    "platforms": ["Steam", "Epic"],
+    "releaseDate": "2020.06.02",
+    "rightColor": "#ffffff",
+    "subtitle": ["Valorant"],
+    "title": "无畏契约"
+  },
+  {
+    "bg": "/games/d840cb51-b73b-4de3-980f-c68b7cf6a4ad/cover.jpg",
+    "free": [],
+    "id": "d840cb51-b73b-4de3-980f-c68b7cf6a4ad",
+    "leftColor": "#000000",
+    "logo": "/games/d840cb51-b73b-4de3-980f-c68b7cf6a4ad/logo.png",
+    "platforms": ["Steam", "Switch"],
+    "releaseDate": "2023.07.22",
+    "rightColor": "#ffffff",
+    "subtitle": ["Crime O'Clock"],
+    "title": "犯罪时刻"
+  },
+  {
+    "bg": "/games/420a6cb6-300f-4f6c-aba7-364597296ea7/cover.png",
+    "free": [],
+    "id": "420a6cb6-300f-4f6c-aba7-364597296ea7",
+    "leftColor": "#b1edd7",
     "platforms": ["Steam", "Xbox", "Switch", "PlayStation"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1634080/library_hero.jpg?t=1700474449",
-    "logo": "",
+    "releaseDate": "2023.06.30",
+    "rightColor": "#66a68f",
+    "subtitle": ["Ghost Trick: Phantom Detective"],
+    "title": "幽灵诡计：幻影侦探（2023）"
+  },
+  {
+    "bg": "/games/0c42236d-a2c7-4dd4-a662-5143758f9c81/cover.jpg",
+    "free": [],
+    "id": "0c42236d-a2c7-4dd4-a662-5143758f9c81",
+    "leftColor": "#ffffff",
+    "logo": "/games/0c42236d-a2c7-4dd4-a662-5143758f9c81/logo.png",
+    "platforms": ["Switch"],
+    "releaseDate": "2023.06.30",
+    "rightColor": "#fdfdfd",
+    "subtitle": ["Master Detective Archives: ", "Rain Code"],
+    "title": "超侦探事件簿：雾雨谜宫"
+  },
+  {
+    "bg": "/games/fb8168d2-8ee3-433e-bab2-a8fd5aa6ca4d/cover.jpg",
+    "free": [],
+    "id": "fb8168d2-8ee3-433e-bab2-a8fd5aa6ca4d",
+    "leftColor": "black",
+    "logo": "/games/fb8168d2-8ee3-433e-bab2-a8fd5aa6ca4d/logo.png",
+    "platforms": ["Steam"],
+    "releaseDate": "2023.06.28",
+    "rightColor": "#9ed5f7",
+    "subtitle": ["Dave the Diver"],
+    "title": "潜水员戴夫"
+  },
+  {
+    "bg": "/games/ae52ff0b-877d-4233-9988-1ab26d7f6a92/cover.png",
+    "free": [],
+    "id": "ae52ff0b-877d-4233-9988-1ab26d7f6a92",
+    "leftColor": "#ffffff",
+    "platforms": ["PlayStation"],
+    "releaseDate": "2023.06.22",
+    "rightColor": "black",
+    "subtitle": ["Final Fantasy XVI"],
+    "title": "最终幻想16"
+  },
+  {
+    "bg": "/games/787df8dd-db48-4e96-bd3b-23d2391e0496/cover.jpg",
+    "free": [],
+    "id": "787df8dd-db48-4e96-bd3b-23d2391e0496",
+    "leftColor": "#ffffff",
+    "platforms": ["Steam", "Switch", "PlayStation"],
+    "releaseDate": "2023.01.26",
+    "rightColor": "#ffffff",
+    "subtitle": ["STORY OF SEASONS: A Wonderful Life"],
+    "title": "牧场物语 Welcome！美丽人生"
+  },
+  {
+    "bg": "/games/f37f9b85-23bf-4622-9b20-c6499c5703f4/cover.jpg",
+    "free": [],
+    "id": "f37f9b85-23bf-4622-9b20-c6499c5703f4",
+    "leftColor": "#ffffff",
+    "logo": "/games/f37f9b85-23bf-4622-9b20-c6499c5703f4/logo.png",
+    "platforms": ["Steam"],
+    "releaseDate": "2023.06.15",
+    "rightColor": "#ffffff",
+    "subtitle": [],
+    "title": "BattleBit Remastered"
+  },
+  {
+    "bg": "/games/335d1aac-e2da-4b5d-935f-274562fde194/cover.jpg",
+    "free": [],
+    "id": "335d1aac-e2da-4b5d-935f-274562fde194",
+    "leftColor": "#f9b6b6",
+    "logo": "/games/335d1aac-e2da-4b5d-935f-274562fde194/logo.png",
+    "platforms": ["Steam", "Xbox", "PlayStation"],
+    "releaseDate": "2023.06.15",
+    "rightColor": "#f5bbbb",
+    "subtitle": ["Layers of Fear"],
+    "title": "层层恐惧（2023）"
+  },
+  {
+    "bg": "/games/45ad106f-fcaa-4e2a-8b43-d5d442e8e25c/cover.jpg",
+    "free": [],
+    "id": "45ad106f-fcaa-4e2a-8b43-d5d442e8e25c",
+    "leftColor": "#ffffff",
+    "logo": "/games/45ad106f-fcaa-4e2a-8b43-d5d442e8e25c/logo.png",
+    "platforms": ["Steam", "Xbox", "PlayStation"],
+    "releaseDate": "2023.06.14",
+    "rightColor": "#ffffff",
+    "subtitle": ["Blue Protocol"],
+    "title": "蓝色协议"
+  },
+  {
+    "bg": "/games/53fec4d7-08e3-4535-9408-c3d11c78adb2/cover.jpg",
+    "free": [],
+    "id": "53fec4d7-08e3-4535-9408-c3d11c78adb2",
+    "leftColor": "#ffffff",
+    "platforms": ["Steam", "Xbox", "PlayStation"],
+    "releaseDate": "2023.06.09",
+    "rightColor": "#ffffff",
+    "subtitle": ["Greyhill Incident"],
+    "title": "灰山事件"
+  },
+  {
+    "bg": "/games/8a2beebf-2c46-4424-a1d9-4107fbfbc4f4/cover.jpg",
+    "free": [],
+    "id": "8a2beebf-2c46-4424-a1d9-4107fbfbc4f4",
+    "leftColor": "#ffffff",
+    "logo": "/games/8a2beebf-2c46-4424-a1d9-4107fbfbc4f4/logo.png",
+    "platforms": ["Steam", "Xbox", "PlayStation"],
+    "releaseDate": "2021.10.28",
+    "rightColor": "#f9edc2",
+    "subtitle": ["Riders Republic"],
+    "title": "极限国度"
+  },
+  {
+    "bg": "/games/a122d741-0b2a-438f-888d-7ff6b86e9baa/cover.jpg",
+    "free": ["XGP"],
+    "id": "a122d741-0b2a-438f-888d-7ff6b86e9baa",
+    "leftColor": "#fd5061",
+    "logo": "/games/a122d741-0b2a-438f-888d-7ff6b86e9baa/logo.png",
+    "platforms": ["Steam", "Epic", "Switch", "Android", "Apple"],
+    "releaseDate": "2023.06.08",
+    "rightColor": "#fd5061",
+    "subtitle": ["20 Minutes Till Dawn"],
+    "title": "黎明前20分钟"
+  },
+  {
+    "bg": "/games/c33666b2-c665-4c19-a270-95a9e315e3d7/cover.jpg",
+    "free": [],
+    "id": "c33666b2-c665-4c19-a270-95a9e315e3d7",
     "leftColor": "#ead856",
-    "rightColor": "#ead856"
+    "platforms": ["Steam", "Xbox", "Switch", "PlayStation"],
+    "releaseDate": "2023.06.07",
+    "rightColor": "#ead856",
+    "subtitle": ["Nocturnal"],
+    "title": "离火长明"
   },
   {
+    "bg": "/games/b741725a-36af-4686-a979-4887d4d3c175/cover.jpg",
+    "free": [],
     "id": "b741725a-36af-4686-a979-4887d4d3c175",
-    "title": "失忆症：地堡",
-    "subtitle": ["Amnesia: The Bunker"],
-    "releaseDate": "2023.06.06",
-    "platforms": ["Steam", "Xbox", "PlayStation"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1944430/library_hero.jpg?t=1699272150",
-    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1944430/logo.png?t=1699272150",
     "leftColor": "#a59f78",
-    "rightColor": "#a59f78"
-  },
-  {
-    "id": "ea35f4f9-e079-494b-a29b-6c9651bb3c5e",
-    "title": "街霸6",
-    "subtitle": ["Street Fighter 6"],
-    "releaseDate": "2023.06.02",
+    "logo": "/games/b741725a-36af-4686-a979-4887d4d3c175/logo.png",
     "platforms": ["Steam", "Xbox", "PlayStation"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1364780/library_hero.jpg?t=1701317132",
-    "logo": "https://cdn2.steamgriddb.com/logo/27908be590d3ec381df976ecbf65df81.png",
-    "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
+    "releaseDate": "2023.06.06",
+    "rightColor": "#a59f78",
+    "subtitle": ["Amnesia: The Bunker"],
+    "title": "失忆症：地堡"
   },
   {
-    "id": "8c5a16ef-be61-41f9-9ada-4ed1f4593d6e",
-    "title": "LOOP8 降神",
-    "subtitle": ["LOOP8（ループエイト）"],
-    "releaseDate": "2023.06.01",
-    "platforms": ["Xbox", "Switch", "PlayStation"],
-    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2127430/library_hero.jpg?t=1686000133",
-    "logo": "",
+    "bg": "/games/ea35f4f9-e079-494b-a29b-6c9651bb3c5e/cover.jpg",
+    "free": [],
+    "id": "ea35f4f9-e079-494b-a29b-6c9651bb3c5e",
     "leftColor": "#ffffff",
-    "rightColor": "#ffffff"
+    "logo": "/games/ea35f4f9-e079-494b-a29b-6c9651bb3c5e/logo.png",
+    "platforms": ["Steam", "Xbox", "PlayStation"],
+    "releaseDate": "2023.06.02",
+    "rightColor": "#ffffff",
+    "subtitle": ["Street Fighter 6"],
+    "title": "街霸6"
+  },
+  {
+    "bg": "/games/8c5a16ef-be61-41f9-9ada-4ed1f4593d6e/cover.jpg",
+    "free": [],
+    "id": "8c5a16ef-be61-41f9-9ada-4ed1f4593d6e",
+    "leftColor": "#ffffff",
+    "platforms": ["Xbox", "Switch", "PlayStation"],
+    "releaseDate": "2023.06.01",
+    "rightColor": "#ffffff",
+    "subtitle": ["LOOP8（ループエイト）"],
+    "title": "LOOP8 降神"
+  },
+  {
+    "id": "87c0e04b-7e2e-4bfe-9a6b-54bf2fc16be6",
+    "title": "网络奇兵：重制版",
+    "subtitle": ["System Shock"],
+    "platforms": ["Steam", "Xbox", "PlayStation"],
+    "releaseDate": "2023.05.30",
+    "leftColor": "#ffffff",
+    "rightColor": "#ffffff",
+    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/482400/library_hero.jpg?t=1704729946",
+    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/482400/logo.png?t=1704729946",
+    "name": [
+      {
+        "content": "网络奇兵：重制版",
+        "lang": "zh_CN"
+      },
+      {
+        "lang": "en_US",
+        "content": "System Shock"
+      }
+    ],
+    "developer": [
+      {
+        "name": "Nightdive Studios"
+      }
+    ],
+    "publisher": [
+      {
+        "name": "Prime Matter"
+      }
+    ],
+    "badges": [
+      {
+        "type": "store.steam",
+        "value": "482400"
+      }
+    ],
+    "markdown": ""
+  },
+  {
+    "id": "1cc406aa-94b0-4b3a-a983-80d3d3adf237",
+    "title": "魔戒：咕噜",
+    "subtitle": ["The Lord of the Rings:", " Gollum"],
+    "platforms": ["Steam", "Xbox", "PlayStation"],
+    "releaseDate": "2023.05.25",
+    "leftColor": "#ffffff",
+    "rightColor": "#ffffff",
+    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1265780/library_hero.jpg?t=1685028759",
+    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1265780/logo.png?t=1685028759",
+    "name": [
+      {
+        "lang": "zh_CN",
+        "content": "魔戒：咕噜"
+      },
+      {
+        "content": "The Lord of the Rings: Gollum",
+        "lang": "en_US"
+      }
+    ],
+    "developer": [
+      {
+        "name": "Daedalic Entertainment"
+      }
+    ],
+    "publisher": [
+      {
+        "name": "Daedalic Entertainment"
+      },
+      {
+        "name": "Nacon"
+      }
+    ],
+    "badges": [
+      {
+        "type": "store.steam",
+        "value": "1265780"
+      }
+    ],
+    "markdown": ""
+  },
+  {
+    "id": "53a77917-15ff-4fc9-8c0d-ff1b409d7215",
+    "title": "兰若异谭",
+    "subtitle": [],
+    "platforms": ["Steam", "Android"],
+    "releaseDate": "2023.05.26",
+    "leftColor": "#ffffff",
+    "rightColor": "#ffffff",
+    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2198680/library_hero_schinese.jpg?t=1695342172",
+    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/2198680/logo_schinese.png?t=1695342172",
+    "name": [
+      {
+        "content": "兰若异谭",
+        "lang": "zh_CN"
+      }
+    ],
+    "developer": [
+      {
+        "name": "拾遗工作室"
+      }
+    ],
+    "publisher": [
+      {
+        "name": "Pixmain"
+      }
+    ],
+    "badges": [
+      {
+        "value": "2198680",
+        "type": "store.steam"
+      }
+    ],
+    "markdown": ""
+  },
+  {
+    "id": "f4b3c556-a7d1-4e8e-9d77-e5a9eaebc6a2",
+    "title": "蛇上而生",
+    "subtitle": ["Above Snakes"],
+    "platforms": ["Steam"],
+    "releaseDate": "2023.05.25",
+    "leftColor": "#ffffff",
+    "rightColor": "#ffffff",
+    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2209150/library_hero.jpg?t=1702999823",
+    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1589120/logo.png?t=1702998100",
+    "name": [
+      {
+        "content": "蛇上而生",
+        "lang": "zh_CN"
+      },
+      {
+        "lang": "en_US",
+        "content": "Above Snakes"
+      }
+    ],
+    "developer": [
+      {
+        "name": "Square Glade Games"
+      }
+    ],
+    "publisher": [
+      {
+        "name": "Crytivo"
+      }
+    ],
+    "badges": [
+      {
+        "type": "store.steam",
+        "value": "1589120"
+      }
+    ],
+    "markdown": ""
+  },
+  {
+    "id": "e462be19-e7ca-4c48-9923-072ad3ce6652",
+    "title": "面包和年糕",
+    "subtitle": ["Bread & Fred"],
+    "platforms": ["Steam", "Xbox"],
+    "releaseDate": "2023.05.21",
+    "leftColor": "#ffffff",
+    "rightColor": "#ffffff",
+    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1607680/library_hero.jpg?t=1707221174",
+    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1607680/logo.png?t=1707221174",
+    "name": [
+      {
+        "content": "聚点危机：英雄联盟外传",
+        "lang": "zh_CN"
+      },
+      {
+        "content": "Bread & Fred",
+        "lang": "en_US"
+      }
+    ],
+    "developer": [
+      {
+        "name": "SandCastles Studio"
+      }
+    ],
+    "publisher": [
+      {
+        "name": "Apogee Entertainment"
+      }
+    ],
+    "badges": [
+      {
+        "type": "store.steam",
+        "value": "1607680"
+      }
+    ],
+    "markdown": ""
+  },
+  {
+    "id": "a3cba743-e895-49b5-9430-8183033c94d7",
+    "title": "战锤40K：爆矢枪",
+    "subtitle": ["Warhammer 40,000:", "Boltgun"],
+    "platforms": ["Steam"],
+    "releaseDate": "2023.05.23",
+    "leftColor": "#ffffff",
+    "rightColor": "#ffffff",
+    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2005010/library_hero.jpg?t=1695390565",
+    "logo": "",
+    "name": [
+      {
+        "content": "战锤40K：爆矢枪",
+        "lang": "zh_CN"
+      },
+      {
+        "lang": "en_US",
+        "content": "Warhammer 40,000:Boltgun"
+      }
+    ],
+    "developer": [
+      {
+        "name": "Auroch Digital"
+      }
+    ],
+    "publisher": [
+      {
+        "name": " Focus Entertainment"
+      }
+    ],
+    "badges": [
+      {
+        "type": "store.steam",
+        "value": "2005010"
+      }
+    ],
+    "markdown": ""
+  },
+  {
+    "id": "f6fe274a-4ceb-4f93-b4de-35980b6261f0",
+    "title": "Planet of Lana",
+    "subtitle": [],
+    "platforms": ["Steam", "Xbox"],
+    "releaseDate": "2023.02.23",
+    "leftColor": "#ffffff",
+    "rightColor": "#ffffff",
+    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1608230/library_hero.jpg?t=1684854288",
+    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1608230/logo.png?t=1684854288",
+    "name": [
+      {
+        "lang": "en_US",
+        "content": "Planet of Lana"
+      }
+    ],
+    "developer": [
+      {
+        "name": "Wishfully"
+      }
+    ],
+    "publisher": [
+      {
+        "name": "Thunderful Publishing"
+      }
+    ],
+    "badges": [
+      {
+        "type": "store.steam",
+        "value": "1608230"
+      }
+    ],
+    "markdown": ""
+  },
+  {
+    "id": "50a54365-1bf0-4d97-80cd-53fb7d993ef6",
+    "title": "逃生：试炼",
+    "subtitle": ["The Outlast Trials"],
+    "platforms": ["Steam"],
+    "releaseDate": "2023.05.19",
+    "leftColor": "#838567",
+    "rightColor": "#838567",
+    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1304930/library_hero.jpg?t=1702501933",
+    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1304930/logo.png?t=1702501933",
+    "name": [
+      {
+        "lang": "zh_CN",
+        "content": "逃生：试炼"
+      },
+      {
+        "content": "The Outlast Trials",
+        "lang": "en_US"
+      }
+    ],
+    "developer": [
+      {
+        "name": "Red Barrels"
+      }
+    ],
+    "publisher": [
+      {
+        "name": "Red Barrels"
+      }
+    ],
+    "badges": [
+      {
+        "type": "store.steam",
+        "value": "1304930"
+      }
+    ],
+    "markdown": ""
+  },
+  {
+    "id": "9a4817e2-18ee-4927-a4a8-027f90d7b243",
+    "title": "原点计划",
+    "subtitle": ["Bio PrototypeBio", "Prototype"],
+    "platforms": ["Steam", "Switch"],
+    "releaseDate": "2023.04.12",
+    "leftColor": "#ba7cff",
+    "rightColor": "#c089fd",
+    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1498040/library_hero.jpg?t=1681288025",
+    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1498040/logo_schinese.png?t=1681288025",
+    "name": [
+      {
+        "content": "原点计划",
+        "lang": "zh_CN"
+      },
+      {
+        "lang": "en_US",
+        "content": "Bio PrototypeBio Prototype"
+      }
+    ],
+    "developer": [
+      {
+        "name": "Emprom Game"
+      }
+    ],
+    "publisher": [
+      {
+        "name": "BD Games"
+      }
+    ],
+    "badges": [
+      {
+        "value": "1498040",
+        "type": "store.steam"
+      }
+    ],
+    "markdown": ""
+  },
+  {
+    "id": "8633f5c8-c6b6-4813-a341-6dfbb846fdf0",
+    "title": "战场的赋格曲2",
+    "subtitle": ["Fuga: Melodies of Steel 2"],
+    "platforms": ["Steam", "Xbox", "Switch", "PlayStation"],
+    "releaseDate": "2023.05.11",
+    "leftColor": "#ffffff",
+    "rightColor": "#ffffff",
+    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/2001340/library_hero.jpg?t=1700116828",
+    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/2001340/logo_schinese.png?t=1700116828",
+    "name": [
+      {
+        "content": "战场的赋格曲2",
+        "lang": "zh_CN"
+      },
+      {
+        "lang": "en_US",
+        "content": "Fuga: Melodies of Steel 2"
+      }
+    ],
+    "developer": [
+      {
+        "name": "CyberConnect2"
+      }
+    ],
+    "publisher": [
+      {
+        "name": "CyberConnect2"
+      }
+    ],
+    "badges": [
+      {
+        "type": "store.steam",
+        "value": "2001340"
+      }
+    ],
+    "markdown": ""
+  },
+  {
+    "id": "66912607-d95f-4d19-a428-2ce5d0e0e625",
+    "title": "暗黑地牢2",
+    "subtitle": ["Darkest Dungeon II"],
+    "platforms": ["Steam"],
+    "releaseDate": "2023.05.09",
+    "leftColor": "#ffffff",
+    "rightColor": "#ffffff",
+    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1940340/library_hero.jpg?t=1704999645",
+    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1940340/logo.png?t=1704999645",
+    "name": [
+      {
+        "lang": "zh_CN",
+        "content": "暗黑地牢2"
+      },
+      {
+        "lang": "en_US",
+        "content": "Darkest Dungeon II"
+      }
+    ],
+    "developer": [
+      {
+        "name": "Red Hook Studios"
+      }
+    ],
+    "publisher": [
+      {
+        "name": "Red Hook Studios"
+      }
+    ],
+    "badges": [
+      {
+        "type": "store.steam",
+        "value": "1940340"
+      }
+    ],
+    "markdown": ""
+  },
+  {
+    "id": "1009f0ee-bf6f-44aa-b3be-26bd26b58029",
+    "title": "霍格沃茨之遗",
+    "subtitle": ["Hogwarts Legacy"],
+    "platforms": ["Steam", "Xbox", "PlayStation"],
+    "releaseDate": "2023.02.10",
+    "leftColor": "#ffffff",
+    "rightColor": "#ffffff",
+    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/990080/library_hero.jpg?t=1676412335",
+    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/990080/logo.png?t=1676412335",
+    "name": [
+      {
+        "lang": "zh_CN",
+        "content": "霍格沃茨之遗"
+      },
+      {
+        "content": "Hogwarts Legacy",
+        "lang": "en_US"
+      }
+    ],
+    "developer": [
+      {
+        "name": "Avalanche Software"
+      }
+    ],
+    "publisher": [
+      {
+        "name": "Warner Bros. Games"
+      }
+    ],
+    "badges": [
+      {
+        "type": "store.steam",
+        "value": "990080"
+      }
+    ],
+    "markdown": ""
+  },
+  {
+    "id": "264c9625-e42a-4b9f-b8ab-916cb16c81aa",
+    "title": "卡库远古封印",
+    "subtitle": ["Kaku Ancient Seal"],
+    "platforms": ["Steam"],
+    "releaseDate": "2023.05.04",
+    "leftColor": "#ffffff",
+    "rightColor": "#ffffff",
+    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1179580/library_hero.jpg?t=1693293996",
+    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1179580/logo_schinese.png?t=1693293996",
+    "name": [
+      {
+        "content": "卡库远古封印",
+        "lang": "zh_CN"
+      },
+      {
+        "lang": "en_US",
+        "content": "Kaku Ancient Seal"
+      }
+    ],
+    "developer": [
+      {
+        "name": "BINGOBELL"
+      }
+    ],
+    "publisher": [
+      {
+        "name": "BINGOBELL"
+      }
+    ],
+    "badges": [
+      {
+        "type": "store.steam",
+        "value": "1179580"
+      }
+    ],
+    "markdown": ""
+  },
+  {
+    "id": "7c22a062-3a23-423f-9e8c-243ff8b6245d",
+    "title": "红霞岛",
+    "subtitle": ["Redfall"],
+    "platforms": ["Steam", "Xbox"],
+    "free": ["XGP"],
+    "releaseDate": "2023.05.02",
+    "leftColor": "#ff0000",
+    "rightColor": "#ff0000",
+    "bg": "https://cdn.cloudflare.steamstatic.com/steam/apps/1294810/library_hero.jpg?t=1683660085",
+    "logo": "https://cdn.cloudflare.steamstatic.com/steam/apps/1294810/logo.png?t=1683660085",
+    "name": [
+      {
+        "lang": "zh_CN",
+        "content": "红霞岛"
+      },
+      {
+        "lang": "en_US",
+        "content": "Redfall"
+      }
+    ],
+    "developer": [
+      {
+        "name": "Arkane Austin"
+      }
+    ],
+    "publisher": [
+      {
+        "name": "Bethesda Softworks"
+      }
+    ],
+    "badges": [
+      {
+        "type": "store.steam",
+        "value": "1294810"
+      }
+    ],
+    "markdown": ""
   }
 ]
