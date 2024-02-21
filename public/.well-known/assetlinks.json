@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.liziyi0914.gamingepochs",
+      "sha256_cert_fingerprints": [
+        "3A:48:03:0B:A1:6A:EB:54:C2:18:93:31:CA:EB:A6:03:37:C0:D2:18:F4:89:A5:75:26:F8:64:BD:BA:E7:C2:D3"
+      ]
+    }
+  }
+]
