@@ -40,12 +40,12 @@ const Month: React.FC<{
           affixed && !props.closed ? 'backdrop-blur-3xl shadow-md' : ''
         } rounded-b-lg`}
         style={{
-          backgroundColor:
+          background:
             props.closed || !affixed
               ? 'transparent'
               : isDark
-              ? 'rgba(0,0,0,0.2)'
-              : 'rgba(255,255,255,0.2)',
+              ? `linear-gradient(180deg, ${token.colorBgLayout}, rgba(0,0,0,0.4))`
+              : `linear-gradient(180deg, ${token.colorBgLayout}, rgba(255,255,255,0.4))`,
         }}
       >
         <div
